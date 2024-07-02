@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-btnVpn {
+    background-image: linear-gradient(90deg, #27ddb1 -32.8%, #6d4aff);
+}
+
+
+.cardShadow{
+    box-shadow: #043CAA 0px 3px 8px;
+}

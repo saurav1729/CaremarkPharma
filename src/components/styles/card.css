@@ -1,0 +1,52 @@
+.card {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 240%;
+    background: linear-gradient(#00ccff, #d500f9);
+    animation: rotate 6s linear infinite;
+    z-index: 1;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background:linear-gradient(#00ccff,#031538); */
+    background-color: white;
+    border-radius: 20px;
+    margin: 5px;
+    z-index: 1;
+}
+
+.card .img {
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

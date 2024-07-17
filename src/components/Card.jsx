@@ -1,133 +1,107 @@
+// import React, { useState } from 'react';
+// import './styles/card.css';
+// import Card from '@mui/material/Card';
+// import CardContent from '@mui/material/CardContent';
+// import CardMedia from '@mui/material/CardMedia';
+// import Typography from '@mui/material/Typography';
+// import { CardActionArea } from '@mui/material';
+
+// const ProductCard = (props) => {
+//     const { data } = props;
+//     const [showTitle, setShowTitle] = useState(false);
+
+//     return (
+//         <div>
+//             <Card
+//                 className="h-[20rem] w-[20rem] p-1 bg-[rgba(0,0,0,0.5)] relative border border-[lightgray] rounded-[20px] hover:shadow-lg hover:scale-105 hover:transition-transform hover:shadow-gray-500"
+//             >
+//                 <CardActionArea
+  
+//                 >
+//                     <CardMedia
+//                         component="img"
+//                         image={data.imageURL}
+//                         alt="product image"
+//                         className="h-[15rem] w-[15rem]"
+//                     />
+//                     {/* {showTitle && ( */}
+//                         <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-2">
+//                             <CardContent>
+//                                 <Typography
+//                                     className="font-bold text-green-300 text-xl"
+//                                     component="span"
+//                                 >
+//                                     {data.title}
+//                                 </Typography>
+//                             </CardContent>
+//                         </div>
+                  
+//                 </CardActionArea>
+//             </Card>
+//         </div>
+//     );
+// };
+
+// export default ProductCard;
+
+
 import React from 'react';
+import { useState } from 'react';
 import './styles/card.css';
 
-const Card = (props) => {
-    const { data } = props;
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
+
+
+
+const productCard = (props) => {
+    const { data,customStyle,page } = props;
+    const [showTitle, setShowTitle] = useState(false);
+  
     console.log(data.imageURL);
     return (
-      <div className='card h-[20rem] p-1 bg-[rgba(0,0,0,0.5)] w-[20rem] relative border border-[lightgray] rounded-[20px]'>
-    <img className='img rounded-[20px]' src={data.imageURL} alt="" />
-</div>
+      <div className='flex flex-col justify-center items-center '>
+<div 
+  onMouseEnter={() => setShowTitle(true)} 
+  onMouseLeave={() => setShowTitle(false)} 
+  style={customStyle} 
+  className={`${page === 'home'? 'card': ''} p-1 bg-[rgba(0,0,0,0.5)] relative border cursor-pointer border-[lightgray] rounded-[20px]`}
+>     <img className='img rounded-[20px]' src={data.imageURL} alt="" />
+     {showTitle &&
+      <div className='absolute h-[97%] w-[97%] bottom-1 rounded-[20px_20px] left-[0.35rem]  z-50 bg-black opacity-30'>
+        <div className='z-50 w-full h-full relative '> <span>Hello</span></div>
+     
+    </div>
+     }
 
+      </div>
+      <span className='text-center cursor-pointer text-[1.4rem] font-semibold leading-7 bg-gradient-to-r from-green-400 to-orange-400 bg-clip-text text-transparent'>{data.medicineName}</span>
+      </div>
+      // <div
+      //   className="h-[20rem] p-1 bg-[rgba(0,0,0,0.5)] w-[20rem] relative border border-[lightgray] rounded-[20px]"
+      //   sx={{ maxWidth: 345 }}
+      // >
+    
+      //     <CardMedia
+      //       component="img"
+      //       height="140"
+      //       style={{ height: "15rem", width: "15rem" }}
+      //       image={data.imageURL}
+      //       alt="green iguana"
+      //     />
+      //     <div className="absolute bottom-0 left-0">
+      //      {setShowTitle &&
+      //       <>
+      //       <div>hello</div>
+      //       </>
+      //      } 
+      //     </div>
+    
+      // </div>
     );
 };
 
-export default Card;
-
-// import React, { useState, useEffect } from "react";
-// import PropTypes from "prop-types";
-// import style from "./OngoingEventCard/styles/OngoingEventCard.module.scss";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-// import { Link } from "react-router-dom";
-// import Share from "../../ShareContainer/Share";
-// import shareOutline from "../../../assets/images/shareOutline.svg";
-// import groupIcon from "../../../assets/images/groups.svg";
-// import rupeeIcon from "../../../assets/images/rupeeIcon.svg";
-
-// const EventCard = (props) => {
-//   const {
-//     data,
-//     onOpen,
-//     type,
-//     modalpath,
-//     customStyles = {},
-//     showShareButton = true,
-//     showRegisterButton = true,
-//     additionalContent,
-//   } = props;
-
-//   useEffect(() => {
-//     AOS.init({ duration: 2000 });
-//   }, []);
-
-//   if (!data) return null;
-
-//   const [isOpen, setOpen] = useState(false);
-
-//   const handleShare = () => {
-//     setOpen(!isOpen);
-//   };
-
-//   const handlesharebtn = () => {
-//     setOpen(false);
-//   };
-
-//   const url = window.location.href;
-
-//   return (
-//     <>
-//       <div className={style.card} style={customStyles.card} data-aos="fade-up">
-//         <div className={style.backimg} style={customStyles.backimg} onClick={onOpen}>
-//           <img srcSet={data.imageURL} className={style.img} style={customStyles.img} alt="Event" />
-//           <div className={style.date} style={customStyles.date}>{data.eventDate}</div>
-//           {type === "ongoing" && showShareButton && (
-//             <div className={style.share} style={customStyles.share} onClick={handleShare}>
-//               <img className={style.shareIcon} style={customStyles.shareIcon} src={shareOutline} alt="Share" />
-//             </div>
-//           )}
-//         </div>
-//         <div className={style.backbtn} style={customStyles.backbtn}>
-//           <div className={style.eventname} style={customStyles.eventname}>
-//             {data.eventName}
-//             {type === "ongoing" && (
-//               <p>
-//                 <img src={groupIcon} alt="Group" />
-//                 Team size: {data.teamSize} {" || "}
-//                 <div className={style.price} style={customStyles.price}>
-//                   {data.eventPrice ? (
-//                     <p style={customStyles.eventnamep}>
-//                       <img src={rupeeIcon} alt="Rupee" />
-//                       {data.eventPrice}
-//                     </p>
-//                   ) : (
-//                     <p style={{ color: "inherit" }}>Free</p>
-//                   )}
-//                 </div>
-//               </p>
-//             )}
-//           </div>
-//           {type === "ongoing" && showRegisterButton && (
-//             <div>
-//               <button className={style.registerbtn} style={customStyles.registerbtn}>Register Now</button>
-//             </div>
-//           )}
-//         </div>
-//         <div className={style.backtxt} style={customStyles.backtxt}>
-//           <div style={{ display: "flex", alignItems: "center" }}>
-//             <div className={style.EventDesc} style={customStyles.EventDesc}>{data.eventDescription}</div>
-//             <Link to={modalpath + data.id}>
-//               <span onClick={handlesharebtn} className={style.seeMore} style={ { ...customStyles.seeMore,
-//                   marginLeft: "auto",
-//                   whiteSpace: "nowrap"}} >
-//                 See More...
-//               </span>
-//             </Link>
-//           </div>
-//           {additionalContent && <div>{additionalContent}</div>}
-//         </div>
-//       </div>
-//       {isOpen && type === "ongoing" && <Share onClose={handleShare} urlpath={url + "/" + data.id} />}
-//     </>
-//   );
-// };
-
-// EventCard.propTypes = {
-//   data: PropTypes.object.isRequired,
-//   onOpen: PropTypes.func.isRequired,
-//   type: PropTypes.string.isRequired,
-//   modalpath: PropTypes.string.isRequired,
-//   customStyles: PropTypes.object,
-//   showShareButton: PropTypes.bool,
-//   showRegisterButton: PropTypes.bool,
-//   additionalContent: PropTypes.node,
-// };
-
-// EventCard.defaultProps = {
-//   customStyles: {},
-//   showShareButton: true,
-//   showRegisterButton: true,
-//   additionalContent: null,
-// };
-
-// export default EventCard;
+export default productCard;

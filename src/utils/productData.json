@@ -1,0 +1,718 @@
+{
+    "products": [
+      { "id":"1",
+        "name": "Smra-L",
+        "manufacturer": "Caremark Pharmaceutical",
+        "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
+        "price": {
+          "original": 175.00,
+          "discounted": 175.00,
+          "discount_percentage": 0,
+          "includes_taxes": true
+        },
+        "package_size": "10 Capsules",
+        "availability": "in stock",
+        "details": {
+          "authenticity": "100% Authentic Products",
+          "shipping": "Free Shipping*",
+          "return_policy": "Products Return Policy"
+        },
+        "description": {
+          "title": "Information about Smra-L",
+          "sections": [
+            {
+              "title": "Description",
+              "content": "Rabeprazole Sodium (EC) & Levosulpiride (SR) Capsules"
+            },
+            {
+              "title": "Composition",
+              "content": "Each hard gelatin Capsule contains: Rabeprazole Sodium (As enteric coated pellets) I.P. 20 mg, Levosulpiride (As sustained release pellets) 75 mg, Excipients q.s., Approved colour used in empty capsule shells."
+            },
+            {
+              "title": "Dosage",
+              "content": "As directed by the physician."
+            },
+            {
+              "title": "Storage",
+              "content": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole."
+            },
+            {
+              "title": "Manufacturer",
+              "content": "Manufactured By: Saphnix Life Sciences (A WHO-GMP Certified Company) Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025. Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+            },
+            {
+              "title": "Batch Information",
+              "content": "Batch No.: HC4770O, Manufacturing Date: 08/2023, Expiry Date: 07/2025"
+            },
+            {
+              "title": "Prescription Warning",
+              "content": "SCHEDULE H PRESCRIPTION DRUG - CAUTION: Not to be sold by retail without the prescription of a Registered Medical Practitioner."
+            },
+            {
+              "title": "Marketing",
+              "content": "Marketed By: Caremark Pharmaceutical Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+            }
+          ]
+        }
+      },
+      { "id":"2",
+        "name": "SmraFlam",
+        "manufacturer": "Algen Healthcare Limited",
+        "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+        "price": {
+          "original": 65.00,
+          "discounted": 65.00,
+          "discount_percentage": 0,
+          "includes_taxes": true
+        },
+        "package_size": "Suspension",
+        "availability": "in stock",
+        "details": {
+          "authenticity": "100% Authentic Products",
+          "shipping": "Free Shipping*",
+          "return_policy": "Products Return Policy"
+        },
+        "description": {
+          "title": "Information about SmraFlam",
+          "sections": [
+            {
+              "title": "Description",
+              "content": "SmraFlam Suspension - Shake well before each use."
+            },
+            {
+              "title": "Composition",
+              "content": "Each 5 ml contains: Aceclofenac IP 50 mg, Paracetamol IP 125 mg, in flavoured suspension base q.s. Colour: Sunset Yellow."
+            },
+            {
+              "title": "Dosage",
+              "content": "As directed by the Physician."
+            },
+            {
+              "title": "Storage",
+              "content": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Temp. below 25° C. Keep the medicine out of the reach of children."
+            },
+            {
+              "title": "Warnings",
+              "content": "Taking more than the daily dose of Paracetamol may cause serious liver damage or allergic reactions (e.g., swelling of the face, mouth and throat, difficulty in breathing, itching or rash). To be sold by retail on the prescription of a Registered Medical Practitioner only."
+            },
+            {
+              "title": "Manufacturer",
+              "content": "Manufactured By: Algen Healthcare Limited (A G.M.P. Certified Company) 134/2, Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030."
+            },
+            {
+              "title": "Batch Information",
+              "content": "Batch No.: AHL-669, Manufacturing Date: 03/2023, Expiry Date: 02/2025."
+            },
+            {
+              "title": "Marketing",
+              "content": "Marketed By: Caremark Pharmaceutical Pvt. Ltd., Mantra City, Ranipur Range, Haridwar, Uttrakhand-249403."
+            }
+          ]
+        }
+      },
+      { "id":"3",
+      "name": "Smra-L",
+      "manufacturer": "Caremark Pharmaceutical",
+      "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
+      "price": {
+        "original": 175.00,
+        "discounted": 175.00,
+        "discount_percentage": 0,
+        "includes_taxes": true
+      },
+      "package_size": "10 Capsules",
+      "availability": "in stock",
+      "details": {
+        "authenticity": "100% Authentic Products",
+        "shipping": "Free Shipping*",
+        "return_policy": "Products Return Policy"
+      },
+      "description": {
+        "title": "Information about Smra-L",
+        "sections": [
+          {
+            "title": "Description",
+            "content": "Rabeprazole Sodium (EC) & Levosulpiride (SR) Capsules"
+          },
+          {
+            "title": "Composition",
+            "content": "Each hard gelatin Capsule contains: Rabeprazole Sodium (As enteric coated pellets) I.P. 20 mg, Levosulpiride (As sustained release pellets) 75 mg, Excipients q.s., Approved colour used in empty capsule shells."
+          },
+          {
+            "title": "Dosage",
+            "content": "As directed by the physician."
+          },
+          {
+            "title": "Storage",
+            "content": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole."
+          },
+          {
+            "title": "Manufacturer",
+            "content": "Manufactured By: Saphnix Life Sciences (A WHO-GMP Certified Company) Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025. Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+          },
+          {
+            "title": "Batch Information",
+            "content": "Batch No.: HC4770O, Manufacturing Date: 08/2023, Expiry Date: 07/2025"
+          },
+          {
+            "title": "Prescription Warning",
+            "content": "SCHEDULE H PRESCRIPTION DRUG - CAUTION: Not to be sold by retail without the prescription of a Registered Medical Practitioner."
+          },
+          {
+            "title": "Marketing",
+            "content": "Marketed By: Caremark Pharmaceutical Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+          }
+        ]
+      }
+    },
+    { "id":"4",
+      "name": "SmraFlam",
+      "manufacturer": "Algen Healthcare Limited",
+      "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+      "price": {
+        "original": 65.00,
+        "discounted": 65.00,
+        "discount_percentage": 0,
+        "includes_taxes": true
+      },
+      "package_size": "Suspension",
+      "availability": "in stock",
+      "details": {
+        "authenticity": "100% Authentic Products",
+        "shipping": "Free Shipping*",
+        "return_policy": "Products Return Policy"
+      },
+      "description": {
+        "title": "Information about SmraFlam",
+        "sections": [
+          {
+            "title": "Description",
+            "content": "SmraFlam Suspension - Shake well before each use."
+          },
+          {
+            "title": "Composition",
+            "content": "Each 5 ml contains: Aceclofenac IP 50 mg, Paracetamol IP 125 mg, in flavoured suspension base q.s. Colour: Sunset Yellow."
+          },
+          {
+            "title": "Dosage",
+            "content": "As directed by the Physician."
+          },
+          {
+            "title": "Storage",
+            "content": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Temp. below 25° C. Keep the medicine out of the reach of children."
+          },
+          {
+            "title": "Warnings",
+            "content": "Taking more than the daily dose of Paracetamol may cause serious liver damage or allergic reactions (e.g., swelling of the face, mouth and throat, difficulty in breathing, itching or rash). To be sold by retail on the prescription of a Registered Medical Practitioner only."
+          },
+          {
+            "title": "Manufacturer",
+            "content": "Manufactured By: Algen Healthcare Limited (A G.M.P. Certified Company) 134/2, Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030."
+          },
+          {
+            "title": "Batch Information",
+            "content": "Batch No.: AHL-669, Manufacturing Date: 03/2023, Expiry Date: 02/2025."
+          },
+          {
+            "title": "Marketing",
+            "content": "Marketed By: Caremark Pharmaceutical Pvt. Ltd., Mantra City, Ranipur Range, Haridwar, Uttrakhand-249403."
+          }
+        ]
+      }
+    },
+    { "id":"5",
+    "name": "Smra-L",
+    "manufacturer": "Caremark Pharmaceutical",
+    "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
+    "price": {
+      "original": 175.00,
+      "discounted": 175.00,
+      "discount_percentage": 0,
+      "includes_taxes": true
+    },
+    "package_size": "10 Capsules",
+    "availability": "in stock",
+    "details": {
+      "authenticity": "100% Authentic Products",
+      "shipping": "Free Shipping*",
+      "return_policy": "Products Return Policy"
+    },
+    "description": {
+      "title": "Information about Smra-L",
+      "sections": [
+        {
+          "title": "Description",
+          "content": "Rabeprazole Sodium (EC) & Levosulpiride (SR) Capsules"
+        },
+        {
+          "title": "Composition",
+          "content": "Each hard gelatin Capsule contains: Rabeprazole Sodium (As enteric coated pellets) I.P. 20 mg, Levosulpiride (As sustained release pellets) 75 mg, Excipients q.s., Approved colour used in empty capsule shells."
+        },
+        {
+          "title": "Dosage",
+          "content": "As directed by the physician."
+        },
+        {
+          "title": "Storage",
+          "content": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole."
+        },
+        {
+          "title": "Manufacturer",
+          "content": "Manufactured By: Saphnix Life Sciences (A WHO-GMP Certified Company) Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025. Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+        },
+        {
+          "title": "Batch Information",
+          "content": "Batch No.: HC4770O, Manufacturing Date: 08/2023, Expiry Date: 07/2025"
+        },
+        {
+          "title": "Prescription Warning",
+          "content": "SCHEDULE H PRESCRIPTION DRUG - CAUTION: Not to be sold by retail without the prescription of a Registered Medical Practitioner."
+        },
+        {
+          "title": "Marketing",
+          "content": "Marketed By: Caremark Pharmaceutical Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+        }
+      ]
+    }
+  },
+  { "id":"6",
+    "name": "SmraFlam",
+    "manufacturer": "Algen Healthcare Limited",
+    "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+    "price": {
+      "original": 65.00,
+      "discounted": 65.00,
+      "discount_percentage": 0,
+      "includes_taxes": true
+    },
+    "package_size": "Suspension",
+    "availability": "in stock",
+    "details": {
+      "authenticity": "100% Authentic Products",
+      "shipping": "Free Shipping*",
+      "return_policy": "Products Return Policy"
+    },
+    "description": {
+      "title": "Information about SmraFlam",
+      "sections": [
+        {
+          "title": "Description",
+          "content": "SmraFlam Suspension - Shake well before each use."
+        },
+        {
+          "title": "Composition",
+          "content": "Each 5 ml contains: Aceclofenac IP 50 mg, Paracetamol IP 125 mg, in flavoured suspension base q.s. Colour: Sunset Yellow."
+        },
+        {
+          "title": "Dosage",
+          "content": "As directed by the Physician."
+        },
+        {
+          "title": "Storage",
+          "content": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Temp. below 25° C. Keep the medicine out of the reach of children."
+        },
+        {
+          "title": "Warnings",
+          "content": "Taking more than the daily dose of Paracetamol may cause serious liver damage or allergic reactions (e.g., swelling of the face, mouth and throat, difficulty in breathing, itching or rash). To be sold by retail on the prescription of a Registered Medical Practitioner only."
+        },
+        {
+          "title": "Manufacturer",
+          "content": "Manufactured By: Algen Healthcare Limited (A G.M.P. Certified Company) 134/2, Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030."
+        },
+        {
+          "title": "Batch Information",
+          "content": "Batch No.: AHL-669, Manufacturing Date: 03/2023, Expiry Date: 02/2025."
+        },
+        {
+          "title": "Marketing",
+          "content": "Marketed By: Caremark Pharmaceutical Pvt. Ltd., Mantra City, Ranipur Range, Haridwar, Uttrakhand-249403."
+        }
+      ]
+    }
+  },
+  { "id":"7",
+  "name": "Smra-L",
+  "manufacturer": "Caremark Pharmaceutical",
+  "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
+  "price": {
+    "original": 175.00,
+    "discounted": 175.00,
+    "discount_percentage": 0,
+    "includes_taxes": true
+  },
+  "package_size": "10 Capsules",
+  "availability": "in stock",
+  "details": {
+    "authenticity": "100% Authentic Products",
+    "shipping": "Free Shipping*",
+    "return_policy": "Products Return Policy"
+  },
+  "description": {
+    "title": "Information about Smra-L",
+    "sections": [
+      {
+        "title": "Description",
+        "content": "Rabeprazole Sodium (EC) & Levosulpiride (SR) Capsules"
+      },
+      {
+        "title": "Composition",
+        "content": "Each hard gelatin Capsule contains: Rabeprazole Sodium (As enteric coated pellets) I.P. 20 mg, Levosulpiride (As sustained release pellets) 75 mg, Excipients q.s., Approved colour used in empty capsule shells."
+      },
+      {
+        "title": "Dosage",
+        "content": "As directed by the physician."
+      },
+      {
+        "title": "Storage",
+        "content": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole."
+      },
+      {
+        "title": "Manufacturer",
+        "content": "Manufactured By: Saphnix Life Sciences (A WHO-GMP Certified Company) Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025. Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+      },
+      {
+        "title": "Batch Information",
+        "content": "Batch No.: HC4770O, Manufacturing Date: 08/2023, Expiry Date: 07/2025"
+      },
+      {
+        "title": "Prescription Warning",
+        "content": "SCHEDULE H PRESCRIPTION DRUG - CAUTION: Not to be sold by retail without the prescription of a Registered Medical Practitioner."
+      },
+      {
+        "title": "Marketing",
+        "content": "Marketed By: Caremark Pharmaceutical Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+      }
+    ]
+  }
+},
+{ "id":"8",
+  "name": "SmraFlam",
+  "manufacturer": "Algen Healthcare Limited",
+  "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+  "price": {
+    "original": 65.00,
+    "discounted": 65.00,
+    "discount_percentage": 0,
+    "includes_taxes": true
+  },
+  "package_size": "Suspension",
+  "availability": "in stock",
+  "details": {
+    "authenticity": "100% Authentic Products",
+    "shipping": "Free Shipping*",
+    "return_policy": "Products Return Policy"
+  },
+  "description": {
+    "title": "Information about SmraFlam",
+    "sections": [
+      {
+        "title": "Description",
+        "content": "SmraFlam Suspension - Shake well before each use."
+      },
+      {
+        "title": "Composition",
+        "content": "Each 5 ml contains: Aceclofenac IP 50 mg, Paracetamol IP 125 mg, in flavoured suspension base q.s. Colour: Sunset Yellow."
+      },
+      {
+        "title": "Dosage",
+        "content": "As directed by the Physician."
+      },
+      {
+        "title": "Storage",
+        "content": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Temp. below 25° C. Keep the medicine out of the reach of children."
+      },
+      {
+        "title": "Warnings",
+        "content": "Taking more than the daily dose of Paracetamol may cause serious liver damage or allergic reactions (e.g., swelling of the face, mouth and throat, difficulty in breathing, itching or rash). To be sold by retail on the prescription of a Registered Medical Practitioner only."
+      },
+      {
+        "title": "Manufacturer",
+        "content": "Manufactured By: Algen Healthcare Limited (A G.M.P. Certified Company) 134/2, Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030."
+      },
+      {
+        "title": "Batch Information",
+        "content": "Batch No.: AHL-669, Manufacturing Date: 03/2023, Expiry Date: 02/2025."
+      },
+      {
+        "title": "Marketing",
+        "content": "Marketed By: Caremark Pharmaceutical Pvt. Ltd., Mantra City, Ranipur Range, Haridwar, Uttrakhand-249403."
+      }
+    ]
+  }
+},
+{ "id":"9",
+"name": "Smra-L",
+"manufacturer": "Caremark Pharmaceutical",
+"composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
+"price": {
+  "original": 175.00,
+  "discounted": 175.00,
+  "discount_percentage": 0,
+  "includes_taxes": true
+},
+"package_size": "10 Capsules",
+"availability": "in stock",
+"details": {
+  "authenticity": "100% Authentic Products",
+  "shipping": "Free Shipping*",
+  "return_policy": "Products Return Policy"
+},
+"description": {
+  "title": "Information about Smra-L",
+  "sections": [
+    {
+      "title": "Description",
+      "content": "Rabeprazole Sodium (EC) & Levosulpiride (SR) Capsules"
+    },
+    {
+      "title": "Composition",
+      "content": "Each hard gelatin Capsule contains: Rabeprazole Sodium (As enteric coated pellets) I.P. 20 mg, Levosulpiride (As sustained release pellets) 75 mg, Excipients q.s., Approved colour used in empty capsule shells."
+    },
+    {
+      "title": "Dosage",
+      "content": "As directed by the physician."
+    },
+    {
+      "title": "Storage",
+      "content": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole."
+    },
+    {
+      "title": "Manufacturer",
+      "content": "Manufactured By: Saphnix Life Sciences (A WHO-GMP Certified Company) Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025. Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+    },
+    {
+      "title": "Batch Information",
+      "content": "Batch No.: HC4770O, Manufacturing Date: 08/2023, Expiry Date: 07/2025"
+    },
+    {
+      "title": "Prescription Warning",
+      "content": "SCHEDULE H PRESCRIPTION DRUG - CAUTION: Not to be sold by retail without the prescription of a Registered Medical Practitioner."
+    },
+    {
+      "title": "Marketing",
+      "content": "Marketed By: Caremark Pharmaceutical Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+    }
+  ]
+}
+},
+{ "id":"10",
+"name": "SmraFlam",
+"manufacturer": "Algen Healthcare Limited",
+"composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+"price": {
+  "original": 65.00,
+  "discounted": 65.00,
+  "discount_percentage": 0,
+  "includes_taxes": true
+},
+"package_size": "Suspension",
+"availability": "in stock",
+"details": {
+  "authenticity": "100% Authentic Products",
+  "shipping": "Free Shipping*",
+  "return_policy": "Products Return Policy"
+},
+"description": {
+  "title": "Information about SmraFlam",
+  "sections": [
+    {
+      "title": "Description",
+      "content": "SmraFlam Suspension - Shake well before each use."
+    },
+    {
+      "title": "Composition",
+      "content": "Each 5 ml contains: Aceclofenac IP 50 mg, Paracetamol IP 125 mg, in flavoured suspension base q.s. Colour: Sunset Yellow."
+    },
+    {
+      "title": "Dosage",
+      "content": "As directed by the Physician."
+    },
+    {
+      "title": "Storage",
+      "content": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Temp. below 25° C. Keep the medicine out of the reach of children."
+    },
+    {
+      "title": "Warnings",
+      "content": "Taking more than the daily dose of Paracetamol may cause serious liver damage or allergic reactions (e.g., swelling of the face, mouth and throat, difficulty in breathing, itching or rash). To be sold by retail on the prescription of a Registered Medical Practitioner only."
+    },
+    {
+      "title": "Manufacturer",
+      "content": "Manufactured By: Algen Healthcare Limited (A G.M.P. Certified Company) 134/2, Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030."
+    },
+    {
+      "title": "Batch Information",
+      "content": "Batch No.: AHL-669, Manufacturing Date: 03/2023, Expiry Date: 02/2025."
+    },
+    {
+      "title": "Marketing",
+      "content": "Marketed By: Caremark Pharmaceutical Pvt. Ltd., Mantra City, Ranipur Range, Haridwar, Uttrakhand-249403."
+    }
+  ]
+}
+},
+{ "id":"11",
+"name": "Smra-L",
+"manufacturer": "Caremark Pharmaceutical",
+"composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
+"price": {
+  "original": 175.00,
+  "discounted": 175.00,
+  "discount_percentage": 0,
+  "includes_taxes": true
+},
+"package_size": "10 Capsules",
+"availability": "in stock",
+"details": {
+  "authenticity": "100% Authentic Products",
+  "shipping": "Free Shipping*",
+  "return_policy": "Products Return Policy"
+},
+"description": {
+  "title": "Information about Smra-L",
+  "sections": [
+    {
+      "title": "Description",
+      "content": "Rabeprazole Sodium (EC) & Levosulpiride (SR) Capsules"
+    },
+    {
+      "title": "Composition",
+      "content": "Each hard gelatin Capsule contains: Rabeprazole Sodium (As enteric coated pellets) I.P. 20 mg, Levosulpiride (As sustained release pellets) 75 mg, Excipients q.s., Approved colour used in empty capsule shells."
+    },
+    {
+      "title": "Dosage",
+      "content": "As directed by the physician."
+    },
+    {
+      "title": "Storage",
+      "content": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole."
+    },
+    {
+      "title": "Manufacturer",
+      "content": "Manufactured By: Saphnix Life Sciences (A WHO-GMP Certified Company) Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025. Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+    },
+    {
+      "title": "Batch Information",
+      "content": "Batch No.: HC4770O, Manufacturing Date: 08/2023, Expiry Date: 07/2025"
+    },
+    {
+      "title": "Prescription Warning",
+      "content": "SCHEDULE H PRESCRIPTION DRUG - CAUTION: Not to be sold by retail without the prescription of a Registered Medical Practitioner."
+    },
+    {
+      "title": "Marketing",
+      "content": "Marketed By: Caremark Pharmaceutical Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+    }
+  ]
+}
+},
+{ "id":"12",
+"name": "SmraFlam",
+"manufacturer": "Algen Healthcare Limited",
+"composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+"price": {
+  "original": 65.00,
+  "discounted": 65.00,
+  "discount_percentage": 0,
+  "includes_taxes": true
+},
+"package_size": "Suspension",
+"availability": "in stock",
+"details": {
+  "authenticity": "100% Authentic Products",
+  "shipping": "Free Shipping*",
+  "return_policy": "Products Return Policy"
+},
+"description": {
+  "title": "Information about SmraFlam",
+  "sections": [
+    {
+      "title": "Description",
+      "content": "SmraFlam Suspension - Shake well before each use."
+    },
+    {
+      "title": "Composition",
+      "content": "Each 5 ml contains: Aceclofenac IP 50 mg, Paracetamol IP 125 mg, in flavoured suspension base q.s. Colour: Sunset Yellow."
+    },
+    {
+      "title": "Dosage",
+      "content": "As directed by the Physician."
+    },
+    {
+      "title": "Storage",
+      "content": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Temp. below 25° C. Keep the medicine out of the reach of children."
+    },
+    {
+      "title": "Warnings",
+      "content": "Taking more than the daily dose of Paracetamol may cause serious liver damage or allergic reactions (e.g., swelling of the face, mouth and throat, difficulty in breathing, itching or rash). To be sold by retail on the prescription of a Registered Medical Practitioner only."
+    },
+    {
+      "title": "Manufacturer",
+      "content": "Manufactured By: Algen Healthcare Limited (A G.M.P. Certified Company) 134/2, Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030."
+    },
+    {
+      "title": "Batch Information",
+      "content": "Batch No.: AHL-669, Manufacturing Date: 03/2023, Expiry Date: 02/2025."
+    },
+    {
+      "title": "Marketing",
+      "content": "Marketed By: Caremark Pharmaceutical Pvt. Ltd., Mantra City, Ranipur Range, Haridwar, Uttrakhand-249403."
+    }
+  ]
+}
+},
+{ "id":"13",
+"name": "Smra-L",
+"manufacturer": "Caremark Pharmaceutical",
+"composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
+"price": {
+  "original": 175.00,
+  "discounted": 175.00,
+  "discount_percentage": 0,
+  "includes_taxes": true
+},
+"package_size": "10 Capsules",
+"availability": "in stock",
+"details": {
+  "authenticity": "100% Authentic Products",
+  "shipping": "Free Shipping*",
+  "return_policy": "Products Return Policy"
+},
+"description": {
+  "title": "Information about Smra-L",
+  "sections": [
+    {
+      "title": "Description",
+      "content": "Rabeprazole Sodium (EC) & Levosulpiride (SR) Capsules"
+    },
+    {
+      "title": "Composition",
+      "content": "Each hard gelatin Capsule contains: Rabeprazole Sodium (As enteric coated pellets) I.P. 20 mg, Levosulpiride (As sustained release pellets) 75 mg, Excipients q.s., Approved colour used in empty capsule shells."
+    },
+    {
+      "title": "Dosage",
+      "content": "As directed by the physician."
+    },
+    {
+      "title": "Storage",
+      "content": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole."
+    },
+    {
+      "title": "Manufacturer",
+      "content": "Manufactured By: Saphnix Life Sciences (A WHO-GMP Certified Company) Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025. Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+    },
+    {
+      "title": "Batch Information",
+      "content": "Batch No.: HC4770O, Manufacturing Date: 08/2023, Expiry Date: 07/2025"
+    },
+    {
+      "title": "Prescription Warning",
+      "content": "SCHEDULE H PRESCRIPTION DRUG - CAUTION: Not to be sold by retail without the prescription of a Registered Medical Practitioner."
+    },
+    {
+      "title": "Marketing",
+      "content": "Marketed By: Caremark Pharmaceutical Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+    }
+  ]
+}
+}]
+}

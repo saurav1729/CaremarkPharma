@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import Carousel from "./Carousel";
 import CarouselImg from "../utils/image";
+import "./styles/caraousel.css"
 
 const Hero = () => {
   // const [currentIndex, setIndex] = useState(0);
@@ -71,7 +72,7 @@ const Hero = () => {
         ))}
       </div> */}
 
-<Carousel images={CarouselImg} />
+{/* <div className="cdiv"><Carousel images={CarouselImg} /></div> */}
     
     </div>
   );

@@ -7,8 +7,9 @@ const SearchBox = () => {
   return (
     <div
       name="search-contaier"
-      className="absolute h-[50px] top-[50%] left-[25%] bg-[#fff] w-[688px] p-[10px] shadow-[#d688d0] shadow-[0_2px_8px] rounded-[50px] flex items-center  overflow-hidden justify-between"
+      className="absolute h-[40px] top-[45%] left-[33%] bg-[#fff] w-[450px] p-[5px] shadow-[#d688d0] shadow-[0_2px_8px] rounded-[50px] flex items-center  overflow-hidden justify-between"
     >
+    
       <i
         className={
           btnclass +
@@ -45,7 +46,7 @@ const SearchBox = () => {
         }}
       ></i>
       <input
-        className="w-[500px] text-[18px] h-[24px] ms-[9px] text-ellipsis text-left focus:outline-none placeholder:text-[#7A7A7A] "
+        className="w-[500px] text-[13px] h-[24px] ms-[9px] text-ellipsis text-left focus:outline-none placeholder:text-[#7A7A7A] "
         type="search"
         placeholder="Search for medicine e.g.abc 500mg"
         value={searchText}

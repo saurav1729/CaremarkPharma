@@ -10,3 +10,7 @@
 .cardShadow{
     box-shadow: #043CAA 0px 3px 8px;
 }
+
+.page{
+    background-image: linear-gradient(rgb(96 165 250 ),#2563eb );
+}

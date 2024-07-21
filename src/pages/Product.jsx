@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import {useParams} from 'react-router-dom'
 import productData from '../utils/productData.json'
+import PrimaryContainer from '../components/Product/PrimaryContainer'
 
 
 const Product = () => {
@@ -17,16 +18,20 @@ const Product = () => {
     console.log(data);
   return (
     <div className='min-h-screen pt-[14rem]'>
-     <div>{data.name}</div>
+      <PrimaryContainer/>
+     {/* <div>{data.name}</div>
      <div>{data.availability}</div>
-     <div>{data.composition}</div>
+     <div>{data.composition}</div> */}
      {/* <div>{data.details}</div> */}
      {/* <div>{data.price}</div> */}
-     <div>{data.package_size}</div>
-     <div>{data.manufacturer}</div>
+     {/* <div>{data.package_size}</div>
+     <div>{data.manufacturer}</div> */}
 
     </div>
   )
 }
 
 export default Product
+
+
+//primarycontainer

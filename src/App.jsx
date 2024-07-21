@@ -17,8 +17,12 @@
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<App />);
 
+import { onAuthStateChanged } from "firebase/auth";
 import { Suspense, lazy} from "react";
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route, Outlet, useNavigate } from "react-router-dom";
+import { auth } from "./utils/firebase";
+import { useDispatch } from "react-redux";
+import { addUser, removeUser } from "./store/userSlice";
 
 
 // microInteraction
@@ -36,6 +40,9 @@ const ProductList = lazy(()=>import("./pages/ProductList"))
 const Product = lazy(()=>import("./pages/Product"))
 const Header =lazy(()=>import("./components/Header"))
 const Footer=lazy(()=>import("./layouts/Footer/Footer"))
+const Login=lazy(()=>import("./auth/Login"))
+const Signup=lazy(()=>import("./auth/Signup"))
+
 
 
 // const Error = lazy(() => import("./pages/Error/Error"));
@@ -55,9 +62,33 @@ const Layout = () => (
 );
 
 
+const AuthLayout = ()=>{
+  <div className="page">
+  <Outlet />
+</div>
+}
+
+
 
 function App() {
-  // const authCtx = useContext(AuthContext);
+  const dispatch = useDispatch();
+  // const navigate = useNavigate();
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+   
+      console.log(user);
+      const {uid,email,displayName,photoURL}=user;
+      dispatch(addUser({id:uid,email:email,displayName:displayName,photoURL:photoURL}))
+    
+      // ...
+    } else {
+      // User is signed out
+      // ...
+      dispatch(removeUser())
+     
+    }
+  });
 
   return (
     <div>
@@ -67,13 +98,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/medicines" element={<ProductList/>}/>
             <Route path="/medicines/:productId" element={<Product/>}/>
+            <Route path="/register" element={<Signup/>}/>
+            <Route path="/Login" element={<Login/>} />
           </Route>
        
-          {/* <Route element={<AuthLayout />}>
-            <Route path="/Login" element={authCtx.isLoggedIn ? <Navigate to='/profile' /> : <PageRenderer />} />
-            <Route path="/SignUp" element={authCtx.isLoggedIn ? <Navigate to='/profile' /> : <Signup />} />
-            <Route path="/ForgotPassword" element={authCtx.isLoggedIn ? <Navigate to='/profile' /> : <ForgotPassword />} />
-          </Route> */}
         </Routes>
       </Suspense>
     </div>

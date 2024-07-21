@@ -2,10 +2,10 @@
     position: relative;
     width: 20rem;
     height: 20rem;
-    padding: 2rem;
+    padding: 1rem;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid lightgray;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -18,8 +18,8 @@
 
     width: 150px;
     height: 240%;
-    /* background: linear-gradient(#00ccff, #d500f9); */
-    background: #00ccff;
+    background: linear-gradient(in hsl longer hue, #406fc790, rgb(90, 215, 161));
+    /* background: #00ccff ; */
     animation: rotate 10s linear infinite;
     z-index: 1;
 
@@ -34,21 +34,23 @@
     bottom: 0;
     /* background:linear-gradient(#00ccff,#031538); */
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 5px;
     z-index: 1;
 }
 
+
+
 .card .img {
     position: relative;
     z-index: 2;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .card .detail{
     position: absolute;
     z-index:3;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 @keyframes rotate {

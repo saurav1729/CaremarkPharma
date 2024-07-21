@@ -50,9 +50,9 @@ const ProductContainer = ({cardData,page}) => {
 
         {cardData.map((event, index) => (
      <div key={event.id}>
-         <Link to={'/medicines/'+event.id}>
+    
        <Card data={event} customStyle={style} />
-       </Link>
+
      </div>
    ))}
 
@@ -63,9 +63,9 @@ const ProductContainer = ({cardData,page}) => {
 
              {cardData.map((event, index) => (
           <div key={event.id}>
-            <Link to={'/medicines/'+event.id}>
+          
             <Card data={event} customStyle={style} page={page} />
-            </Link>
+      
           </div>
         
         ))}

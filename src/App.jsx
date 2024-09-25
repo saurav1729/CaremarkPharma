@@ -63,7 +63,7 @@ const Layout = () => (
 
 
 const AuthLayout = ()=>{
-  <div className="page">
+  <div  >
   <Outlet />
 </div>
 }

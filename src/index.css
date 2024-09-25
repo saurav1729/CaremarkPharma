@@ -12,5 +12,12 @@
 }
 
 .page{
-    background-image: linear-gradient(rgb(96 165 250 ),#2563eb );
+    /* background-image: linear-gradient(rgb(96 165 250 ),#2563eb ); */
+    background-color: white;
+}
+
+
+*{
+
+    
 }

@@ -47,7 +47,7 @@ const Navbar = () => {
   }, [dropdownOpen]);
 
   return (
-    <nav className="bg-transparent shadow-sm shadow-gray-700 absolute top-0 left-0 z-10 w-full border-gray-200 dark:bg-gray-900">
+    <nav className="bg-transparent shadow-sm shadow-gray-300 absolute top-0 left-0 z-10 w-full border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logoImg} className="h-28" alt="Flowbite Logo" />
@@ -128,7 +128,7 @@ const Navbar = () => {
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-user"
         >
-          <ul className="flex flex-col text-[1.2rem] text-[#ffffff] font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col text-[1.2rem] text-gray-900 font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <Link to="/">
               <li className="cursor-pointer hover:shadow-[4px_3px_7px] hover:bg-[#1BC76890] hover:shadow-[lightgray] px-4 rounded-full hover:scale-110">
                 Home

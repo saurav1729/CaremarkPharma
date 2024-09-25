@@ -28,24 +28,21 @@ const ProductContainer = ({cardData,page}) => {
 
 
   return (
-    <div className=" relative h-auto  pb-[3rem] w-screen  bg-gradient-to-r from-blue-400 to-blue-600 pt-[12rem] overflow-x-hidden  ">
+    <div className=" relative h-auto  pb-[3rem] w-screen   overflow-x-hidden   " style={{paddingTop:page=="product"?"10rem":""}}>
    
-   
-     <div className='w-full flex justify-center items-center '>
+   {/* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */}
+     <div className=' flex justify-center items-center '>
 
-     <div className="text-[#ffffff90]   ml-6 text-[3.4rem] text-600 font-semibold flex-col justify-center items-center">
+     <div className="text-[#26b5c6]   ml-6 text-[3.4rem] text-600 font-semibold flex-col justify-center items-center">
         {" "}
         <span>Our Medicine</span>
         <img className="mx-auto w-[13rem]" src={bottom}></img>{" "}
       </div>
      </div>
   
-     <div className='h-[20rem] w-[20rem] bg-[#00ff1190] rounded-full blur-[120px] absolute top-[0%] left-[-18%]'></div>
-     <div className='h-[20rem] w-[20rem] bg-[#00ff1190] rounded-full blur-[120px] absolute top-[0%] right-[-10%]'></div>
-     <div className='h-[20rem] w-[20rem] bg-[#00ff1190] rounded-full blur-[120px] absolute bottom-[0%] left-[-18%]'></div>
-     <div className='h-[20rem] w-[20rem] bg-[#00ff1190] rounded-full blur-[120px] absolute bottom-[0%] right-[-10%]'></div>
+
       {page=="product"?(
-        <div className="h-auto w-[90%] mx-auto mt-[5rem] grid grid-cols-4 gap-4 z-10  ">
+        <div className="h-auto w-[90%] mx-auto mt-[5rem] grid grid-cols-4 gap-4  z-10  ">
   
 
         {cardData.map((event, index) => (
@@ -58,7 +55,7 @@ const ProductContainer = ({cardData,page}) => {
 
  </div>
       ):(<>
-      <div className="h-auto w-[90%] mx-auto mt-[5rem] grid grid-cols-3 gap-3 z-10  ">
+      <div className="h-auto w-[90%] mx-auto mt-[5rem] grid grid-cols-3 gap-10 gap-y-14  z-10  ">
   
 
              {cardData.map((event, index) => (

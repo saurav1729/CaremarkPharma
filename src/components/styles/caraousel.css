@@ -13,7 +13,7 @@
 
 
 .hero{
-  background: var(--Secondary, #DEE9FF);
+  /* background: var(--Secondary, #DEE9FF); */
 }
 
 .carousel_card {

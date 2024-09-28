@@ -50,11 +50,11 @@ const ProductCard = (props) => {
              {data.description}
           </p>
 }
-          <p className="font-normal text-lg text-gray-50 relative z-10  flex justify-between items-center" style={{marginLeft:hovered?'':'1.8rem',marginBottom:hovered?'':'1rem'}}>
-            <div>  <span className='text-[#295276]'>Price: {data?.price?.original}</span></div>
+          <p className="font-normal text-lg text-gray-50 relative z-10  flex justify-between items-center " style={{marginLeft:hovered?'':'1.8rem',marginBottom:hovered?'':'1rem'}}>
+            <div>  <span className=' bg-gradient-to-b from-[#20b8c3] to-[white]  bg-clip-text text-transparent font-semibold'>Price: {data?.price?.original}</span></div>
         
           <Link to={'/medicines/' + data.id}>
-            <button className='px-6 py-1 cursor-pointer  text-md font-medium text-[#295276] hover:underline rounded-lg mt-2 '>
+            <button className='px-6 py-1 cursor-pointer  text-md  bg-gradient-to-b from-[#20b8c3] to-[white]  bg-clip-text text-transparent font-semibold hover:scale-110 rounded-lg mt-2 '>
               See details
             </button>
           </Link> 

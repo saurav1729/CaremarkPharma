@@ -54,7 +54,7 @@ const Layout = () => (
   <div>
 
     <Header/>
-    <div className="page">
+    <div className="page  bg-gradient-to-t from-[#cfd9df] to-[#e2ebf0]">
       <Outlet />
     </div>
     <Footer />
@@ -63,7 +63,7 @@ const Layout = () => (
 
 
 const AuthLayout = ()=>{
-  <div  >
+  <div className="" >
   <Outlet />
 </div>
 }
@@ -83,8 +83,7 @@ function App() {
     
       // ...
     } else {
-      // User is signed out
-      // ...
+
       dispatch(removeUser())
      
     }

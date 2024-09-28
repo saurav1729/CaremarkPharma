@@ -50,7 +50,7 @@ const Signup = () => {
   }
   return (
     <div className='min-h-screen w-screen flex justify-center items-center'>
-    <div className='flex mt-[8rem] flex-col w-[23rem] gap-3 p-[2rem] border rounded-[10px] border-[#ffffff61] bg-[#2a2a2a40] '>
+    <div className='flex mt-[8rem] flex-col w-[23rem] gap-3 p-[2rem] border rounded-[10px] border-[#ffffff61] bg-[#DEE9FF] '>
         <div className='text-3xl font-semibold text-white mb-4'>Sign up</div>
         <input type="text" name='fullName' onChange={(e=>DataInp(e.target.name,e.target.value))} className='p-2 border bg-[transparent] text-[#cac2c2] text-xl  outline-none bg-[#ffffff] rounded-md' placeholder='Enter full name' />
         <input type='email'   name='email' onChange={(e=>DataInp(e.target.name,e.target.value))}  className='p-2 border bg-[transparent]  text-[#cac2c2] text-xl outline-none bg-[#ffffff]  rounded-md' placeholder='Enter email' />

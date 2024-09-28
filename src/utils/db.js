@@ -9,6 +9,7 @@ export const cardData = [
     "id": "1",
     "medicineName": "BrocareLs+",
     "manufacturer": "Caremark Pharmaceutical",
+    "composition":"Rabeprazole Sodium (EC) & Levosulpiride (SR)",
     "description": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs.",
     "price": {
       "original": 111.00,
@@ -84,7 +85,7 @@ export const cardData = [
     "imageURL": 'https://res.cloudinary.com/df6sjkg3j/image/upload/v1727229552/Smracordial1-removebg-preview_zoz8pc.png'
   },
   {
-    "id": "6",
+    "id": "7",
     "medicineName": "Metformin",
     "manufacturer": "Caremark Pharmaceutical",
     "description": "Used to control blood sugar levels in people with type 2 diabetes.",
@@ -97,7 +98,7 @@ export const cardData = [
     "imageURL": 'https://res.cloudinary.com/df6sjkg3j/image/upload/v1727229593/Smraflam_Suspension4-removebg-preview_lbkvco.png'
     },
   {
-    "id": "6",
+    "id": "8",
     "medicineName": "Metformin",
     "manufacturer": "Caremark Pharmaceutical",
     "description": "Used to control blood sugar levels in people with type 2 diabetes.",
@@ -110,7 +111,7 @@ export const cardData = [
     "imageURL": 'https://res.cloudinary.com/df6sjkg3j/image/upload/v1727229552/Smracordial1-removebg-preview_zoz8pc.png'
   },
   {
-    "id": "6",
+    "id": "9",
     "medicineName": "Metformin",
     "manufacturer": "Caremark Pharmaceutical",
     "description": "Used to control blood sugar levels in people with type 2 diabetes.",

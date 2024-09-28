@@ -1,6 +1,6 @@
 import React from 'react'
 import ProductContainer from '../components/ProductContainer'
-import { medList } from '../utils/db'
+import { cardData } from '../utils/db'
 import { useEffect } from 'react'
 
 const Product = () => {
@@ -9,7 +9,7 @@ const Product = () => {
 
 },[])
   return (
-    <div><ProductContainer cardData={medList} page={'product'} /></div>
+    <div><ProductContainer cardData={cardData} page={'product'} /></div>
   )
 }
 

@@ -10,6 +10,7 @@ import { ContainerScroll } from '../layouts/ContainerScroll';
 import ContactUs from '../components/ContactUs';
 
 const Home = () => {
+  const FilteredProducts = cardData.filter((data)=>data.id<=6)
   return (
     <>
       
@@ -23,7 +24,8 @@ const Home = () => {
         <Hero/>
         <div className='bg-gradient-to-t from-[#cfd9df] to-[#e2ebf0]'>
         
-        <ProductContainer cardData={cardData} page='home'/>
+        
+        <ProductContainer cardData={FilteredProducts} page='home'/>
         <ContactUs/>
         <div className='max-w-screen overflow-hidden mt-[-12rem] mb-[-7rem]'>
         <ContainerScroll/>

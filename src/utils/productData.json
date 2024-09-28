@@ -1,28 +1,45 @@
 {
     "products": [
       { "id":"1",
-        "name": "Smra-L",
+        "primaryData":{
+        "name": "BrocareLs+",
         "manufacturer": "Caremark Pharmaceutical",
-        "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
+        "composition": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup ",
         "price": {
-          "original": 175.00,
-          "discounted": 175.00,
+          "original": 111.00,
+          "discounted": 111.00,
           "discount_percentage": 0,
           "includes_taxes": true
         },
+        "imageUrls":[
+          {
+            "url":"https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare_LS_4_fomnyr.jpg"
+          },
+          {
+            "url":"https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243242/Brocare_LS_3_him3cb.jpg"
+          },
+          {
+            "url":"https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare1_pmikhh.jpg"
+          },
+          {
+            "url":"https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243116/ivuk12jyixrbxrha8gg8.jpg"
+          }
+
+        ],
         "package_size": "10 Capsules",
         "availability": "in stock",
         "details": {
           "authenticity": "100% Authentic Products",
           "shipping": "Free Shipping*",
           "return_policy": "Products Return Policy"
-        },
+        }
+      },
         "description": {
-          "title": "Information about Smra-L",
+          "title": "Information about BrocareLs+",
           "sections": [
             {
               "title": "Description",
-              "content": "Rabeprazole Sodium (EC) & Levosulpiride (SR) Capsules"
+              "content": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs."
             },
             {
               "title": "Composition",
@@ -111,7 +128,7 @@
         }
       },
       { "id":"3",
-      "name": "Smra-L",
+      "name": "BrocareLs+",
       "manufacturer": "Caremark Pharmaceutical",
       "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
       "price": {
@@ -128,7 +145,7 @@
         "return_policy": "Products Return Policy"
       },
       "description": {
-        "title": "Information about Smra-L",
+        "title": "Information about BrocareLs+",
         "sections": [
           {
             "title": "Description",
@@ -221,7 +238,7 @@
       }
     },
     { "id":"5",
-    "name": "Smra-L",
+    "name": "BrocareLs+",
     "manufacturer": "Caremark Pharmaceutical",
     "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
     "price": {
@@ -238,7 +255,7 @@
       "return_policy": "Products Return Policy"
     },
     "description": {
-      "title": "Information about Smra-L",
+      "title": "Information about BrocareLs+",
       "sections": [
         {
           "title": "Description",
@@ -331,7 +348,7 @@
     }
   },
   { "id":"7",
-  "name": "Smra-L",
+  "name": "BrocareLs+",
   "manufacturer": "Caremark Pharmaceutical",
   "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
   "price": {
@@ -348,7 +365,7 @@
     "return_policy": "Products Return Policy"
   },
   "description": {
-    "title": "Information about Smra-L",
+    "title": "Information about BrocareLs+",
     "sections": [
       {
         "title": "Description",
@@ -441,7 +458,7 @@
   }
 },
 { "id":"9",
-"name": "Smra-L",
+"name": "BrocareLs+",
 "manufacturer": "Caremark Pharmaceutical",
 "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
 "price": {
@@ -458,7 +475,7 @@
   "return_policy": "Products Return Policy"
 },
 "description": {
-  "title": "Information about Smra-L",
+  "title": "Information about BrocareLs+",
   "sections": [
     {
       "title": "Description",
@@ -551,7 +568,7 @@
 }
 },
 { "id":"11",
-"name": "Smra-L",
+"name": "BrocareLs+",
 "manufacturer": "Caremark Pharmaceutical",
 "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
 "price": {
@@ -568,7 +585,7 @@
   "return_policy": "Products Return Policy"
 },
 "description": {
-  "title": "Information about Smra-L",
+  "title": "Information about BrocareLs+",
   "sections": [
     {
       "title": "Description",
@@ -661,7 +678,7 @@
 }
 },
 { "id":"13",
-"name": "Smra-L",
+"name": "BrocareLs+",
 "manufacturer": "Caremark Pharmaceutical",
 "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
 "price": {
@@ -678,7 +695,7 @@
   "return_policy": "Products Return Policy"
 },
 "description": {
-  "title": "Information about Smra-L",
+  "title": "Information about BrocareLs+",
   "sections": [
     {
       "title": "Description",

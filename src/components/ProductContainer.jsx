@@ -42,7 +42,7 @@ const ProductContainer = ({cardData,page}) => {
   
 
       {page=="product"?(
-        <div className="h-auto w-[90%] mx-auto mt-[5rem] grid grid-cols-4 gap-4  z-10  ">
+        <div className="h-auto w-[90%] mx-auto mt-[5rem] grid grid-cols-3 gap-y-10  z-10  ">
   
 
         {cardData.map((event, index) => (

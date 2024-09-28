@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import {useParams} from 'react-router-dom'
 import productData from '../utils/productData.json'
 import PrimaryContainer from '../components/Product/PrimaryContainer'
+import DetailSection from '../components/Product/DetailSection'
 
 
 const Product = () => {
@@ -12,21 +13,13 @@ const Product = () => {
     
     const{productId}=useParams();
     console.log(productId);
-    console.log(productData);
     const {products}=productData;
     const data = products.find((data)=>data.id===productId);
-    console.log(data);
+    console.log("data of product",data);
   return (
-    <div className='min-h-screen pt-[14rem]'>
-      <PrimaryContainer/>
-     {/* <div>{data.name}</div>
-     <div>{data.availability}</div>
-     <div>{data.composition}</div> */}
-     {/* <div>{data.details}</div> */}
-     {/* <div>{data.price}</div> */}
-     {/* <div>{data.package_size}</div>
-     <div>{data.manufacturer}</div> */}
-
+    <div className='min-h-screen pt-[13rem] pb-[5rem] bg-gradient-to-t from-[#cfd9df] to-[#e2ebf0]'>
+      <PrimaryContainer primaryData={data.primaryData}/>
+      <DetailSection detaledData={data.description}/>
     </div>
   )
 }

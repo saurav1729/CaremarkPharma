@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../utils/firebase";
+// import { signInWithEmailAndPassword } from "firebase/auth";
+// import { auth } from "../utils/firebase";
 import { useNavigate, Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setUser } from "../store/userSlice";
+import authService from "../service/authService";
+
 
 const Login = () => {
   const [userData, setUserData] = useState({
@@ -10,29 +14,53 @@ const Login = () => {
   });
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setUserData({ ...userData, [name]: value });
   };
 
-  const handleLogin = (e) => {
+  // const handleLogin = (e) => {
+  //   e.preventDefault();
+  //   const { email, password } = userData;
+  //   if (!email || !password) {
+  //     setError("Please fill in all fields");
+  //     return;
+  //   }
+  //   signInWithEmailAndPassword(auth, email, password)
+  //     .then((userCredential) => {
+  //       navigate("/");
+  //     })
+  //     .catch((error) => {
+  //       setError("Invalid email or password");
+  //       console.error(error);
+  //     });
+  // };
+  
+  const handleLogin = async (e) => {
     e.preventDefault();
     const { email, password } = userData;
     if (!email || !password) {
       setError("Please fill in all fields");
       return;
     }
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
+    try {
+      const user = await authService.login(email, password);
+      dispatch(setUser(user));
+      
+      if (user.role === 'admin') {
+        navigate("/admin");
+      } else {
         navigate("/");
-      })
-      .catch((error) => {
-        setError("Invalid email or password");
-        console.error(error);
-      });
+      }
+    } catch (error) {
+      setError("Invalid email or password");
+      console.error(error);
+    }
   };
 
+  // Implement this function to fetch user role from your backend or Firebase
   return (
     <div className="min-h-screen w-screen flex justify-center items-center bg-custom-gradient">
       <div className="w-full max-w-md p-8 space-y-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl shadow-2xl">
@@ -79,7 +107,7 @@ const Login = () => {
           <p className="mt-2 text-sm text-gray-200">
             Don't have an account?{" "}
             <Link
-              to="/signup"
+              to="/register"
               className="font-medium text-indigo-300 hover:text-indigo-200"
             >
               Sign up

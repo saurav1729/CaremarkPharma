@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { signOut } from "firebase/auth";
-import { auth } from "../utils/firebase";
 import logoImg from "../resources/logo2.png";
 import { MdOutlineLogout } from "react-icons/md";
+import authService from "../service/authService";
+import { clearUser } from "../store/userSlice";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -36,14 +36,9 @@ const Navbar = () => {
   };
 
   const handleSignOut = () => {
-    signOut(auth)
-      .then(() => {
-        console.log('signed out');
-        navigate('/login');
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    authService.logout();
+    dispatch(clearUser());
+    navigate("/login");
   };
 
   useEffect(() => {
@@ -82,6 +77,7 @@ const Navbar = () => {
   }, [dropdownOpen]);
 
   const isActiveLink = (path) => location.pathname === path;
+  const isAdmin = user && user.role === "ADMIN";
 
   return (
     <nav className={`fixed w-full z-10 transition-all duration-300 ${isVisible ? 'top-0' : '-top-full'}`}>
@@ -125,6 +121,7 @@ const Navbar = () => {
                       <div>{user.displayName}</div>
                       <div className="font-medium truncate">{user.email}</div>
                     </div>
+                    {isAdmin && <NavItem to="/admin" label="Admin Dashboard" isActive={isActiveLink("/admin")} />}
                     <button
                       onClick={handleSignOut}
                       className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -155,6 +152,7 @@ const Navbar = () => {
             <MobileNavItem to="/medicines" label="Products" onClick={toggleMobileMenu} />
             <MobileNavItem to="/about" label="About" onClick={toggleMobileMenu} />
             <MobileNavItem to="/contact" label="Contact" onClick={toggleMobileMenu} />
+            {isAdmin && <MobileNavItem to="/admin" label="Admin Dashboard" onClick={toggleMobileMenu} />}
           </div>
           {user && (
             <div className="pt-4 pb-3 border-t border-gray-700">

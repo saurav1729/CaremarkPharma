@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { auth } from '../utils/firebase';
+// import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+// import { auth } from '../utils/firebase';
 import { useNavigate, Link } from 'react-router-dom';
 import { useDispatch } from "react-redux";
-import { addUser } from '../store/userSlice';
+// import { addUser } from '../store/userSlice';
+import axios from 'axios';
 
 const Signup = () => {
   const [userData, setUserData] = useState({
     fullName: '',
     email: '',
-    password: ''
+    password: '',
+    confirmPassword: ''
   });
   const [error, setError] = useState('');
   const navigate = useNavigate();
@@ -20,30 +22,35 @@ const Signup = () => {
     setUserData({ ...userData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const API_URL = "http://localhost:5000/api/auth"
+
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    const { email, password, fullName } = userData;
+    const { fullName, email, password, confirmPassword } = userData;
     if (!email || !password || !fullName) {
       setError('Please fill in all fields');
       return;
     }
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        updateProfile(auth.currentUser, {
-          displayName: fullName,
-          photoURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/510px-Default_pfp.svg.png"
-        }).then(() => {
-          navigate('/');
-          const { uid, email, displayName, photoURL } = auth.currentUser;
-          dispatch(addUser({ id: uid, email: email, displayName: displayName, photoURL: photoURL }));
-        }).catch((error) => {
-          setError(error.message);
-        });
-      })
-      .catch((error) => {
-        setError(error.message);
+    
+    if (password !== confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
+    try {
+      const response = await axios.post(`${API_URL}/signup`, {
+        fullName,
+        email,
+        photoURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/510px-Default_pfp.svg.png",
+        password,
+        role:"USER"
       });
+      const user = response.data;
+      dispatch(setUser(user));
+      navigate('/');
+    } catch (error) {
+      setError(error.response?.data?.message || 'An error occurred during signup');
+      console.error(error);
+    }
   };
 
   return (
@@ -82,6 +89,16 @@ const Signup = () => {
                 required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                 placeholder="Password"
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                name="confirmPassword"
+                required
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                placeholder="Confirm Password"
                 onChange={handleInputChange}
               />
             </div>

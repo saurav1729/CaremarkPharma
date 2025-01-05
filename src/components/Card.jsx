@@ -13,7 +13,7 @@ const ProductCard = ({ data, page }) => {
       onMouseLeave={() => setHover(false)}
     >
       <div
-        className="overflow-hidden relative card h-96  bg-[linear-gradient(90deg,_rgba(2,0,36,1)_37%,_rgba(5,5,15,1)_75%)]  rounded-lg border border-teal-300 shadow-teal-200 shadow-[5px_5px_0px_0px] max-w-sm mx-auto flex flex-col justify-between p-4 transition-all duration-300 ease-in-out transform  hover:shadow-[8px_8px_0px_0px]"
+        className="overflow-hidden relative card h-96  bg-[linear-gradient(90deg,_rgba(2,0,36,1)_37%,_rgba(5,5,15,1)_75%)]  rounded-lg border border-teal-300  shadow-[5px_5px_0px_0px] max-w-sm mx-auto flex flex-col justify-between p-4 transition-all duration-300 ease-in-out transform  hover:shadow-[8px_8px_0px_0px]"
       >
         <div 
           className="absolute inset-0 bg-cover bg-center transition-transform duration-300 ease-in-out group-hover/card:scale-110"
@@ -31,7 +31,7 @@ const ProductCard = ({ data, page }) => {
             <p className="font-semibold text-sm text-teal-300">
               {data.manufacturer}
             </p>
-            <p className="text-xs text-gray-300">Harine</p>
+            {/* <p className="text-xs text-gray-300">Harine</p> */}
           </div>
         </div>
 

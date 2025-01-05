@@ -22,9 +22,7 @@ const Home = () => {
         {/* <div className="h-full w-auto float-right flex justify-center mr-6 items-center z-20 relative">
         </div> */}
         <Hero/>
-        <div className='bg-gradient-to-t from-[#cfd9df] to-[#e2ebf0]'>
-        
-        
+        <div className=''>
         <ProductContainer cardData={FilteredProducts} page='home'/>
         <ContactUs/>
         <div className='max-w-screen overflow-hidden mt-[-12rem] mb-[-7rem]'>

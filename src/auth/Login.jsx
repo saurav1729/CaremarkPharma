@@ -1,66 +1,91 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Login = () => {
-  const [userData, setData] = useState({
+  const [userData, setUserData] = useState({
     email: "",
     password: "",
   });
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const DataInp = (name, value) => {
-    setData({ ...userData, [name]: value });
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setUserData({ ...userData, [name]: value });
   };
 
   const handleLogin = (e) => {
     e.preventDefault();
     const { email, password } = userData;
-    console.log(userData);
     if (!email || !password) {
+      setError("Please fill in all fields");
       return;
     }
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        // console.log(userCredential)
-        // console.log(user);
-        // ...
         navigate("/");
       })
       .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorMessage);
+        setError("Invalid email or password");
+        console.error(error);
       });
   };
+
   return (
-    <div className="min-h-screen w-screen flex justify-center items-center">
-      <div className="flex mt-[8rem] flex-col w-[23rem] gap-3 p-[2rem] border rounded-[20px] border-[#ffffff61] bg-[#2a2a2a40] ">
-        <div className="text-3xl font-semibold text-white mb-4">Login</div>
-        <input
-          type="email"
-          name="email"
-          onChange={(e) => DataInp(e.target.name, e.target.value)}
-          className="p-2 border bg-[transparent] text-white  text-md h-[2.5rem] outline-none bg-[#ffffff] rounded-2xl"
-          placeholder="Enter email"
-        />
-        <input
-          type="password"
-          name="password"
-          onChange={(e) => DataInp(e.target.name, e.target.value)}
-          className="p-2 border bg-[transparent] text-white  text-md h-[2.5rem] outline-none bg-[#ffffff] rounded-2xl"
-          placeholder="password here"
-        />
-        <button
-          type="button"
-          onClick={handleLogin}
-          className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-        >
-          Login
-        </button>
+    <div className="min-h-screen w-screen flex justify-center items-center bg-custom-gradient">
+      <div className="w-full max-w-md p-8 space-y-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl shadow-2xl">
+        <div className="text-center">
+          <h2 className="mt-6 text-4xl font-bold text-white">Welcome Back</h2>
+          <p className="mt-2 text-sm text-gray-200">Sign in to your account</p>
+        </div>
+        <form onSubmit={handleLogin} className="mt-8 space-y-6">
+          <div className="rounded-md shadow-sm -space-y-px">
+            <div>
+              <input
+                type="email"
+                name="email"
+                required
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                placeholder="Email address"
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                name="password"
+                required
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                placeholder="Password"
+                onChange={handleInputChange}
+              />
+            </div>
+          </div>
+
+          {error && <p className="text-red-300 text-sm text-center">{error}</p>}
+
+          <div>
+            <button
+              type="submit"
+              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+            >
+              Sign In
+            </button>
+          </div>
+        </form>
+        <div className="text-center">
+          <p className="mt-2 text-sm text-gray-200">
+            Don't have an account?{" "}
+            <Link
+              to="/signup"
+              className="font-medium text-indigo-300 hover:text-indigo-200"
+            >
+              Sign up
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -1,67 +1,115 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from '../utils/firebase';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { addUser } from '../store/userSlice';
 
 const Signup = () => {
-  const [userData,setData]=useState({
-    fullName:'',
-    email:'',
-    password:''
-  })
+  const [userData, setUserData] = useState({
+    fullName: '',
+    email: '',
+    password: ''
+  });
+  const [error, setError] = useState('');
   const navigate = useNavigate();
-  const [errorMsg,setErrrorMessage]=useState('');
   const dispatch = useDispatch();
 
-  const DataInp = (name, value) => {
-    setData({ ...userData, [name]: value });
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setUserData({ ...userData, [name]: value });
   };
-  const handleSubmit=(e)=>{
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(userData);
-    const {email,password,fullName}=userData;
+    const { email, password, fullName } = userData;
+    if (!email || !password || !fullName) {
+      setError('Please fill in all fields');
+      return;
+    }
     createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed up 
-    const user = userCredential.user;
-    updateProfile(auth.currentUser, {
-      displayName: fullName, photoURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/510px-Default_pfp.svg.png"
-    }).then(() => {
-      navigate('/');
-      const {uid,email,displayName,photoURL}=auth.currentUser;
-      dispatch(addUser({id:uid,email:email,displayName:displayName,photoURL:photoURL}))
-      // ...
-    }).catch((error) => {
-      setErrrorMessage(error.message);
-    });
+      .then((userCredential) => {
+        const user = userCredential.user;
+        updateProfile(auth.currentUser, {
+          displayName: fullName,
+          photoURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/510px-Default_pfp.svg.png"
+        }).then(() => {
+          navigate('/');
+          const { uid, email, displayName, photoURL } = auth.currentUser;
+          dispatch(addUser({ id: uid, email: email, displayName: displayName, photoURL: photoURL }));
+        }).catch((error) => {
+          setError(error.message);
+        });
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
 
-   
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    setErrrorMessage(errorMessage)
-    // ..
-  });
-
-  }
   return (
-    <div className='min-h-screen w-screen flex justify-center items-center'>
-    <div className='flex mt-[8rem] flex-col w-[23rem] gap-3 p-[2rem] border rounded-[10px] border-[#ffffff61] bg-[#DEE9FF] '>
-        <div className='text-3xl font-semibold text-white mb-4'>Sign up</div>
-        <input type="text" name='fullName' onChange={(e=>DataInp(e.target.name,e.target.value))} className='p-2 border bg-[transparent] text-[#cac2c2] text-xl  outline-none bg-[#ffffff] rounded-md' placeholder='Enter full name' />
-        <input type='email'   name='email' onChange={(e=>DataInp(e.target.name,e.target.value))}  className='p-2 border bg-[transparent]  text-[#cac2c2] text-xl outline-none bg-[#ffffff]  rounded-md' placeholder='Enter email' />
-        <input type='password' name='password' onChange={(e=>DataInp(e.target.name,e.target.value))} className='p-2 border bg-[transparent]  text-[#cac2c2] text-xl outline-none bg-[#ffffff]  rounded-md' placeholder='password here'/>
-        {errorMsg&& <p>{errorMsg}</p>}
-        <button type="button" onClick={handleSubmit} className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Sign Up</button>
+    <div className="min-h-screen w-screen flex justify-center items-center bg-custom-gradient">
+      <div className="w-full max-w-md p-8 space-y-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl shadow-2xl">
+        <div className="text-center">
+          <h2 className="mt-6 text-4xl font-bold text-white">Create Account</h2>
+          <p className="mt-2 text-sm text-gray-200">Sign up to get started</p>
+        </div>
+        <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+          <div className="rounded-md shadow-sm -space-y-px">
+            <div>
+              <input
+                type="text"
+                name="fullName"
+                required
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                placeholder="Full Name"
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                required
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                placeholder="Email address"
+                onChange={handleInputChange}
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                name="password"
+                required
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                placeholder="Password"
+                onChange={handleInputChange}
+              />
+            </div>
+          </div>
 
+          {error && <p className="text-red-300 text-sm text-center">{error}</p>}
+
+          <div>
+            <button
+              type="submit"
+              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+            >
+              Sign Up
+            </button>
+          </div>
+        </form>
+        <div className="text-center">
+          <p className="mt-2 text-sm text-gray-200">
+            Already have an account?{" "}
+            <Link to="/login" className="font-medium text-indigo-300 hover:text-indigo-200">
+              Sign in
+            </Link>
+          </p>
+        </div>
+      </div>
     </div>
+  );
+};
 
-</div>
-  )
-}
+export default Signup;
 
-export default Signup

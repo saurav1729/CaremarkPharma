@@ -1,30 +1,44 @@
-import React, { useEffect } from 'react'
-import {useParams} from 'react-router-dom'
-import productData from '../utils/productData.json'
-import PrimaryContainer from '../components/Product/PrimaryContainer'
-import DetailSection from '../components/Product/DetailSection'
-
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import productData from '../utils/productData.json';
+import ImageGallery from '../components/Product/ImageGallery'
+import ProductInfo from '../components/Product/ProductInfo';
+import ProductDetails from '../components/Product/productDetails';
+import Reviews from '../components/Product/Reviews';
+import RelatedProducts from '../components/Product/RelatedProducts';
+import Breadcrumb from '../components/Product/BreadCrumb';
 
 const Product = () => {
-    useEffect(()=>{
-        window.scrollTo(0,0)
+  const [product, setProduct] = useState(null);
+  const { productId } = useParams();
 
-    },[])
-    
-    const{productId}=useParams();
-    console.log(productId);
-    const {products}=productData;
-    const data = products.find((data)=>data.id===productId);
-    console.log("data of product",data);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const foundProduct = productData.products.find((p) => p.id === productId);
+    setProduct(foundProduct);
+  }, [productId]);
+
+  if (!product) return <div>Loading...</div>;
+
   return (
-    <div className='min-h-screen pt-[13rem] pb-[5rem] bg-gradient-to-t from-[#cfd9df] to-[#e2ebf0]'>
-      <PrimaryContainer primaryData={data.primaryData}/>
-      <DetailSection detaledData={data.description}/>
+    <div className="min-h-screen pt-28 pb-12 bg-gradient-to-t from-gray-100 to-white">
+      <Breadcrumb product={product} />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="lg:w-1/2">
+            <ImageGallery images={product.images} />
+          </div>
+          <div className="lg:w-1/2">
+            <ProductInfo product={product} />
+          </div>
+        </div>
+        <ProductDetails product={product} />
+        <Reviews reviews={product.reviews} />
+        <RelatedProducts relatedIds={product.related_products} />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;
 
-
-//primarycontainer

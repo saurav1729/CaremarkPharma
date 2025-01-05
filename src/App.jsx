@@ -42,6 +42,8 @@ const Header =lazy(()=>import("./components/Header"))
 const Footer=lazy(()=>import("./layouts/Footer/Footer"))
 const Login=lazy(()=>import("./auth/Login"))
 const Signup=lazy(()=>import("./auth/Signup"))
+const Contact = lazy(()=>import("./pages/contact"))
+const About = lazy(()=>import("./pages/About"))
 
 
 
@@ -99,6 +101,8 @@ function App() {
             <Route path="/medicines/:productId" element={<Product/>}/>
             <Route path="/register" element={<Signup/>}/>
             <Route path="/Login" element={<Login/>} />
+            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/about" element={<About/>}/>
           </Route>
        
         </Routes>

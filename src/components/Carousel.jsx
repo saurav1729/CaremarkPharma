@@ -18,10 +18,11 @@ function Carousel() {
       {images.map((image, index) => (
         <div
           key={index}
-          className={`carousel_card ${index === current ? "carousel_card_active" : ""}`}
+          className={`carousel_card ${
+            index === current ? "carousel_card_active" : ""
+          }`}
         >
           <img className="card_image" src={image.image} alt={image.title} />
-
         </div>
       ))}
 
@@ -29,7 +30,9 @@ function Carousel() {
         {images.map((_, index) => (
           <div
             key={index}
-            className={`pagination_dot ${index === current ? "pagination_dot_active" : ""}`}
+            className={`pagination_dot ${
+              index === current ? "pagination_dot_active" : ""
+            }`}
             onClick={() => setCurrent(index)}
           />
         ))}

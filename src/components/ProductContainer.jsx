@@ -1,87 +1,41 @@
-import React from 'react'
-import bottom from '../assets/bottom.svg'
-import Card from './Card'
-// import cardData from '../utils/db.js'
-import Carousel from './Carousel.jsx';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaLongArrowAltRight } from "react-icons/fa";
-import {Link} from 'react-router-dom'
-import { MdHeight } from 'react-icons/md';
+import ProductCard from "./Card"
+import bottom from '../assets/bottom.svg';
 
-
-
-
-
-
-
-const ProductContainer = ({cardData,page}) => {
-  const style1={
-    height:"15rem",
-    width:"15rem"
-  }
-  
-  const style2={
-    height:"20rem",
-    width:"20rem"
-  }
-  
-  const style=page=='product'?style1:style2;
-
-
+const ProductContainer = ({ cardData, page }) => {
   return (
-    <div className=" relative h-auto  pb-[3rem] w-screen   overflow-x-hidden   " style={{paddingTop:page=="product"?"10rem":""}}>
-   
-   {/* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */}
-     <div className=' flex justify-center items-center '>
-
-     <div className="text-[#26b5c6]   ml-6 text-[3.4rem] text-600 font-semibold flex-col justify-center items-center">
-        {" "}
-        <span>Our Medicine</span>
-        <img className="mx-auto w-[13rem]" src={bottom}></img>{" "}
+    <div className="relative h-auto pb-16 w-full overflow-x-hidden " style={{paddingTop: page === "product" ? "10rem" : ""}}>
+      <div className='flex justify-center items-center mb-12'>
+        <div className="text-teal-300 text-4xl md:text-5xl font-semibold flex flex-col items-center">
+          <span>Our Medicine</span>
+          <img className="mx-auto w-32 md:w-40" src={bottom} alt="Decorative bottom" />
+        </div>
       </div>
-     </div>
-  
 
-      {page=="product"?(
-        <div className="h-auto w-[90%] mx-auto mt-[5rem] grid grid-cols-3 gap-y-10  z-10  ">
-  
-
-        {cardData.map((event, index) => (
-     <div key={event.id}>
-    
-       <Card data={event} customStyle={style} />
-
-     </div>
-   ))}
-
- </div>
-      ):(<>
-      <div className="h-auto w-[90%] mx-auto mt-[5rem] grid grid-cols-3 gap-10 gap-y-14  z-10  ">
-  
-
-             {cardData.map((event, index) => (
-          <div key={event.id}>
-          
-            <Card data={event} customStyle={style} page={page} />
-      
-          </div>
-        
+      <div className={`w-11/12 mx-auto grid gap-8 ${
+        page === "product" 
+          ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" 
+          : "w-[80%] ml-auto mr-auto sm:grid-cols-2 lg:grid-cols-3"
+      }`}>
+        {cardData.map((event) => (
+          <ProductCard key={event.id} data={event} page={page} />
         ))}
-     
       </div>
-          <Link to="/medicines">
-          <div className='w-full h-[5rem] flex  justify-center items-center'>
-              <div className='text-[2rem] text-white font-sans font-semibold cursor-pointer flex justify-center items-center gap-3 '>see all<FaLongArrowAltRight/></div>
+
+      {page !== "product" && (
+        <Link to="/medicines">
+          <div className='w-full mt-12 flex justify-center items-center'>
+            <div className='text-2xl text-teal-300 font-semibold cursor-pointer flex items-center gap-3 hover:underline'>
+              See all <FaLongArrowAltRight />
             </div>
-            </Link>
-            </>
-      
-    )
-      
-}
-  
+          </div>
+        </Link>
+      )}
     </div>
-
   );
-}
+};
 
-export default ProductContainer
+export default ProductContainer;
+

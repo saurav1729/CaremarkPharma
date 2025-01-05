@@ -1,18 +1,28 @@
-import { useState, useEffect, useRef } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import logoImg from "../resources/logo2.png";
+import React, { useState, useEffect, useRef } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
+import logoImg from "../resources/logo2.png";
+import { MdOutlineLogout } from "react-icons/md";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [navbarHeight, setNavbarHeight] = useState("90px");
   const user = useSelector((store) => store.user);
   const dropdownRef = useRef(null);
-  console.log(user);
+  const buttonRef = useRef(null);
+  const lastScrollY = useRef(0);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+    setNavbarHeight(!mobileMenuOpen ? "auto" : "90px");
+  };
 
   const handleClickOutside = (event) => {
     if (
@@ -25,14 +35,39 @@ const Navbar = () => {
     }
   };
 
-  const handleSignOut=()=>{
-    signOut(auth).then(()=>{
-      console.log('signed out');
-     
-    }).catch((err)=>{
-      console.log(err);
-    })
-  }
+  const handleSignOut = () => {
+    signOut(auth)
+      .then(() => {
+        console.log('signed out');
+        navigate('/login');
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > lastScrollY.current) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+
+      if (mobileMenuOpen) {
+        setMobileMenuOpen(false);
+        setNavbarHeight("90px");
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [mobileMenuOpen]);
 
   useEffect(() => {
     if (dropdownOpen) {
@@ -46,114 +81,132 @@ const Navbar = () => {
     };
   }, [dropdownOpen]);
 
-  return (
-    <nav className="bg-transparent shadow-sm shadow-gray-300 absolute top-0 left-0 z-10 w-full border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={logoImg} className="h-28" alt="Flowbite Logo" />
-        </Link>
-        <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          {!user ? (
-            <Link to="/register">
-              <button
-                type="button"
-                className="text-gray-900 text-[1.1rem] bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-              >
-                Login/Signup
-              </button>
-            </Link>
-          ) : (
-            <>
-              <button
-                type="button"
-                className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
-                id="user-menu-button"
-                aria-expanded="false"
-                onClick={toggleDropdown}
-              >
-                <span className="sr-only">Open user menu</span>
-                <img className="w-12 h-12 rounded-full" src={user.photoURL} alt="user photo" />
-                </button>
-              <button
-                data-collapse-toggle="navbar-user"
-                type="button"
-                className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-user"
-                aria-expanded="false"
-              >
-                <span className="sr-only">Open main menu</span>
-                <svg
-                  className="w-5 h-5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 17 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 1h15M1 7h15M1 13h15"
-                  />
-                </svg>
-              </button>
-            </>
-          )}
+  const isActiveLink = (path) => location.pathname === path;
 
-          {dropdownOpen && (
-            <div
-              ref={dropdownRef}
-              className="absolute right-4 top-[5.5rem] bg-[#fff]   z-50 my-4 text-base list-none bg-blue border border-[#124c7561] divide-y divide-gray-100 rounded-lg shadow"
-              id="user-dropdown"
-            >
-              <div className="px-4 py-3">
-                <span className="block text-sm text-gray-900 dark:text-white">{user.displayName}</span>
-                <span className="block text-sm text-gray-500 truncate dark:text-gray-400">{user.email}</span>
-              </div>
-              <ul className="py-2" aria-labelledby="user-menu-button">
-                <li>
-                  <Link to='/login'
-                    onClick={handleSignOut}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+  return (
+    <nav className={`fixed w-full z-10 transition-all duration-300 ${isVisible ? 'top-0' : '-top-full'}`}>
+      <div className="bg-gradient-to-r from-[rgba(48,48,48,0.3)] to-[rgba(217,217,217,0)] backdrop-blur-[20px] rounded-[50px] px-8 py-2 mx-4 mt-2">
+    
+        <div className="flex flex-row-reverse sm:flex-row justify-between items-center">
+  <Link to="/" className="sm:flex hidden  sm:items-center sm:space-x-2">
+    <img src={logoImg} alt="Logo" className="h-[5rem] " />
+  </Link>
+
+
+          <div className="hidden md:flex space-x-8 text-xl">
+            <NavItem to="/" label="Home" isActive={isActiveLink("/")} />
+            <NavItem to="/medicines" label="Products" isActive={isActiveLink("/medicines")} />
+            <NavItem to="/about" label="About" isActive={isActiveLink("/about")} />
+            <NavItem to="/contact" label="Contact" isActive={isActiveLink("/contact")} />
+          </div>
+
+          <div className="flex items-center">
+            {!user ? (
+              <Link to="/register">
+                <button className="text-white bg-gradient-to-r from-[rgba(177,143,48,0.84)] to-[#3b5bc5d6] hover:from-[rgba(56,149,165,0.9)] hover:to-[rgba(58,74,179,0.9)] font-semibold rounded-full text-md px-5 py-2.5 transition-all duration-300 ease-in-out transform hover:scale-105">
+                  Login/Signup
+                </button>
+              </Link>
+            ) : (
+              <div className="relative">
+                <button
+                  ref={buttonRef}
+                  onClick={toggleDropdown}
+                  className="flex items-center  justify-center w-12 h-12 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300 ease-in-out transform hover:scale-105"
+                >
+                  <img className="h-10 w-10 rounded-full" src={user.photoURL} alt="User avatar" />
+                </button>
+                {dropdownOpen && (
+                  <div
+                    ref={dropdownRef}
+                    className="absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
                   >
-                    Sign out
-                  </Link>
-                </li>
-              </ul>
+                    <div className="px-4 py-2 text-sm text-gray-700">
+                      <div>{user.displayName}</div>
+                      <div className="font-medium truncate">{user.email}</div>
+                    </div>
+                    <button
+                      onClick={handleSignOut}
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Sign out
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+
+          
+          </div>
+          <button
+              onClick={toggleMobileMenu}
+              className="md:hidden ml-4 focus:outline-none"
+            >
+              <div className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${mobileMenuOpen ? 'transform rotate-45 translate-y-2' : ''}`}></div>
+              <div className={`w-6 h-0.5 bg-white mb-1.5 ${mobileMenuOpen ? 'opacity-0' : ''}`}></div>
+              <div className={`w-6 h-0.5 bg-white transition-all ${mobileMenuOpen ? 'transform -rotate-45 -translate-y-2' : ''}`}></div>
+            </button>
+        </div>
+
+        {/* Mobile menu */}
+        <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${mobileMenuOpen ? 'max-h-96' : 'max-h-0'}`} style={{ height: navbarHeight }}>
+          <div className="px-2 pt-2 pb-3 space-y-1">
+            <MobileNavItem to="/" label="Home" onClick={toggleMobileMenu} />
+            <MobileNavItem to="/medicines" label="Products" onClick={toggleMobileMenu} />
+            <MobileNavItem to="/about" label="About" onClick={toggleMobileMenu} />
+            <MobileNavItem to="/contact" label="Contact" onClick={toggleMobileMenu} />
+          </div>
+          {user && (
+            <div className="pt-4 pb-3 border-t border-gray-700">
+              <div className="flex items-center px-5">
+                <div className="flex-shrink-0">
+                  <img className="h-10 w-10 rounded-full" src={user.photoURL} alt="User avatar" />
+                </div>
+                <div className="ml-3">
+                  <div className="text-base font-medium leading-none text-white">{user.displayName}</div>
+                  <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>
+                </div>
+              </div>
+              <div className="mt-3 px-2 space-y-1">
+                <button
+                  onClick={() => {
+                    handleSignOut();
+                    toggleMobileMenu();
+                  }}
+                  className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
+                >
+                  Sign out <MdOutlineLogout className="inline ml-2" size={20} />
+                </button>
+              </div>
             </div>
           )}
-        </div>
-        <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-user"
-        >
-          <ul className="flex flex-col text-[1.2rem] text-gray-900 font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <Link to="/">
-              <li className="cursor-pointer hover:shadow-[4px_3px_7px] hover:bg-[#1BC76890] hover:shadow-[lightgray] px-4 rounded-full hover:scale-110">
-                Home
-              </li>
-            </Link>
-            <Link to="/medicines">
-              <li className="cursor-pointer hover:shadow-[4px_3px_7px] hover:shadow-[lightgray] px-4 rounded-full hover:bg-[#1BC76890] hover:scale-110">
-                Products
-              </li>
-            </Link>
-            <Link to="/about">
-              <li className="cursor-pointer hover:shadow-[4px_3px_7px] hover:shadow-[lightgray] px-4 rounded-full hover:bg-[#1BC76890] hover:scale-110">
-                About
-              </li>
-            </Link>
-            <Link to="/contact">
-              <li className="cursor-pointer hover:shadow-[4px_3px_7px] hover:shadow-[lightgray] px-4 rounded-full hover:bg-[#1BC76890] hover:scale-110">
-                Contact
-              </li>
-            </Link>
-          </ul>
         </div>
       </div>
     </nav>
   );
 };
 
+const NavItem = ({ to, label, isActive }) => (
+  <Link
+    to={to}
+    className={`text-white font-medium hover:text-[#3b5bc5d6] transition duration-300 relative ${
+      isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-[#3f88a9] to-[#294fbf]' : ''
+    }`}
+  >
+    {label}
+    {isActive && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#3f88a9] to-[#294fbf]"></span>}
+  </Link>
+);
+
+const MobileNavItem = ({ to, label, onClick }) => (
+  <Link
+    to={to}
+    className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
+    onClick={onClick}
+  >
+    {label}
+  </Link>
+);
+
 export default Navbar;
+

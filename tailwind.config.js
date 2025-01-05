@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(315deg, #7ed6df 0%, #000000 74%)',
+      },
       keyframes: {
         gradientMove: {
           '0%': { backgroundPosition: '0% 50%' },

@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 // import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 // import { auth } from '../utils/firebase';
+import { useContext } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 // import { addUser } from '../store/userSlice';
 import axios from 'axios';
+// import { setUser } from '../store/userSlice';
+import AuthContext from '../../Context/AuthContext';
+import Alert from '../../microinteraction/Alert';
+import { useEffect } from 'react';
+import { api } from '../service';
 
 const Signup = () => {
   const [userData, setUserData] = useState({
@@ -15,7 +21,31 @@ const Signup = () => {
   });
   const [error, setError] = useState('');
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+  const [shouldNavigate, setShouldNavigate] = useState(false);
+  const [navigatePath, setNavigatePath] = useState("/");
+  const authCtx = useContext(AuthContext); 
+  const [alert, setAlert] = useState(null);
+  // const dispatch = useDispatch();
+  
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    if (alert) {
+      const { type, message, position, duration } = alert;
+      Alert({ type, message, position, duration });
+    }
+  }, [alert]);
+
+  useEffect(() => {
+    if (shouldNavigate) {
+      navigate(navigatePath);
+      setShouldNavigate(false); 
+    }
+  }, [shouldNavigate, navigatePath, navigate]);
+ 
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -37,15 +67,34 @@ const Signup = () => {
       return;
     }
     try {
-      const response = await axios.post(`${API_URL}/signup`, {
-        fullName,
+      const response = await api.post('/api/auth/signup', {
+        name:fullName,
         email,
-        photoURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/510px-Default_pfp.svg.png",
+        photoURL: "https://www.inforwaves.com/media/2021/04/dummy-profile-pic-300x300-1.png",
         password,
         role:"USER"
       });
-      const user = response.data;
-      dispatch(setUser(user));
+   
+     if(response.status == 200 || response.status==201){
+      setAlert({
+        type: "success",
+        message: "signup successful",
+        position: "bottom-right",
+        duration: 2800,
+      });
+      const user = {
+          name : response.data.user.name, 
+          img: response.data.user.img,
+          email: response.data.user.email, 
+          role: response.data.user.role
+      }; 
+      localStorage.setItem("token",response.data.token);
+      authCtx.login(
+        response.data.token, 
+        user, 
+        10800000
+      )
+     }
       navigate('/');
     } catch (error) {
       setError(error.response?.data?.message || 'An error occurred during signup');

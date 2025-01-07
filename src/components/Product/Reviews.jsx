@@ -6,7 +6,7 @@ function classNames(...classes) {
 }
 
 const Reviews = ({ reviews }) => {
-  const averageRating = reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length;
+  const averageRating = reviews && reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length;
 
   return (
     <div className="mt-16">

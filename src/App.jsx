@@ -1,9 +1,9 @@
-import { Suspense, lazy, useEffect } from "react";
+import { Suspense, lazy, useContext } from "react";
 import { Routes, Route, Outlet, useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { setUser, clearUser } from "./store/userSlice";
-import authService from "./service/authService";
 import PrivateRoute from "./components/PrivateRoute";
+import AuthContext from "../Context/AuthContext";
+import AdminLayout from "./layouts/profile/Adminlayout";
+import MultiStepProductForm from "./components/Admin/Form/ProductForm";
 
 // Lazy loading pages
 const Home = lazy(() => import("./pages/Home"));
@@ -15,7 +15,9 @@ const Login = lazy(() => import("./auth/Login"));
 const Signup = lazy(() => import("./auth/Signup"));
 const Contact = lazy(() => import("./pages/contact"));
 const About = lazy(() => import("./pages/About"));
-// const AdminDashboard = lazy(() => import("./components/AdminDashboard"));
+const AdminDashboard = lazy(() => import("./pages/profile/AdminDashboard"));
+const AddProduct = lazy(()=>import("./pages/profile/addproducts"))
+const ViewProducs = lazy(()=>import("./pages/profile/ViewProduct"))
 
 const Layout = () => (
   <div>
@@ -34,19 +36,9 @@ const AuthLayout = () => (
 );
 
 function App() {
-  const dispatch = useDispatch();
+  const authCtx = useContext(AuthContext); 
   const navigate = useNavigate();
-  const user = useSelector((state) => state.user);
-
-  useEffect(() => {
-    const user = authService.getCurrentUser();
-    if (user) {
-      dispatch(setUser(user));
-    } else {
-      dispatch(clearUser());
-      // navigate('/login');
-    }
-  }, [dispatch, navigate]);
+  console.log(authCtx); 
 
   return (
     <div>
@@ -58,13 +50,17 @@ function App() {
             <Route path="/medicines/:productId" element={<Product />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route element={<PrivateRoute adminOnly={true} />}>
-              {/* <Route path="/admin" element={<AdminDashboard />} /> */}
-            </Route>
           </Route>
           <Route element={<AuthLayout />}>
             <Route path="/register" element={<Signup />} />
             <Route path="/login" element={<Login />} />
+          </Route>
+          <Route element={<PrivateRoute adminOnly={true} />}>
+            <Route element={<AdminLayout />}>
+              <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/admin/products" element={<ViewProducs />} />
+              <Route path="/admin/add-product" element={<MultiStepProductForm />} />
+            </Route>
           </Route>
         </Routes>
       </Suspense>

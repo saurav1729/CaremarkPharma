@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext,useEffect, useState } from "react";
 // import { signInWithEmailAndPassword } from "firebase/auth";
 // import { auth } from "../utils/firebase";
 import { useNavigate, Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { setUser } from "../store/userSlice";
-import authService from "../service/authService";
+import AuthContext from "../../Context/AuthContext";
+// import { useDispatch } from "react-redux";
+// import { setUser } from "../store/userSlice";
+// import authService from "../service/authService";
+import Alert from "../../microinteraction/Alert";
+import axios from "axios";
+import { api } from "../service";
 
 
 const Login = () => {
@@ -14,29 +18,38 @@ const Login = () => {
   });
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+  const [shouldNavigate, setShouldNavigate] = useState(false);
+  const [navigatePath, setNavigatePath] = useState("/");
+  const [alert, setAlert] = useState(null);
+  const authCtx = useContext(AuthContext); 
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setUserData({ ...userData, [name]: value });
   };
 
-  // const handleLogin = (e) => {
-  //   e.preventDefault();
-  //   const { email, password } = userData;
-  //   if (!email || !password) {
-  //     setError("Please fill in all fields");
-  //     return;
-  //   }
-  //   signInWithEmailAndPassword(auth, email, password)
-  //     .then((userCredential) => {
-  //       navigate("/");
-  //     })
-  //     .catch((error) => {
-  //       setError("Invalid email or password");
-  //       console.error(error);
-  //     });
-  // };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    if (alert) {
+      const { type, message, position, duration } = alert;
+      Alert({ type, message, position, duration });
+    }
+  }, [alert]);
+
+
+  useEffect(() => {
+    if (shouldNavigate) {
+      navigate(navigatePath);
+      setShouldNavigate(false); 
+    }
+  }, [setShouldNavigate, navigatePath, navigate]);
+ 
+    const API_URL = "http://localhost:5000/api/auth"
+
   
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -46,16 +59,52 @@ const Login = () => {
       return;
     }
     try {
-      const user = await authService.login(email, password);
-      dispatch(setUser(user));
-      
-      if (user.role === 'admin') {
-        navigate("/admin");
-      } else {
-        navigate("/");
+      const response = await api.post('/api/auth/login', { email, password });
+
+      if(response.status ==200 ||response.status ==201){
+        const user = response.data.user; 
+
+        setAlert({
+          type: "success",
+          message: "Login successful",
+          position: "bottom-right",
+          duration: 2800,
+        });
+        navigate('/')
+
+        // setTimeout(() => {
+        //   setShouldNavigate(true);
+        // }, 750);
+
+        // setTimeout(() => {
+          localStorage.setItem("token", response.data.token);
+          authCtx.login(
+           response.data.token, 
+           user, 
+           9600000
+          );
+        // }, 800);
+        // console.log(authCtx);
+
+        sessionStorage.removeItem("prevPage")
+      }else {
+        setAlert({
+          type: "error",
+          message: response.data.message || "Invalid email or password",
+          position: "bottom-right",
+          duration: 3000,
+        });
       }
     } catch (error) {
       setError("Invalid email or password");
+      setAlert({
+        type: "error",
+        message:
+          error?.response?.data?.message ||
+          "There was an error logging in. Please try again.",
+        position: "bottom-right",
+        duration: 3000,
+      });
       console.error(error);
     }
   };

@@ -10,7 +10,7 @@ const ImageGallery = ({ images }) => {
     <div>
       <div className="aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">
         <img
-          src={selectedImage}
+          src={selectedImage.url}
           alt={`Product`}
           className="w-full h-full object-center object-cover cursor-pointer"
           onClick={() => setIsOpen(true)}
@@ -26,7 +26,7 @@ const ImageGallery = ({ images }) => {
             onClick={() => setSelectedImage(image)}
           >
             <img
-              src={image}
+              src={image.url}
               alt={`Product ${index + 1}`}
               className="w-full h-full object-center object-cover"
             />

@@ -20,7 +20,7 @@ const ProductContainer = ({ cardData, page }) => {
           : "w-[80%] ml-auto mr-auto sm:grid-cols-2 lg:grid-cols-3"
       }`}>
         {cardData.map((event) => (
-          <ProductCard key={event.id} data={event} page={page} />
+          <ProductCard key={event._id} data={event} page={page} />
         ))}
       </div>
 

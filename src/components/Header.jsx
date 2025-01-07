@@ -1,22 +1,26 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import logoImg from "../resources/logo2.png";
 import { MdOutlineLogout } from "react-icons/md";
-import authService from "../service/authService";
-import { clearUser } from "../store/userSlice";
+import AuthContext from "../../Context/AuthContext";
+// import authService from "../service/authService";
+// import { clearUser } from "../store/userSlice";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [navbarHeight, setNavbarHeight] = useState("90px");
-  const user = useSelector((store) => store.user);
+ 
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);
   const lastScrollY = useRef(0);
   const navigate = useNavigate();
   const location = useLocation();
+  // console.log("user",user)
+  const authCtx = useContext(AuthContext);
+  const user = authCtx.user
 
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
   const toggleMobileMenu = () => {
@@ -36,9 +40,8 @@ const Navbar = () => {
   };
 
   const handleSignOut = () => {
-    authService.logout();
-    dispatch(clearUser());
-    navigate("/login");
+    authCtx.logout();
+    navigate("/");
   };
 
   useEffect(() => {
@@ -77,7 +80,7 @@ const Navbar = () => {
   }, [dropdownOpen]);
 
   const isActiveLink = (path) => location.pathname === path;
-  const isAdmin = user && user.role === "ADMIN";
+  const isAdmin = authCtx.isAdmin;
 
   return (
     <nav className={`fixed w-full z-10 transition-all duration-300 ${isVisible ? 'top-0' : '-top-full'}`}>
@@ -97,7 +100,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center">
-            {!user ? (
+            {!authCtx.isLoggedIn ? (
               <Link to="/register">
                 <button className="text-white bg-gradient-to-r from-[rgba(177,143,48,0.84)] to-[#3b5bc5d6] hover:from-[rgba(56,149,165,0.9)] hover:to-[rgba(58,74,179,0.9)] font-semibold rounded-full text-md px-5 py-2.5 transition-all duration-300 ease-in-out transform hover:scale-105">
                   Login/Signup
@@ -118,10 +121,10 @@ const Navbar = () => {
                     className="absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
                   >
                     <div className="px-4 py-2 text-sm text-gray-700">
-                      <div>{user.displayName}</div>
+                      <div>{user.name}</div>
                       <div className="font-medium truncate">{user.email}</div>
                     </div>
-                    {isAdmin && <NavItem to="/admin" label="Admin Dashboard" isActive={isActiveLink("/admin")} />}
+                    {isAdmin && <button  onClick={()=>navigate('/admin')} className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Admin Dashboard</button>}
                     <button
                       onClick={handleSignOut}
                       className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"

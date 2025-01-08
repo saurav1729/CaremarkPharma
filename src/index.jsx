@@ -9,7 +9,7 @@ import { AuthContextProvider } from '../Context/AuthContext.jsx';
 // import RecoveryContextProvider from './context/RecoveryContext.jsx';
 
 import './index.css'
-import appStore from './store/appStore.js';
+// import appStore from './store/appStore.js';
 // const clientId = '1077095174667-l6hai5erjd95lidrdl95k8mt3342vb99.apps.googleusercontent.com';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

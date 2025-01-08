@@ -4,11 +4,12 @@ import ProductData from '../utils/productData.json'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
+import { api } from '../service'
 
 const Product = () => {
   const [frontendProducts, setFrontendProducts] = useState(ProductData.products);
   const [backendProducts, setBackendProducts] = useState(null);
-  const API_URL = "http://localhost:5000/api/product"
+  // const API_URL = "http://localhost:5000/api/product"
 
     
 

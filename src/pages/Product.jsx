@@ -9,6 +9,7 @@ import RelatedProducts from '../components/Product/RelatedProducts';
 import Breadcrumb from '../components/Product/BreadCrumb';
 import axios from 'axios';
 import { api } from '../service';
+import { Helmet } from 'react-helmet-async'; 
 const API_URL = "http://localhost:5000/api/product"
 
 const Product = () => {
@@ -59,6 +60,17 @@ const Product = () => {
 
   return (
     <div className="min-h-screen pt-28 pb-12 bg-gradient-to-t from-gray-100 to-white">
+         {/* Helmet to manage meta tags */}
+         <Helmet>
+        <title>{product.name} - Caremark Pharmaceutical</title>
+        <meta name="description" content={product.description?.short || `Learn more about ${product.name} from Caremark Pharmaceutical.`} />
+        <meta property="og:title" content={`${product.name} - Caremark Pharmaceutical`} />
+        <meta property="og:description" content={product.description?.short || `Learn more about ${product.name} from Caremark Pharmaceutical.`} />
+        <meta property="og:image" content={product.images?.[0]?.url || 'https://www.caremarkpharmaceutical.com/default-product-image.jpg'} />
+        <meta property="og:url" content={`https://www.caremarkpharmaceutical.com/medicines/${productId}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href={`https://www.caremarkpharmaceutical.com/medicines/${productId}`} />
+      </Helmet>
       <Breadcrumb product={product} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8">

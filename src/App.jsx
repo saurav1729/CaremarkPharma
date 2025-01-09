@@ -4,6 +4,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import AuthContext from "../Context/AuthContext";
 import AdminLayout from "./layouts/profile/Adminlayout";
 import MultiStepProductForm from "./components/Admin/Form/ProductForm";
+import Loading from "../microinteraction/Loading";
 
 // Lazy loading pages
 const Home = lazy(() => import("./pages/Home"));
@@ -42,7 +43,7 @@ function App() {
 
   return (
     <div>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div><Loading/></div>}>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />

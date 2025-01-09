@@ -9,6 +9,7 @@ export default {
 
       backgroundImage: {
         'custom-gradient': 'linear-gradient(315deg, #7ed6df 0%, #000000 74%)',
+        // 'custom-gradient-home': 'linear-gradient(315deg, #ff9a9e %, #7ed6df 24%)', //
       },
       keyframes: {
         gradientMove: {
@@ -27,6 +28,8 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
 

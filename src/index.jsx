@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import { BrowserRouter } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 // import {Provider} from '@reduxjs/toolkit'
 
 import { AuthContextProvider } from '../Context/AuthContext.jsx';
@@ -14,15 +15,12 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthContextProvider> 
-    {/* <GoogleOAuthProvider clientId={clientId}>  */}
-   
-    <BrowserRouter>
-    <App /> 
-     
-    </BrowserRouter>
-     {/* </GoogleOAuthProvider> */}
-    </AuthContextProvider> 
-
-  </React.StrictMode>,
+    <HelmetProvider>
+      <AuthContextProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </AuthContextProvider>
+    </HelmetProvider>
+  </React.StrictMode>
 )

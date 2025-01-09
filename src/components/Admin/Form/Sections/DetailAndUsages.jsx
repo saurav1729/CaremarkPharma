@@ -6,7 +6,7 @@ const DetailsAndUsage = ({ product, handleChange, errors }) => (
     <div className="mb-2">
       <label className="block text-sm font-bold mb-1" htmlFor="short">Short Description</label>
       <textarea
-        className={`w-full px-2 py-1 text-sm border rounded ${errors['description.short'] ? 'border-red-500' : ''}`}
+        className={`w-full px-2 py-1 text-sm outline-none border rounded ${errors['description.short'] ? 'border-red-500' : ''}`}
         id="short" name="short" value={product.description.short}
         onChange={(e) => handleChange(e, 'description')} rows="2"
       />
@@ -15,7 +15,7 @@ const DetailsAndUsage = ({ product, handleChange, errors }) => (
     <div className="mb-2">
       <label className="block text-sm font-bold mb-1" htmlFor="long">Long Description</label>
       <textarea
-        className={`w-full px-2 py-1 text-sm border rounded ${errors['description.long'] ? 'border-red-500' : ''}`}
+        className={`w-full px-2 py-1 outline-none text-sm border rounded ${errors['description.long'] ? 'border-red-500' : ''}`}
         id="long" name="long" value={product.description.long}
         onChange={(e) => handleChange(e, 'description')} rows="4"
       />

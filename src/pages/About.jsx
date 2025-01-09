@@ -1,9 +1,20 @@
 import React from 'react';
 import { FaHardHat, FaCog } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 
 const About = () => {
+  const location = useLocation();
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-teal-400">
+      <Helmet>
+        <title>About Us - Caremark Pharmaceutical</title>
+        <meta 
+          name="description" 
+          content="Learn about Caremark Pharmaceutical, established in 2021, a leading manufacturer of chemical products based in Haridwar, Uttarakhand, India." 
+        />
+        <link rel="canonical" href={`https://www.caremarkpharmaceutical.com${location.pathname}`} />
+      </Helmet>
       <div className="text-center p-8 bg-white rounded-lg shadow-2xl">
         <div className="flex justify-center mb-4">
           <FaHardHat className="text-6xl text-yellow-500 mr-2" />

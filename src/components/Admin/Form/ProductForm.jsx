@@ -12,6 +12,8 @@ import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { api } from '../../../service';
+import MicroLoad from '../../../../microinteraction/MicroLoad';
+
 const initialProduct = {
   name: '',
   manufacturer: '',
@@ -44,6 +46,7 @@ const MultiStepProductForm = () => {
   const authctx = useContext(AuthContext);
   const navigate = useNavigate(); 
   const location = useLocation();
+  const[isLoading, setLoad]=useState(false); 
 
   useEffect(() => {
     if (location.state && location.state.product) {
@@ -73,13 +76,14 @@ const MultiStepProductForm = () => {
   };
   
   const handleSubmit = async (e) => {
+    setLoad(true); 
     e.preventDefault();
     if (validateForm()) {
       
       try {
 
         const formData = new FormData();
-        formData.append('product', JSON.stringify(product)); // Append other product details as JSON string
+        formData.append('product', JSON.stringify(product)); 
         if (product.images && product.images.length > 0) {
           product.images.forEach((image, index) => {
             // If the image is a file, append it
@@ -121,6 +125,7 @@ const MultiStepProductForm = () => {
         if (response.status === 200 || response.status === 201) {
           setAlertProps({ type: 'success', message: `Product ${product._id ? 'updated' : 'added'} successfully!` });
           setTimeout(() => {
+            setLoad(false); 
             navigate('/admin/products');
           }, 4000); // Navigate after 2 seconds
         } else {
@@ -176,19 +181,21 @@ const MultiStepProductForm = () => {
       <FormNavigation steps={steps} currentStep={currentStep} />
       <form className="bg-gray-300 shadow-sm shadow-blue-400 rounded px-4 pt-4 pb-4 mb-4">
         <CurrentStepComponent product={product} handleChange={handleChange} errors={errors} />
-        <div className="flex justify-between mt-4">
+        <div   className={`flex mt-4 ${
+    currentStep > 0 ? 'justify-between' : 'justify-end'
+  }`}>
           {currentStep > 0 && (
-            <button type="button" onClick={prevStep} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+            <button type="button" onClick={prevStep} className="bg-gray-400 hover:bg-gray-500 text-gray-800  font-bold py-2 px-4 rounded-md">
               Previous
             </button>
           )}
           {currentStep < steps.length - 1 ? (
-            <button type="button" onClick={nextStep} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r">
+            <button type="button" onClick={nextStep} className="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2  px-4 rounded">
               Next
             </button>
           ) : (
-            <button type="button" onClick={handleSubmit} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-r">
-            {product._id ? 'Update Product' : 'Submit'}
+            <button type="button" onClick={handleSubmit} className="bg-green-700 flex justify-center items-center w-[10rem] hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            {isLoading?<MicroLoad/>:(product._id ? 'Update Product' : 'Submit')}
             </button>
           )}
         </div>

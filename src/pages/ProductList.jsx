@@ -5,10 +5,13 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import { api } from '../service'
+import { useLocation } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 const Product = () => {
   const [frontendProducts, setFrontendProducts] = useState(ProductData.products);
   const [backendProducts, setBackendProducts] = useState(null);
+  const location = useLocation();
   // const API_URL = "http://localhost:5000/api/product"
 
     
@@ -41,7 +44,19 @@ const Product = () => {
 
 },[])
   return (
-    <div><ProductContainer cardData={displayProducts} page={'product'} /></div>
+    <div>
+      <Helmet>
+        <title>Our Medicines - Caremark Pharmaceutical</title>
+        <meta 
+          name="description" 
+          content="Explore our comprehensive range of pharmaceutical products. Quality medicines manufactured by Caremark Pharmaceutical." 
+        />
+        <link rel="canonical" href={`https://www.caremarkpharmaceutical.com${location.pathname}`} />
+      </Helmet>
+      
+      <ProductContainer cardData={displayProducts} page={'product'} />
+      
+      </div>
   )
 }
 

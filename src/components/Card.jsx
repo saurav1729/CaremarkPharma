@@ -21,7 +21,7 @@ console.log("image", firstImageUrl);
       onMouseLeave={() => setHover(false)}
     >
       <div
-        className="overflow-hidden relative card h-96 bg-[linear-gradient(90deg,_rgba(2,0,36,1)_37%,_rgba(5,5,15,1)_75%)] rounded-lg border border-teal-300 shadow-[5px_5px_0px_0px] max-w-sm mx-auto flex flex-col justify-between p-4 transition-all duration-300 ease-in-out transform hover:shadow-[8px_8px_0px_0px]"
+        className="overflow-hidden relative card h-96 bg-[linear-gradient(90deg,_rgba(2,0,36,1)_37%,_rgba(5,5,15,1)_75%)] rounded-lg border border-teal-300  shadow-[0px_4px_12px_rgba(128,0,255,0.2),_0px_2px_4px_rgba(128,0,255,0.3)] max-w-sm mx-auto flex flex-col justify-between p-4 transition-all duration-300 ease-in-out transform hover:shadow-[0px_6px_16px_rgba(0,255,255,0.3),_0px_3px_6px_rgba(0,255,255,0.5)]"
       >
         <div 
           className="absolute inset-0 bg-cover bg-center transition-transform duration-300 ease-in-out group-hover/card:scale-110"

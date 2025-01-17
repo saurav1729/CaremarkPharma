@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='w-[90%] mx-auto flex flex-col'>
         <div className='flex flex-col md:flex-row justify-between items-center mb-8'>
           <div className='mb-4 md:mb-0 text-center md:text-left'>
-            <h3 className='text-2xl md:text-[2.1rem] text-[#24b5c5] font-serif font-medium pb-1'>Sign Up To Our Shop</h3>
+            <h3 className='text-2xl md:text-[2.1rem] text-[#24b5c5] font-serif font-medium pb-1'>Stay Connected with Us</h3>
             <span className='text-base md:text-[1.2rem] text-[#6b829c]'>Stay up to date about new Medicine launched</span>
           </div>
           <div className='flex flex-col md:flex-row gap-4 w-full md:w-auto'>

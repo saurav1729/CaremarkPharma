@@ -16,7 +16,7 @@ import MicroLoad from '../../../../microinteraction/MicroLoad';
 
 const initialProduct = {
   name: '',
-  manufacturer: '',
+  category:'tablets', 
   composition: '',
   price: {
     original: 0,
@@ -25,6 +25,7 @@ const initialProduct = {
     includes_taxes: true,
   },
   package_size: '10 Capsules',
+  package_size_ml:'100 ml', 
   stock_quantity: 0,
   description: { short: '', long: '' },
   usage: { dosage: 'As directed by the physician', instructions: 'Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.', side_effects: '', precautions: '' },
@@ -210,7 +211,7 @@ export default MultiStepProductForm;
 function validateBasicInfo(product) {
   const errors = {};
   if (!product.name) errors.name = 'Name is required';
-  if (!product.manufacturer) errors.manufacturer = 'Manufacturer is required';
+  if (!product.category) errors.category = 'category is required';
   if (!product.composition) errors.composition = 'Composition is required';
   if(!product.package_size) errors.package_size='Package size is required'; 
   if(!product.availability) errors.availability='Availability field is required'; 

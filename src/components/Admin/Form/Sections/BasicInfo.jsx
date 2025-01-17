@@ -21,14 +21,17 @@ const BasicInfo = ({ product, handleChange, errors }) => (
         />
       </div>
       <div className="mb-2 w-full md:w-1/2 md:pl-2">
-        <Input
-          label="Manufacturer"
-          id="manufacturer"
-          name="manufacturer"
-          placeholder="Enter manufacturer"
-          value={product.manufacturer}
+         <Select
+          label="Category"
+          id="category"
+          name="category"
+          value={product.category}
           onChange={handleChange}
-          error={errors.manufacturer}
+          error={errors.category}
+          options={[
+            { value: "tablets", label: "tablets" },
+            { value: "syrup", label: "syrup" },
+          ]}
           className="bg-gray-50 focus:bg-white transition-colors"
         />
       </div>
@@ -45,20 +48,33 @@ const BasicInfo = ({ product, handleChange, errors }) => (
     />
     <div className='w-full flex flex-wrap'>
       <div className='mb-2 w-full md:w-1/2 md:pr-2'>
-        <Select
-          label="Package Size"
-          id="package_size"
-          name="package_size"
-          value={product.package_size}
-          onChange={handleChange}
-          options={[
-            { value: "10 Capsules", label: "10 Capsules" },
-            { value: "15 Capsules", label: "15 Capsules" },
-            { value: "20 Capsules", label: "20 Capsules" },
-            { value: "50 Capsules", label: "50 Capsules" },
-          ]}
-          className="bg-gray-50 focus:bg-white transition-colors"
-        />
+      {product.category === 'tablets' ? (
+            <Select
+              label="Package Size"
+              id="package_size"
+              name="package_size"
+              value={product.package_size}
+              onChange={handleChange}
+              options={[
+                { value: "10 Capsules", label: "10 Capsules" },
+                { value: "15 Capsules", label: "15 Capsules" },
+                { value: "20 Capsules", label: "20 Capsules" },
+                { value: "50 Capsules", label: "50 Capsules" },
+              ]}
+              className="bg-gray-50 focus:bg-white transition-colors"
+            />
+          ) : (
+            <Input
+              label="Package Size (in ml)"
+              id="package_size_ml"
+              name="package_size_ml"
+              placeholder="Enter package size in ml"
+              value={product.package_size_ml || ''}
+              onChange={handleChange}
+              error={errors.package_size_ml}
+              className="bg-gray-50 focus:bg-white transition-colors"
+            />
+          )}
       </div>
       <div className='mb-2 w-full md:w-1/2 md:pl-2'>
         <Select

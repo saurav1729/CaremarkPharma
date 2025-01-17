@@ -1,22 +1,39 @@
 import React, { useState } from 'react';
 import { Tab } from '@headlessui/react';
+// import '../Admin/Form/Sections/styles/formattedDescription.css'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
+const formatDescription = (text) => {
+  return text.split('\n').map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      <br />
+    </React.Fragment>
+  ));
+};
+
+
 const ProductDetails = ({ product }) => {
   const [categories] = useState({
-    Description: product.description.long,
+    Description: (  <div className="formatted-description">
+      {formatDescription(product.description.long)}
+    </div>),
     Usage: (
       <div>
-        <p><strong>Dosage:</strong> {product.usage.dosage}</p>
-        <p><strong>Instructions:</strong> {product.usage.instructions}</p>
-        <p><strong>Side Effects:</strong> {product.usage.side_effects}</p>
-        <p><strong>Precautions:</strong> {product.usage.precautions}</p>
+        <p><strong>Dosage:</strong> {formatDescription(product.usage.dosage)}</p>
+        <p><strong>Instructions:</strong> {formatDescription(product.usage.instructions)}</p>
+        <p><strong>Side Effects:</strong> {formatDescription(product.usage.side_effects)}</p>
+        <p><strong>Precautions:</strong> { formatDescription(product.usage.precautions)}</p>
       </div>
     ),
-    Storage: product.storage,
+    Storage: (
+      <div className="formatted-description">
+      {formatDescription(product.storage)}
+      </div>
+      ),
     Manufacturer: (
       <div>
         <p><strong>Name:</strong> {product.manufacturer_details.name}</p>

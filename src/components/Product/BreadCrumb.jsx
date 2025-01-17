@@ -4,7 +4,7 @@ import { ChevronRightIcon, HomeIcon } from '@heroicons/react/20/solid';
 
 const Breadcrumb = ({ product }) => {
   return (
-    <nav className="flex mb-8" aria-label="Breadcrumb">
+    <nav className="flex mb-8 ml-[1.5rem]  md:ml-[2.2rem] " aria-label="Breadcrumb">
       <ol className="inline-flex items-center space-x-1 md:space-x-3">
         <li className="inline-flex items-center">
           <Link to="/" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600">

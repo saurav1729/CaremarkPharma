@@ -16,8 +16,8 @@ const ProductContainer = ({ cardData, page }) => {
 
       <div className={`w-11/12 mx-auto grid gap-8 ${
         page === "product" 
-          ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" 
-          : "w-[80%] ml-auto mr-auto sm:grid-cols-2 lg:grid-cols-3"
+          ? "grid-cols-1f w-[90%] felx justify-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" 
+          : "w-[84%] ml-auto mr-auto md:gap-[2rem] sm:grid-cols-2 lg:grid-cols-3"
       }`}>
         {cardData.map((event) => (
           <ProductCard key={event._id} data={event} page={page} />
@@ -26,7 +26,7 @@ const ProductContainer = ({ cardData, page }) => {
 
       {page !== "product" && (
         <Link to="/medicines">
-          <div className='w-full mt-12 flex justify-center items-center'>
+          <div className='w-full  mt-12 flex justify-center items-center'>
             <div className='text-2xl text-teal-300 font-semibold cursor-pointer flex items-center gap-3 hover:underline'>
               See all <FaLongArrowAltRight />
             </div>

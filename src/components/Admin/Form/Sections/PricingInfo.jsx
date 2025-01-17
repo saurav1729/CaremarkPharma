@@ -14,17 +14,23 @@ const PricingInfo = ({ product, handleChange, errors }) => {
       handleChange({
         target: {
           name: 'price',
-          value: { ...priceRef.current, discounted: discountedPrice || 0 },
+          value: { ...priceRef.current, discounted: discountedPrice },
+        },
+      });
+    } else if (original) {
+      handleChange({
+        target: {
+          name: 'price',
+          value: { ...priceRef.current, discounted: original },
         },
       });
     }
-  }, [product.price.original, product.price.discount_percentage]); 
+  }, [product.price.original, product.price.discount_percentage]);
 
   const handlePriceChange = (e) => {
     const { name, value } = e.target;
     const updatedPrice = { ...product.price, [name]: value };
 
-    // Update the ref and propagate the change
     priceRef.current = updatedPrice;
     handleChange({ target: { name: 'price', value: updatedPrice } });
   };
@@ -60,7 +66,7 @@ const PricingInfo = ({ product, handleChange, errors }) => {
         </div>
       </div>
       <div className='mb-2'>
-        <p>Discounted Price: {product.price.discounted || 0}</p>
+        <p>Discounted Price: {product.price.discounted || product.price.original}</p>
       </div>
       <div className='w-full flex flex-wrap'>
         <div className='mb-2 w-full md:w-1/2'>

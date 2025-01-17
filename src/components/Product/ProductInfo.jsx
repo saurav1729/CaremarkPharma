@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ShoppingCartIcon } from '@heroicons/react/24/outline';
+import { BiRupee } from 'react-icons/bi';
 
 const ProductInfo = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
@@ -10,17 +11,19 @@ const ProductInfo = ({ product }) => {
   };
 
   return (
+
     <div className="flex flex-col gap-4">
+          {console.log(product)}
       <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
-      <p className="text-xl text-gray-500">{product.manufacturer}</p>
+      <p className="text-xl text-gray-500">{product.manufacturer||'Caremark Pharmaceutical Pvt. Ltd.'}</p>
       <p className="text-lg">{product.composition}</p>
       <div className="flex items-center">
-        <p className="text-2xl font-semibold text-gray-900">
-          {product.price.currency} {product.price.discounted.toFixed(2)}
+        <p className="text-xl flex justify-center items-center font-semibold text-gray-900">
+        <BiRupee/> {product.price.currency} {product.price.discounted.toFixed(2)}
         </p>
         {product.price.discount_percentage > 0 && (
-          <p className="ml-2 text-sm font-medium text-gray-500 line-through">
-            {product.price.currency} {product.price.original.toFixed(2)}
+          <p className="ml-2 flex justify-center items-center text-sm font-medium text-gray-500 line-through">
+           <BiRupee/>  {product.price.currency} {product.price.original.toFixed(2)}
           </p>
         )}
       </div>
@@ -52,7 +55,7 @@ const ProductInfo = ({ product }) => {
         <dl className="mt-2 border-t border-b border-gray-200 divide-y divide-gray-200">
           <div className="py-3 flex justify-between text-sm">
             <dt className="text-gray-500">Package Size</dt>
-            <dd className="text-gray-900 font-medium">{product.package_size}</dd>
+            <dd className="text-gray-900 font-medium">{product?.category=='tablet'? product.package_size:product.package_size_ml}</dd>
           </div>
           {Object.entries(product.details).map(([key, value]) => (
             <div key={key} className="py-3 flex justify-between text-sm">

@@ -48,9 +48,9 @@ const Header = ({ translate }) => {
       className="text-center  z-10"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-[#26b5c6]">
-        Visit Our Pharmacy
+       Find Us on the map
       </h2>
-      <p className="text-lg text-gray-600">Find us on the map and drop by!</p>
+      {/* <p className="text-lg text-gray-600">Find us on the map and drop by!</p> */}
     </motion.div>
   );
 };
@@ -70,7 +70,7 @@ const Card = ({ rotate, scale }) => {
           <div className="space-y-4">
             <div className="flex items-start">
               <FaMapMarkerAlt className="text-[#26b5c6] mt-1 mr-3" />
-              <p className="text-gray-700">123 Health Street, Wellness City, Medical State 12345</p>
+              <p className="text-gray-700">Haridwar City (Near Mantra Township), Haridwar - 249401</p>
             </div>
             <div className="flex items-center">
               <FaPhone className="text-[#26b5c6] mr-3" />

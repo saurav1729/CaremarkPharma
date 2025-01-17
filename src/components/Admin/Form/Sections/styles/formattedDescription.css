@@ -1,0 +1,12 @@
+.formatted-description {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  

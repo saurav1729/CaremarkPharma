@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 // import { useSelector } from "react-redux";
-import logoImg from "../resources/logo2.png";
+import logoImg from "../resources/CaremarkPharmaceuticalNewLogo.png";
 import { MdOutlineLogout } from "react-icons/md";
 import AuthContext from "../../Context/AuthContext";
 // import authService from "../service/authService";
@@ -83,8 +83,8 @@ const Navbar = () => {
   const isAdmin = authCtx.isAdmin;
 
   return (
-    <nav className={`fixed w-full z-10 transition-all duration-300 ${isVisible ? 'top-0' : '-top-full'}`}>
-      <div className="bg-gradient-to-r from-[rgba(48,48,48,0.3)] to-[rgba(217,217,217,0)] backdrop-blur-[20px] rounded-[50px] px-8 py-2 mx-4 mt-2">
+    <nav className={`fixed w-full z-20 transition-all duration-300 ${isVisible ? 'top-0' : '-top-full'}`}>
+      <div className=" bg-gradient-to-r  from-[rgba(48,48,48,0.3)] to-[rgba(217,217,217,0)] backdrop-blur-[20px] rounded-[50px] px-8 py-2 mx-4 mt-2">
     
         <div className="flex flex-row-reverse sm:flex-row justify-between items-center">
   <Link to="/" className="sm:flex hidden  sm:items-center sm:space-x-2">
@@ -101,7 +101,7 @@ const Navbar = () => {
 
           <div className="flex items-center">
             {!authCtx.isLoggedIn ? (
-              <Link to="/register">
+              <Link to="/login">
                 <button className="text-white bg-gradient-to-r from-[rgba(177,143,48,0.84)] to-[#3b5bc5d6] hover:from-[rgba(56,149,165,0.9)] hover:to-[rgba(58,74,179,0.9)] font-semibold rounded-full text-md px-5 py-2.5 transition-all duration-300 ease-in-out transform hover:scale-105">
                   Login/Signup
                 </button>
@@ -111,9 +111,9 @@ const Navbar = () => {
                 <button
                   ref={buttonRef}
                   onClick={toggleDropdown}
-                  className="flex items-center  justify-center w-12 h-12 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300 ease-in-out transform hover:scale-105"
+                  className="flex items-center  justify-center w-12 h-12  rounded-full bg-[rgb(38,181,198,0.32)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300 ease-in-out transform hover:scale-105"
                 >
-                  <img className="h-10 w-10 rounded-full" src={user.photoURL} alt="User avatar" />
+                  <img className="h-10 w-10 rounded-full " src={authCtx.user.img} alt="User avatar" />
                 </button>
                 {dropdownOpen && (
                   <div
@@ -174,7 +174,7 @@ const Navbar = () => {
                     handleSignOut();
                     toggleMobileMenu();
                   }}
-                  className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
+                  className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-gray-700"
                 >
                   Sign out <MdOutlineLogout className="inline ml-2" size={20} />
                 </button>
@@ -202,7 +202,7 @@ const NavItem = ({ to, label, isActive }) => (
 const MobileNavItem = ({ to, label, onClick }) => (
   <Link
     to={to}
-    className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
+    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-gray-700"
     onClick={onClick}
   >
     {label}

@@ -66,7 +66,7 @@ const Home = () => {
         <div className=''>
         <ProductContainer cardData={filteredProducts} page='home'/>
         <ContactUs/>
-        <div className='max-w-screen overflow-hidden mt-[-12rem] mb-[-7rem]'>
+        <div className='max-w-screen overflow-hidden mt-[-5rem] mb-[-7rem]'>
         <ContainerScroll/>
         </div>
    

@@ -4,7 +4,7 @@ const Select = ({ label, id, name, value, onChange, options, error, className = 
   <div className="mb-2">
     <label className="block text-sm font-bold mb-1" htmlFor={id}>{label}</label>
     <select
-      className={`w-full px-2 py-1 text-sm border rounded ${error ? 'border-red-500' : ''} ${className}`}
+      className={`w-full px-2 py-1 outline-none text-sm border rounded ${error ? 'border-red-500' : ''} ${className}`}
       id={id}
       name={name}
       value={value}

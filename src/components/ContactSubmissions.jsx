@@ -55,7 +55,7 @@ const ContactSubmissions = () => {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="bg-white shadow-xl sm:rounded-lg p-6">
+    <div className="bg-white w-auto overflow-scroll scrollbar-none shadow-xl sm:rounded-lg p-6">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">Recent Contact Form Submissions</h2>
       <div className="">
         <table className="divide-y divide-gray-200">

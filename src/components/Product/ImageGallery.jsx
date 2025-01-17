@@ -18,7 +18,7 @@ const ImageGallery = ({ images }) => {
 
   return (
     <div>
-      <div className="aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">
+      <div className="max-h-[23rem]   aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">
         <img
           src={selectedImage.url}
           alt={`Product`}

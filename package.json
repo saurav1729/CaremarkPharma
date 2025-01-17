@@ -14,7 +14,7 @@
     "@emotion/styled": "^11.14.0",
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
-    "@mui/material": "^5.16.4",
+    "@mui/material": "^6.4.0",
     "@reduxjs/toolkit": "^2.2.6",
     "aos": "^2.3.4",
     "axios": "^1.7.9",

@@ -11,9 +11,9 @@ import {
   useTheme,
   useMediaQuery,
 } from '@mui/material';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import GitHubIcon from '@mui/icons-material/GitHub';
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import GitHubIcon from '@mui/icons-material/GitHub';
 
 const AboutDeveloper = () => {
   const theme = useTheme();
@@ -47,7 +47,7 @@ const AboutDeveloper = () => {
                 <Typography variant="body2" color="text.secondary" align="center" sx={{ mb: 1 }}>
                   Web Developer & ML Engineer
                 </Typography>
-                <Box>
+                {/* <Box>
                   <IconButton
                     href="https://in.linkedin.com/in/saurav-jha-574171279"
                     target="_blank"
@@ -72,7 +72,7 @@ const AboutDeveloper = () => {
                   >
                     <GitHubIcon fontSize="small" />
                   </IconButton>
-                </Box>
+                </Box> */}
               </Box>
             </Grid>
             <Grid item xs={12} sm={8}>

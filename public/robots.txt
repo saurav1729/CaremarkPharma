@@ -1,3 +1,18 @@
+# Allow all user agents to crawl everything
 User-agent: *
-Allow: /
+Disallow:
+
+# Block certain pages or directories
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+
+# Allow Googlebot (Google's web crawler) to crawl everything
+User-agent: Googlebot
+Disallow:
+
+# Prevent crawling of a specific file
+Disallow: /private-page.html
+
+# Sitemap location
 Sitemap: https://www.caremarkpharmaceutical.com/sitemap.xml

@@ -22,8 +22,9 @@ const ProductDetails = ({ product }) => {
       {formatDescription(product.description.long)}
     </div>),
     Usage: (
-      <div>
+      <div className='flex flex-col gap-2'>
         <p><strong>Dosage:</strong> {formatDescription(product.usage.dosage)}</p>
+        <p><strong>used in:</strong> {formatDescription(product.description.short)}</p>
         <p><strong>Instructions:</strong> {formatDescription(product.usage.instructions)}</p>
         <p><strong>Side Effects:</strong> {formatDescription(product.usage.side_effects)}</p>
         <p><strong>Precautions:</strong> { formatDescription(product.usage.precautions)}</p>

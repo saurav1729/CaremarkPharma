@@ -10,15 +10,15 @@ import Breadcrumb from '../components/Product/BreadCrumb';
 import axios from 'axios';
 import { api } from '../service';
 import { Helmet } from 'react-helmet-async'; 
-const API_URL = "http://localhost:5000/api/product"
+// const API_URL = "http://localhost:5000/api/product"
 
 const Product = () => {
-  const [product, setProduct] = useState(null);
-  const [error,setError]=useState(null);
   
-  
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const { productId } = useParams();
+  const initialFrontendProduct = ProductData.products.find(p => p._id === productId);
+  const [product, setProduct] = useState(initialFrontendProduct);
+  const [error,setError]=useState(null);
   
 
   useEffect(() => {
@@ -30,8 +30,9 @@ const Product = () => {
           setProduct(response.data.data);
         } else {
           // If backend request fails, fall back to frontend data
-          const frontendProduct = ProductData.products.find(p => p.id === productId);
+          const frontendProduct = ProductData.products.find(p => p._id === productId);
           if (frontendProduct) {
+            console.log(frontendProduct);
             setProduct(frontendProduct);
           } else {
             throw new Error('Product not found');

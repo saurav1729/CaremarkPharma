@@ -1,840 +1,713 @@
 {
     "products": [
-      {
-        "id": "1",
-        "name": "BrocareLs+",
-        "manufacturer": "Caremark Pharmaceutical",
-        "composition": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup",
-        "price": {
-          "original": 111.00,
-          "discounted": 111.00,
-          "discount_percentage": 0,
-          "includes_taxes": true
-        },
-        "images": [
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare_LS_4_fomnyr.jpg",
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243242/Brocare_LS_3_him3cb.jpg",
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare1_pmikhh.jpg",
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243116/ivuk12jyixrbxrha8gg8.jpg"
-        ],
-        "package_size": "10 Capsules",
-        "availability": "in stock",
-        "stock_quantity": 100,
-        "details": {
-          "authenticity": "100% Authentic Products",
-          "shipping": "Free Shipping*",
-          "return_policy": "30-day return policy"
-        },
-        "description": {
-          "short": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs.",
-          "long": "BrocareLs+ is a powerful combination medication designed to effectively treat various types of coughs. It contains three active ingredients: Ambroxol hydrochloride, which helps to thin and loosen mucus, making it easier to cough up; Levosalbutamol, a bronchodilator that helps to open up the airways; and Guaifenesin, an expectorant that helps to loosen phlegm."
-        },
-        "usage": {
-          "dosage": "As directed by the physician.",
-          "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
-          "side_effects": "Common side effects may include nausea, vomiting, stomach upset, dizziness, or headache.",
-          "precautions": "Before using this medication, tell your doctor or pharmacist your medical history, especially of: heart problems, high blood pressure, diabetes, overactive thyroid."
-        },
-        "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
-        "manufacturer_details": {
-          "name": "Saphnix Life Sciences",
-          "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025",
-          "license": "Mfg. Lic. No.: MNB/08/680 & MB/08/681"
-        },
-        "batch_info": {
-          "number": "HC4770O",
-          "manufacturing_date": "08/2023",
-          "expiry_date": "07/2025"
-        },
-        "prescription_required": true,
-        "marketing": {
-          "company": "Caremark Pharmaceutical",
-          "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-        },
-        "reviews": [
-          {
-            "user": "Satyam Jha",
-            "rating": 4.5,
-            "comment": "Works well for my cough, but causes slight drowsiness.",
-            "date": "2024-12-15"
-          },
-          {
-            "user": "Nityam Jha",
-            "rating": 5,
-            "comment": "Excellent product! Cleared my congestion quickly.",
-            "date": "2024-01-03"
-          }
-        ],
-        "related_products": ["2", "3", "4"]
-      },
-      {
-        "id": "2",
-        "name": "SmraFlam",
-        "manufacturer": "Algen Healthcare Limited",
-        "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
-        "price": {
-          "original": 65.00,
-          "discounted": 65.00,
-          "discount_percentage": 0,
-          "includes_taxes": true
-        },
-        "images": [
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare_LS_4_fomnyr.jpg",
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243242/Brocare_LS_3_him3cb.jpg",
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare1_pmikhh.jpg",
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243116/ivuk12jyixrbxrha8gg8.jpg"
-        ],
-        "package_size": "10 Capsules",
-        "availability": "in stock",
-        "details": {
-          "authenticity": "100% Authentic Products",
-          "shipping": "Free Shipping*",
-          "return_policy": "30-day return policy"
-        },
-        "description": {
-          "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
-          "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
-        },
-        "usage": {
-          "dosage": "As directed by the physician.",
-          "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
-          "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
-          "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
-        },
-        "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
-        "manufacturer_details": {
-          "name": "Algen Healthcare Limited",
-          "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
-          "license": "Mfg. Lic. No.: GMP Certified"
-        },
-        "batch_info": {
-          "number": "AHL-669",
-          "manufacturing_date": "03/2023",
-          "expiry_date": "02/2025"
-        },
-        "prescription_required": true,
-        "marketing": {
-          "company": "Caremark Pharmaceutical Pvt. Ltd.",
-          "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-        },
-        "reviews": [
-          {
-            "user": "Rahul Sharma",
-            "rating": 4.5,
-            "comment": "This medicine worked very well for my pain relief. No major side effects. Highly recommended!",
-            "date": "2024-01-03"
-          },
-          {
-            "user": "Priya Verma",
-            "rating": 4,
-            "comment": "दवा प्रभावी है, लेकिन इसे लेने के बाद थोड़ी नींद आ जाती है।",
-            "date": "2024-01-02"
-          },
-          {
-            "user": "Anil Kumar",
-            "rating": 5,
-            "comment": "Great product! Helped me recover quickly from muscle pain.",
-            "date": "2023-12-30"
-          },
-          {
-            "user": "Neha Singh",
-            "rating": 4.5,
-            "comment": "दर्द से राहत मिली और कोई गंभीर साइड इफेक्ट्स नहीं हुए।",
-            "date": "2023-12-28"
-          }
-        ],
-        "related_products": ["3", "4", "5"]
-      },
-      
-      { "id":"3",
-      "name": "BrocareLs+",
-      "manufacturer": "Caremark Pharmaceutical",
-      "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
-      "price": {
-        "original": 175.00,
-        "discounted": 175.00,
-        "discount_percentage": 0,
-        "includes_taxes": true
-      },
-      "images": [
-        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare_LS_4_fomnyr.jpg",
-        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243242/Brocare_LS_3_him3cb.jpg",
-        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare1_pmikhh.jpg",
-        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243116/ivuk12jyixrbxrha8gg8.jpg"
-      ],
-      "package_size": "10 Capsules",
-      "availability": "in stock",
-      "details": {
-        "authenticity": "100% Authentic Products",
-        "shipping": "Free Shipping*",
-        "return_policy": "Products Return Policy"
-      },
-      "description": {
-        "short": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs.",
-        "long": "BrocareLs+ is a powerful combination medication designed to effectively treat various types of coughs. It contains three active ingredients: Ambroxol hydrochloride, which helps to thin and loosen mucus, making it easier to cough up; Levosalbutamol, a bronchodilator that helps to open up the airways; and Guaifenesin, an expectorant that helps to loosen phlegm."
-      },
-      "usage": {
-        "dosage": "As directed by the physician.",
-        "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
-        "side_effects": "Common side effects may include nausea, vomiting, stomach upset, dizziness, or headache.",
-        "precautions": "Before using this medication, tell your doctor or pharmacist your medical history, especially of: heart problems, high blood pressure, diabetes, overactive thyroid."
-      },
-      "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
-      "manufacturer_details": {
-        "name": "Saphnix Life Sciences",
-        "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025",
-        "license": "Mfg. Lic. No.: MNB/08/680 & MB/08/681"
-      },
-      "batch_info": {
-        "number": "HC4770O",
-        "manufacturing_date": "08/2023",
-        "expiry_date": "07/2025"
-      },
-      "prescription_required": true,
-      "marketing": {
-        "company": "Caremark Pharmaceutical",
-        "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-      },
-      "reviews": [
         {
-          "user": "John D.",
-          "rating": 4.5,
-          "comment": "Works well for my cough, but causes slight drowsiness.",
-          "date": "2023-12-15"
+            "price": {
+                "original": 50.5,
+                "discounted": 50.5,
+                "discount_percentage": 0,
+                "includes_taxes": true
+            },
+            "description": {
+                "short": "Useful in Gastroesophageal reflux disease (GERD), peptic ulcers, dyspepsia, nausea, and vomiting.",
+                "long": "This tablet combines Rabeprazole, a proton pump inhibitor, and Domperidone, a prokinetic agent, to address digestive disorders comprehensively. Rabeprazole reduces excess stomach acid, preventing heartburn and allowing ulcers to heal, while Domperidone enhances gastric motility, preventing nausea and ensuring smooth digestion. The enteric-coated formulation ensures effective absorption of Rabeprazole in the intestines, maximizing its efficacy. This tablet provides long-lasting relief from acidity, bloating, and other digestive issues, making it a trusted solution for improving gastrointestinal health and overall comfort in patients with chronic or acute symptoms."
+            },
+            "usage": {
+                "dosage": "As directed by the physician",
+                "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+                "side_effects": "Headache, Diarrhea or Constipation, Dry Mouth, Abdominal Pain or Cramps, Dizziness or Drowsiness.",
+                "precautions": "Always use this medication as prescribed by a licensed healthcare professional to ensure its safe and effective application."
+            },
+            "manufacturer_details": {
+                "name": "Saphnix Life Sciences",
+                "address": "Village-Barotiwala, Paonta Sahib,\nDistt. Sirmour, Himachal Pradesh-173025",
+                "license": "MNB/08/680 & MB/08/681"
+            },
+            "batch_info": {
+                "number": " ",
+                "manufacturing_date": "2024-10-24T00:00:00.000Z",
+                "expiry_date": "2025-12-31T00:00:00.000Z"
+            },
+            "details": {
+                "authenticity": "100% authentic product",
+                "shipping": "Free shipping",
+                "return_policy": "7 days return policy"
+            },
+            "marketing": {
+                "company": "Caremark Pharmaceutical",
+                "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+            },
+            "_id": "678d25d99b447b5281046d39",
+            "name": "RABMARK-D",
+            "category": "tablets",
+            "composition": "Rabeprazole (20 mg) + Domperidone (30 mg)",
+            "package_size": "10 Capsules",
+            "package_size_ml": "100 ml",
+            "stock_quantity": 0,
+            "prescription_required": true,
+            "availability": "in stock",
+            "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737303507/ProductImages/huw42ctgmaopuhjgtb9n.jpg",
+                    "_id": "678dfb826ff2357901ea9c71"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737303508/ProductImages/juv3vazjlqh6jsmrrovo.jpg",
+                    "_id": "678dfb826ff2357901ea9c72"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737303510/ProductImages/cti6svekpou7fqbrtt7b.jpg",
+                    "_id": "678dfb826ff2357901ea9c73"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737303510/ProductImages/ceyhsodd8dysd6phxmnj.jpg",
+                    "_id": "678dfb826ff2357901ea9c74"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737303511/ProductImages/ogkt1ytyywdebmdwwi0r.jpg",
+                    "_id": "678dfb826ff2357901ea9c75"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737303512/ProductImages/ce24bmzficvvv4hkgfin.jpg",
+                    "_id": "678dfb826ff2357901ea9c76"
+                }
+            ],
+            "__v": 0
         },
         {
-          "user": "Sarah M.",
-          "rating": 5,
-          "comment": "Excellent product! Cleared my congestion quickly.",
-          "date": "2024-01-03"
+            "price": {
+                "original": 99.55,
+                "discounted": 99.55,
+                "discount_percentage": 0,
+                "includes_taxes": true
+            },
+            "description": {
+                "short": "Useful in pain relief, inflammation, fever, osteoarthritis, rheumatoid arthritis, and post-surgical swelling.",
+                "long": "This tablet combines Aceclofenac, Paracetamol, and Serratiopeptidase for effective pain management and anti-inflammatory action. Aceclofenac, a non-steroidal anti-inflammatory drug (NSAID), reduces inflammation and provides relief from joint and muscle pain. Paracetamol acts as a mild pain reliever and fever reducer, enhancing the overall effect. Serratiopeptidase, an enzyme, reduces swelling and helps in faster recovery of damaged tissues. This combination is widely used to manage conditions like arthritis, musculoskeletal pain, and post-operative swelling, offering quick and long-lasting relief. The tablet is well-suited for patients with moderate to severe pain and inflammation."
+            },
+            "usage": {
+                "dosage": "As directed by the physician",
+                "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+                "side_effects": "Nausea, stomach discomfort, diarrhea, dizziness, and heartburn. In some cases, patients might experience drowsiness or skin rash. These effects are usually temporary and subside as the body adjusts to the medication. If side effects persist or worsen, consulting a doctor is recommended.",
+                "precautions": "Always take this medication as prescribed by a healthcare professional for safe and effective results."
+            },
+            "manufacturer_details": {
+                "name": "Algen Healthcare Ltd.",
+                "address": "134/2, Vill. Khara Khari, Sadhaura Road, \nKala Amb, Distt. Sirmour (H.P.) 173030",
+                "license": "S-MNB/08/25 & S-MB/08/26"
+            },
+            "batch_info": {
+                "number": " ",
+                "manufacturing_date": "2024-09-18T00:00:00.000Z",
+                "expiry_date": "2025-12-01T00:00:00.000Z"
+            },
+            "details": {
+                "authenticity": "100% authentic product",
+                "shipping": "Free shipping",
+                "return_policy": "7 days return policy"
+            },
+            "marketing": {
+                "company": "Caremark Pharmaceutical",
+                "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+            },
+            "_id": "678d29db9b447b5281046d57",
+            "name": "SMRAFLAM",
+            "category": "tablets",
+            "composition": "Aceclofenac (100 mg) + Paracetamol (325 mg) + Serratipeptidase (15 mg)",
+            "package_size": "10 Capsules",
+            "package_size_ml": "100 ml",
+            "stock_quantity": 0,
+            "prescription_required": true,
+            "availability": "in stock",
+            "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737304536/ProductImages/l6bftj9bpmb3mskyo3ol.jpg",
+                    "_id": "678dfd3c6ff2357901ea9dde"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737304537/ProductImages/zbk7ghph6kf1d4hljbhi.jpg",
+                    "_id": "678dfd3c6ff2357901ea9ddf"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737304538/ProductImages/aa3skoc7r3nwv40n80ro.jpg",
+                    "_id": "678dfd3c6ff2357901ea9de0"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737304538/ProductImages/qzb1jk3csfavxe1vyhcs.jpg",
+                    "_id": "678dfd3c6ff2357901ea9de1"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737304539/ProductImages/mt054yz3zms7zxl6h8uf.jpg",
+                    "_id": "678dfd3c6ff2357901ea9de2"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "price": {
+                "original": 105,
+                "discounted": 105,
+                "discount_percentage": 0,
+                "includes_taxes": true
+            },
+            "description": {
+                "short": "Useful in gastroesophageal reflux disease (GERD), acid reflux, dyspepsia, peptic ulcers, nausea, and vomiting.",
+                "long": "This tablet combines Pantoprazole, a proton pump inhibitor, and Domperidone in a sustained-release (SR) form for effective management of digestive disorders. Pantoprazole works by reducing the production of stomach acid, providing relief from heartburn, acid reflux, and ulcers. Domperidone enhances gastrointestinal motility, promoting smooth digestion and preventing nausea or vomiting caused by delayed stomach emptying. The sustained-release formulation ensures prolonged action, offering extended relief throughout the day. This combination is widely used to treat chronic digestive conditions, improving patient comfort and preventing complications related to excess stomach acid."
+            },
+            "usage": {
+                "dosage": "As directed by the physician",
+                "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+                "side_effects": "Nausea, headache, dry mouth, abdominal discomfort, diarrhea, or constipation. Some patients might experience dizziness or flatulence. These effects are typically mild and temporary, resolving as the body adjusts to the medication. If they persist or worsen, consult your doctor.",
+                "precautions": "Always take this medication as prescribed by a healthcare professional for safe and effective results."
+            },
+            "manufacturer_details": {
+                "name": "Saphnix Life Sciences",
+                "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173025",
+                "license": "MNB/08/680 & MB/08/681"
+            },
+            "batch_info": {
+                "number": " ",
+                "manufacturing_date": "2024-02-14T00:00:00.000Z",
+                "expiry_date": "2025-08-29T00:00:00.000Z"
+            },
+            "details": {
+                "authenticity": "100% authentic product",
+                "shipping": "Free shipping",
+                "return_policy": "7 days return policy"
+            },
+            "marketing": {
+                "company": "Caremark Pharmaceutical",
+                "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+            },
+            "_id": "678d2c869b447b5281046dc7",
+            "name": "NANOPAN DSR",
+            "category": "tablets",
+            "composition": "Pantoprazole (40 mg) + Domperidone SR (30 mg)",
+            "package_size": "10 Capsules",
+            "package_size_ml": "100 ml",
+            "stock_quantity": 0,
+            "prescription_required": true,
+            "availability": "in stock",
+            "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737305219/ProductImages/wikouh706njsi15z8boa.jpg",
+                    "_id": "678d2c869b447b5281046dc8"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737305220/ProductImages/h1b1veisb4rbfvs0rqif.jpg",
+                    "_id": "678d2c869b447b5281046dc9"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737305220/ProductImages/x5e3cmzwxviqmpn767dw.jpg",
+                    "_id": "678d2c869b447b5281046dca"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737305221/ProductImages/tv8wv5q7uogimq5egoyf.jpg",
+                    "_id": "678d2c869b447b5281046dcb"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737305222/ProductImages/xq36etjv1gzeipyh98om.jpg",
+                    "_id": "678d2c869b447b5281046dcc"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "price": {
+                "original": 198,
+                "discounted": 198,
+                "discount_percentage": 0,
+                "includes_taxes": true
+            },
+            "description": {
+                "short": "Useful in hormone balance, reproductive health, nutritional supplement, general health improvement, immune support, skin health, antioxidant support, energy boost, metabolism regulation, and overall well-being.",
+                "long": "This combination of vitamins, minerals, amino acids, and plant extracts is designed to support overall health and well-being. L-Arginine and N-Acetylcysteine are known for their antioxidant properties and support blood circulation, while Chasteberry Extract and Tribulus Terrestris promote hormonal balance and reproductive health. Inositol, Green Tea Extract, and Evening Primrose Extract provide antioxidant benefits and help improve metabolism, skin health, and energy levels. Essential vitamins like Vitamin D3, Vitamin E, and Vitamin C support immune function and skin health. Iron, Zinc, Magnesium, and Copper are important for boosting energy, metabolism, and maintaining healthy bones and tissues. This combination is ideal for those looking for a holistic health supplement to improve vitality, manage stress, and boost immunity."
+            },
+            "usage": {
+                "dosage": "As directed by the physician",
+                "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+                "side_effects": "Stomach upset, headache, dizziness, or a mild allergic reaction such as skin rashes. Some individuals may experience gastrointestinal discomfort like bloating or gas. These side effects are generally rare and usually subside as the body adjusts to the supplement. If they persist or worsen, it is advised to consult a healthcare professional.",
+                "precautions": "Always use this medication as prescribed by a licensed healthcare professional to ensure its safe and effective application."
+            },
+            "manufacturer_details": {
+                "name": "Algen Healthcare Ltd.",
+                "address": "134/2, Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+                "license": "FSSAI No. 10020062000521"
+            },
+            "batch_info": {
+                "number": " ",
+                "manufacturing_date": "2024-03-21T00:00:00.000Z",
+                "expiry_date": "2025-08-07T00:00:00.000Z"
+            },
+            "details": {
+                "authenticity": "100% authentic product",
+                "shipping": "Free shipping",
+                "return_policy": "7 days return policy"
+            },
+            "marketing": {
+                "company": "Caremark Pharmaceutical",
+                "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+            },
+            "_id": "678d304ffad642f5b3201ead",
+            "name": "SMRACORDIAL",
+            "category": "tablets",
+            "composition": "L-ARGININE-50mg + N-ACETYLCYSTEINE-50mg + CHASTEBERRYEXTRACT-25mg + INOSITOL-100mg + GREEN TEA EXTRACT-15mg + EVENING PRIMROSE EXTRACT-25mg + TRIBULUS TERRESTRIS-25mg + LYCOPENE10%-5mg + VIT. D3-375IU + VIT. E-3.5mg + VIT. C-20mg + VIT. A-250mcg + FOLIC ACID 45mcg + CYANCOBALAMIN-0.35mcg + VIT. B1-0.75mg + VIT. B6-2mg + VIT. B2-0.86mg + NIACINAMIDE-12.5mg + IODINE- 50mcg + ZINC-5mg + MAGNESIUM 52mg + CHROMIUM-50mcg + SODIUM SELENITE- 40mcg + IRON-25mg + MANGANESE-1.5mg + COPPER-1mg",
+            "package_size": "10 Capsules",
+            "package_size_ml": "100 ml",
+            "stock_quantity": 0,
+            "prescription_required": true,
+            "availability": "in stock",
+            "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737306188/ProductImages/dpdohunkldaghtsgb5ml.jpg",
+                    "_id": "678d304ffad642f5b3201eae"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737306189/ProductImages/hfngcdve8ftptpqphnvo.jpg",
+                    "_id": "678d304ffad642f5b3201eaf"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737306189/ProductImages/dz9ny1xc0la7vbkmveit.jpg",
+                    "_id": "678d304ffad642f5b3201eb0"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737306190/ProductImages/t2bumgww9emfvizprmw6.jpg",
+                    "_id": "678d304ffad642f5b3201eb1"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "price": {
+                "original": 175,
+                "discounted": 175,
+                "discount_percentage": 0,
+                "includes_taxes": true
+            },
+            "description": {
+                "short": "Useful in gastroesophageal reflux disease (GERD), peptic ulcers, dyspepsia, nausea, vomiting, and functional dyspepsia.",
+                "long": "This tablet combines Rabeprazole Sodium, a proton pump inhibitor (PPI), and Levosulpiride, a prokinetic agent. Rabeprazole works by reducing stomach acid production, providing relief from heartburn, acid reflux, and helping in the healing of peptic ulcers. Levosulpiride improves gastrointestinal motility and reduces nausea or vomiting caused by delayed gastric emptying or digestive issues. The extended-release (SR) formulation of Levosulpiride ensures sustained therapeutic effects. This combination is often prescribed for individuals suffering from GERD, chronic indigestion, and other gastrointestinal disorders, improving comfort and digestion by addressing both acid production and motility issues."
+            },
+            "usage": {
+                "dosage": "As directed by the physician",
+                "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+                "side_effects": "Nausea, abdominal pain, dizziness, or dry mouth. In rare cases, diarrhea, constipation, or fatigue may occur. These side effects are generally mild and temporary, subsiding as the body adjusts to the medication. If side effects persist or become bothersome, it is advisable to consult a healthcare provider.",
+                "precautions": "Always use this medication as prescribed by a licensed healthcare professional to ensure its safe and effective application."
+            },
+            "manufacturer_details": {
+                "name": "Saphnix Life Sciences",
+                "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173025",
+                "license": "MNB/08/680 & MB/08/681"
+            },
+            "batch_info": {
+                "number": " ",
+                "manufacturing_date": "2024-01-26T00:00:00.000Z",
+                "expiry_date": "2025-07-24T00:00:00.000Z"
+            },
+            "details": {
+                "authenticity": "100% authentic product",
+                "shipping": "Free shipping",
+                "return_policy": "7 days return policy"
+            },
+            "marketing": {
+                "company": "Caremark Pharmaceutical",
+                "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+            },
+            "_id": "678d323afad642f5b3201ec9",
+            "name": "SMRA-L",
+            "category": "tablets",
+            "composition": "Rabeprazole Sodium (EC) (20 mg) + Levosulpiride (SR) (75 mg)",
+            "package_size": "10 Capsules",
+            "package_size_ml": "100 ml",
+            "stock_quantity": 0,
+            "prescription_required": true,
+            "availability": "in stock",
+            "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737306680/ProductImages/sshb4rpt0995icvduwjl.jpg",
+                    "_id": "678d323afad642f5b3201eca"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737306680/ProductImages/h5wtlj9pulan6x42zvpv.jpg",
+                    "_id": "678d323afad642f5b3201ecb"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737306681/ProductImages/vgx5qg5kgggmxfvqkvn5.jpg",
+                    "_id": "678d323afad642f5b3201ecc"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737306682/ProductImages/nb2ekl2l7wbeq6qwrusu.jpg",
+                    "_id": "678d323afad642f5b3201ecd"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "price": {
+                "original": 190.55,
+                "discounted": 190.55,
+                "discount_percentage": 0,
+                "includes_taxes": true
+            },
+            "description": {
+                "short": "Useful in bone health, calcium and vitamin D3 deficiency, osteoporosis, joint health, immune support, and overall vitality.",
+                "long": "This combination of Calcitriol, Calcium Citrate Malate, Vitamin K2-7, Methylcobalamin, Zinc, Magnesium, and L-Methyl Folate is designed to support bone health, improve calcium absorption, and enhance overall well-being. Calcitriol helps regulate calcium and phosphorus levels, ensuring proper bone mineralization. Calcium Citrate Malate provides easily absorbed calcium, essential for bone strength. Vitamin K2-7 promotes calcium deposition in bones while preventing arterial calcification. Methylcobalamin supports nerve health and energy production, while Magnesium and Zinc are vital for maintaining strong bones and supporting metabolic functions. L-Methyl Folate, the bioactive form of folic acid, aids in cell repair and red blood cell production. This combination is ideal for individuals with weakened bones, calcium deficiency, or those looking to enhance their overall bone health."
+            },
+            "usage": {
+                "dosage": "As directed by the physician",
+                "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+                "side_effects": "Stomach upset, bloating, or diarrhea, especially in individuals with sensitive stomachs. Some people may experience headache, dizziness, or mild allergic reactions such as skin rashes. These side effects are usually temporary and resolve as the body adjusts. If side effects persist or worsen, it is advised to consult a healthcare provider.",
+                "precautions": "Follow your healthcare provider's guidance to ensure the safe use of this supplement."
+            },
+            "manufacturer_details": {
+                "name": "Caspian Pharmaceuticals",
+                "address": "Suketi Road, Mauza Ogli, Kala Amb, Himachal Pradesh-173030",
+                "license": "N-MNB/2021/228 & N-MB/2021/229"
+            },
+            "batch_info": {
+                "number": " ",
+                "manufacturing_date": "2024-03-08T00:00:00.000Z",
+                "expiry_date": "2025-09-30T00:00:00.000Z"
+            },
+            "details": {
+                "authenticity": "100% authentic product",
+                "shipping": "Free shipping",
+                "return_policy": "7 days return policy"
+            },
+            "marketing": {
+                "company": "Caremark Pharmaceutical",
+                "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+            },
+            "_id": "678d3553fad642f5b3201ee9",
+            "name": "SMRACAL-PLUS",
+            "category": "tablets",
+            "composition": "Calcitriol + Calcium Citrate Malate + Vitamin K2-7 + Methylcobalamin + Zinc + Magnesium + L-Methyl Folate Soft Gelatin Capsules",
+            "package_size": "10 Capsules",
+            "package_size_ml": "100 ml",
+            "stock_quantity": 0,
+            "prescription_required": true,
+            "availability": "in stock",
+            "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737307472/ProductImages/mau38ulwpfztdjffctdt.jpg",
+                    "_id": "678d3553fad642f5b3201eea"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737307473/ProductImages/wiuj6m3kaoatzgh26sjf.jpg",
+                    "_id": "678d3553fad642f5b3201eeb"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737307473/ProductImages/uvaqm2bkx4qvgcfmczbe.jpg",
+                    "_id": "678d3553fad642f5b3201eec"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737307474/ProductImages/y9invqhpnv52jqt0z5mx.jpg",
+                    "_id": "678d3553fad642f5b3201eed"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "price": {
+                "original": 65,
+                "discounted": 65,
+                "discount_percentage": 0,
+                "includes_taxes": true
+            },
+            "description": {
+                "short": "Useful in pain relief, fever, inflammation, headache, toothache, musculoskeletal pain, and post-vaccination fever in children.",
+                "long": "This suspension combines Aceclofenac and Paracetamol, offering dual action for pain and fever relief, especially in pediatric patients. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and provides relief from pain, while Paracetamol works as an antipyretic and mild analgesic to lower fever and ease discomfort. The suspension form ensures easy administration and dosage adjustment for children. It is widely prescribed for conditions such as teething pain, mild to moderate musculoskeletal pain, and post-vaccination fever, providing quick and effective relief while being gentle on young patients."
+            },
+            "usage": {
+                "dosage": "As directed by the physician",
+                "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+                "side_effects": "Nausea, vomiting, stomach discomfort, or diarrhea. Some children may experience drowsiness or mild skin rashes. These side effects are usually temporary and subside as the body adjusts to the medication. If side effects persist or worsen, consult a pediatrician promptly.",
+                "precautions": "Always consult a healthcare professional before administering medication to children for safe and effective results."
+            },
+            "manufacturer_details": {
+                "name": "Algen Healthcare Ltd.",
+                "address": "134/2, Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+                "license": "S-MNB/08/25 & S-MB/08/26"
+            },
+            "batch_info": {
+                "number": " ",
+                "manufacturing_date": "2023-11-30T00:00:00.000Z",
+                "expiry_date": "2025-11-28T00:00:00.000Z"
+            },
+            "details": {
+                "authenticity": "100% authentic product",
+                "shipping": "Free shipping",
+                "return_policy": "7 days return policy"
+            },
+            "marketing": {
+                "company": "Caremark Pharmaceutical",
+                "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+            },
+            "_id": "678d388efad642f5b3201f0d",
+            "name": "SMRAFLAM (Suspension)",
+            "category": "syrup",
+            "composition": "Aceclofenac (50 mg) + Paracetamol (125 mg)",
+            "package_size": "10 Capsules",
+            "package_size_ml": "60 ml",
+            "stock_quantity": 0,
+            "prescription_required": true,
+            "availability": "in stock",
+            "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737308298/ProductImages/vx4jxynzcxfawnczxhkc.jpg",
+                    "_id": "678d388efad642f5b3201f0e"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737308299/ProductImages/vnoklr9muzbdg0e5viak.jpg",
+                    "_id": "678d388efad642f5b3201f0f"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737308299/ProductImages/ljznn5ynktmr3aidnhsl.jpg",
+                    "_id": "678d388efad642f5b3201f10"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737308300/ProductImages/pnyotsaxrgbstoovw4yt.jpg",
+                    "_id": "678d388efad642f5b3201f11"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737308301/ProductImages/f4anxuh0m4x8ppm7dli7.jpg",
+                    "_id": "678d388efad642f5b3201f12"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737308302/ProductImages/unkwiak63zvv4ulizprc.jpg",
+                    "_id": "678d388efad642f5b3201f13"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "price": {
+                "original": 111,
+                "discounted": 111,
+                "discount_percentage": 0,
+                "includes_taxes": true
+            },
+            "description": {
+                "short": "Useful in cough with mucus, bronchitis, asthma, chronic obstructive pulmonary disease (COPD), and respiratory tract infections.",
+                "long": "This syrup combines Levosalbutamol, Ambroxol, and Guaiphenesin to provide effective relief from productive cough and respiratory congestion. Levosalbutamol is a bronchodilator that relaxes airway muscles, making breathing easier in conditions like asthma and bronchitis. Ambroxol acts as a mucolytic, breaking down and thinning mucus, facilitating its easy removal. Guaiphenesin is an expectorant that loosens and clears phlegm from the airways, promoting productive coughing. This combination is ideal for individuals suffering from respiratory conditions with thick mucus, ensuring better airway clearance and easier breathing. The syrup is especially beneficial in managing conditions associated with mucus build-up in the lungs and throat."
+            },
+            "usage": {
+                "dosage": "As directed by the physician",
+                "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+                "side_effects": "Dizziness, headache, dry mouth, or a mild tremor. Some individuals might experience stomach upset, diarrhea, or a metallic taste in the mouth. These effects are generally mild and resolve on their own. If they persist or worsen, consult a healthcare provider.",
+                "precautions": "Always use this medication under medical guidance for safe and effective treatment of respiratory conditions."
+            },
+            "manufacturer_details": {
+                "name": "Somadil Biotech",
+                "address": "Mohal Ogli, Sadhaura Road, Kala-Amb, District Sirmaur-173030 (H.P)",
+                "license": "N-MNB/2020/219 & N-MB/2020/220"
+            },
+            "batch_info": {
+                "number": " ",
+                "manufacturing_date": "2024-01-31T00:00:00.000Z",
+                "expiry_date": "2025-12-31T00:00:00.000Z"
+            },
+            "details": {
+                "authenticity": "100% authentic product",
+                "shipping": "Free shipping",
+                "return_policy": "7 days return policy"
+            },
+            "marketing": {
+                "company": "Caremark Pharmaceutical",
+                "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+            },
+            "_id": "678d3b8cfad642f5b3201f86",
+            "name": "BROCARE LS+",
+            "category": "syrup",
+            "composition": "Levosalbutamol (1 mg) + Ambroxol (30 mg) + Guaiphenesin (50 mg)",
+            "package_size": "10 Capsules",
+            "package_size_ml": "100 ml",
+            "stock_quantity": 0,
+            "prescription_required": true,
+            "availability": "in stock",
+            "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737309064/ProductImages/frvryjb6sp9zdswt0bvw.jpg",
+                    "_id": "678d3b8cfad642f5b3201f87"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737309065/ProductImages/grrfbafi9dkg5bii5klm.jpg",
+                    "_id": "678d3b8cfad642f5b3201f88"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737309066/ProductImages/qb9kbk0vyryc4cems54r.jpg",
+                    "_id": "678d3b8cfad642f5b3201f89"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737309066/ProductImages/t7jtafdu1nwj4yze1nkk.jpg",
+                    "_id": "678d3b8cfad642f5b3201f8a"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737309067/ProductImages/jerww5s1sw9lqwr8re57.jpg",
+                    "_id": "678d3b8cfad642f5b3201f8b"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "price": {
+                "original": 125,
+                "discounted": 125,
+                "discount_percentage": 0,
+                "includes_taxes": true
+            },
+            "description": {
+                "short": "Useful in digestive disorders, indigestion, loss of appetite, bloating, flatulence, vitamin deficiencies, and general weakness.",
+                "long": "This syrup combines Fungal Diastase and Pepsin with essential B vitamins to improve digestion and overall nutritional status. Fungal Diastase is an enzyme that breaks down carbohydrates, aiding in the digestion of complex food. Pepsin helps in protein breakdown, supporting efficient nutrient absorption. The inclusion of Vitamin B1, B2, B6, B12, Niacinamide, and D-Panthenol enhances metabolic activities, supports nerve function, and boosts energy production. This syrup is beneficial for managing conditions like indigestion, appetite loss, and vitamin B deficiencies, making it suitable for people recovering from illnesses, experiencing dietary deficiencies, or requiring digestive support."
+            },
+            "usage": {
+                "dosage": "As directed by the physician",
+                "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+                "side_effects": "Nausea, abdominal discomfort, diarrhea, or a mild skin rash. Some individuals may experience an unpleasant taste in the mouth or temporary bloating. These effects are usually rare and resolve quickly. If they persist or worsen, consult a healthcare provider.",
+                "precautions": "Always use this syrup under medical guidance for optimal digestive support and nutritional benefits."
+            },
+            "manufacturer_details": {
+                "name": "Algen Healthcare Ltd.",
+                "address": "134/2, Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+                "license": "FSSAI No. 10020062000521"
+            },
+            "batch_info": {
+                "number": " ",
+                "manufacturing_date": "2024-07-24T00:00:00.000Z",
+                "expiry_date": "2025-12-24T00:00:00.000Z"
+            },
+            "details": {
+                "authenticity": "100% authentic product",
+                "shipping": "Free shipping",
+                "return_policy": "7 days return policy"
+            },
+            "marketing": {
+                "company": "Caremark Pharmaceutical",
+                "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+            },
+            "_id": "678d3fc5bf5dc31e58022910",
+            "name": "SMRA-PLUS",
+            "category": "syrup",
+            "composition": "Fungal Diastase (1:1200) 50mg, Pepsin (1:3000) 10mg, Vitamin B1 HCL 2mg, Vitamin B2 Phosphate Sodium 1mg, Vitamin B6 HCL 1.5mg, Vitamin B12 (Cyanocobalamin) 1mcg, D-Panthenol 1.5mg, Niacinamide 15mg",
+            "package_size": "10 Capsules",
+            "package_size_ml": "200 ml",
+            "stock_quantity": 0,
+            "prescription_required": true,
+            "availability": "in stock",
+            "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310146/ProductImages/aln4n5lrbz9fymrnvnkt.jpg",
+                    "_id": "678d3fc5bf5dc31e58022911"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310146/ProductImages/gozgogbsfztgsrj6rd4o.jpg",
+                    "_id": "678d3fc5bf5dc31e58022912"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310147/ProductImages/koic16lqmvedlfl8hfpr.jpg",
+                    "_id": "678d3fc5bf5dc31e58022913"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310148/ProductImages/b0pm3pdh0lcx3sbhuljk.jpg",
+                    "_id": "678d3fc5bf5dc31e58022914"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310148/ProductImages/mzoydcsta3t5x34plslx.jpg",
+                    "_id": "678d3fc5bf5dc31e58022915"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "price": {
+                "original": 87,
+                "discounted": 87,
+                "discount_percentage": 0,
+                "includes_taxes": true
+            },
+            "description": {
+                "short": "Useful in indigestion, bloating, flatulence, loss of appetite, digestive disorders, gastrointestinal discomfort, and vitamin B deficiencies.",
+                "long": "This dry syrup is a combination of Lactic Bacillus, Diastase, Pepsin, Simethicone, and essential vitamins to improve digestion and overall well-being. Lactic Bacillus helps restore healthy gut flora, supporting digestion and reducing gastrointestinal issues. Diastase and Pepsin act as digestive enzymes to break down starches and proteins, aiding nutrient absorption. Simethicone relieves bloating and gas by reducing surface tension of gas bubbles in the gut. The inclusion of Vitamin B Complex, L-Lysine, and Folic Acid boosts metabolism, promotes appetite, and supports overall nutritional health. This formulation is ideal for addressing digestive imbalances, improving nutrient uptake, and enhancing overall vitality in both children and adults."
+            },
+            "usage": {
+                "dosage": "As directed by the physician",
+                "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+                "side_effects": "Nausea, diarrhea, abdominal discomfort. Rarely, individuals may experience mild bloating, skin rashes, or flatulence. These side effects are usually temporary and resolve on their own. If symptoms persist, seek medical advice.",
+                "precautions": "Always use this dry syrup under medical guidance to ensure safe and effective results for digestive and nutritional support."
+            },
+            "manufacturer_details": {
+                "name": "Knox Life Sciences",
+                "address": "Vill. Gullarwala, Sai Road, Baddi, Distt. Solan (H.P.)",
+                "license": "MNB/06/485, MB/06/486"
+            },
+            "batch_info": {
+                "number": " ",
+                "manufacturing_date": "2024-12-01T00:00:00.000Z",
+                "expiry_date": "2026-05-01T00:00:00.000Z"
+            },
+            "details": {
+                "authenticity": "100% authentic product",
+                "shipping": "Free shipping",
+                "return_policy": "7 days return policy"
+            },
+            "marketing": {
+                "company": "Caremark Pharmaceutical",
+                "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+            },
+            "_id": "678d430ebf5dc31e58022945",
+            "name": "ZYNOPLUS (Dry Syrup)",
+            "category": "syrup",
+            "composition": "Lactic Basllus + Diastase + Papsin + Simethicone + Vitamin B Complex L-ysice Mono + HCL + Vitamin B6 + Niacinamide, Folic Acid",
+            "package_size": "10 Capsules",
+            "package_size_ml": "60 ml",
+            "stock_quantity": 0,
+            "prescription_required": true,
+            "availability": "in stock",
+            "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310986/ProductImages/fp2qb2ya6fj4j5bmmko2.jpg",
+                    "_id": "678d430ebf5dc31e58022946"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310986/ProductImages/eutnjgkjjjleaqejenzi.jpg",
+                    "_id": "678d430ebf5dc31e58022947"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310987/ProductImages/miz5rioysuumpr37pikz.jpg",
+                    "_id": "678d430ebf5dc31e58022948"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310988/ProductImages/pxjx6wemvfqzanaxte0m.jpg",
+                    "_id": "678d430ebf5dc31e58022949"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310988/ProductImages/ubht57tyjnyapggqogyj.jpg",
+                    "_id": "678d430ebf5dc31e5802294a"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310989/ProductImages/kvprng9dszwfy7hluah5.jpg",
+                    "_id": "678d430ebf5dc31e5802294b"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310989/ProductImages/zel7e7uulkgjdsbjdhd1.jpg",
+                    "_id": "678d430ebf5dc31e5802294c"
+                },
+                {
+                    "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1737310990/ProductImages/nwwteferladf9hhh5qd4.jpg",
+                    "_id": "678d430ebf5dc31e5802294d"
+                }
+            ],
+            "__v": 0
         }
-      ],
-      "related_products": ["2", "3", "4"]
-    },
-    {
-      "id": "4",
-      "name": "SmraFlam",
-      "manufacturer": "Algen Healthcare Limited",
-      "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
-      "price": {
-        "original": 65.00,
-        "discounted": 65.00,
-        "discount_percentage": 0,
-        "includes_taxes": true
-      },
-      "images": [
-        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare_LS_4_fomnyr.jpg",
-        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243242/Brocare_LS_3_him3cb.jpg",
-        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare1_pmikhh.jpg",
-        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243116/ivuk12jyixrbxrha8gg8.jpg"
-      ],
-      "package_size": "Suspension",
-      "availability": "in stock",
-      "details": {
-        "authenticity": "100% Authentic Products",
-        "shipping": "Free Shipping*",
-        "return_policy": "Products Return Policy"
-      },
-      "description": {
-        "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
-        "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
-      },
-      "usage": {
-        "dosage": "As directed by the physician.",
-        "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
-        "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
-        "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
-      },
-      "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
-      "manufacturer_details": {
-        "name": "Algen Healthcare Limited",
-        "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
-        "license": "Mfg. Lic. No.: GMP Certified"
-      },
-      "batch_info": {
-        "number": "AHL-669",
-        "manufacturing_date": "03/2023",
-        "expiry_date": "02/2025"
-      },
-      "prescription_required": true,
-      "marketing": {
-        "company": "Caremark Pharmaceutical Pvt. Ltd.",
-        "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-      },
-      "reviews": [
-        {
-          "user": "Vikas Gupta",
-          "rating": 4.5,
-          "comment": "This suspension worked effectively for pain relief with no major issues.",
-          "date": "2024-01-03"
-        },
-        {
-          "user": "Sneha Roy",
-          "rating": 4,
-          "comment": "This medicine is effective but caused slight dizziness.",
-          "date": "2024-01-02"
-        },
-        {
-          "user": "Ankita Mehra",
-          "rating": 5,
-          "comment": "Helped with my inflammation quickly, and I didn't face any side effects.",
-          "date": "2023-12-30"
-        },
-        {
-          "user": "Ramesh Yadav",
-          "rating": 4.5,
-          "comment": "Good quality and provided relief from pain.",
-          "date": "2023-12-28"
-        }
-      ],
-      "related_products": ["2", "3", "5"]
-    },
-      {
-        "id": "5",
-        "name": "BrocareLs+",
-        "manufacturer": "Caremark Pharmaceutical",
-        "composition": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup",
-        "price": {
-          "original": 111.00,
-          "discounted": 111.00,
-          "discount_percentage": 0,
-          "includes_taxes": true
-        },
-        "images": [
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare_LS_4_fomnyr.jpg",
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243242/Brocare_LS_3_him3cb.jpg",
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare1_pmikhh.jpg",
-          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243116/ivuk12jyixrbxrha8gg8.jpg"
-        ],
-        "package_size": "10 Capsules",
-        "availability": "in stock",
-        "stock_quantity": 100,
-        "details": {
-          "authenticity": "100% Authentic Products",
-          "shipping": "Free Shipping*",
-          "return_policy": "30-day return policy"
-        },
-        "description": {
-          "short": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs.",
-          "long": "BrocareLs+ is a powerful combination medication designed to effectively treat various types of coughs. It contains three active ingredients: Ambroxol hydrochloride, which helps to thin and loosen mucus, making it easier to cough up; Levosalbutamol, a bronchodilator that helps to open up the airways; and Guaifenesin, an expectorant that helps to loosen phlegm."
-        },
-        "usage": {
-          "dosage": "As directed by the physician.",
-          "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
-          "side_effects": "Common side effects may include nausea, vomiting, stomach upset, dizziness, or headache.",
-          "precautions": "Before using this medication, tell your doctor or pharmacist your medical history, especially of: heart problems, high blood pressure, diabetes, overactive thyroid."
-        },
-        "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
-        "manufacturer_details": {
-          "name": "Saphnix Life Sciences",
-          "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025",
-          "license": "Mfg. Lic. No.: MNB/08/680 & MB/08/681"
-        },
-        "batch_info": {
-          "number": "HC4770O",
-          "manufacturing_date": "08/2023",
-          "expiry_date": "07/2025"
-        },
-        "prescription_required": true,
-        "marketing": {
-          "company": "Caremark Pharmaceutical",
-          "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-        },
-        "reviews": [
-          {
-            "user": "Satyam Jha",
-            "rating": 4.5,
-            "comment": "Works well for my cough, but causes slight drowsiness.",
-            "date": "2024-12-15"
-          },
-          {
-            "user": "Nityam Jha",
-            "rating": 5,
-            "comment": "Excellent product! Cleared my congestion quickly.",
-            "date": "2024-01-03"
-          }
-        ],
-        "related_products": ["2", "3", "4"]
-      },
-      {
-        "id": "6",
-        "name": "SmraFlam",
-        "manufacturer": "Algen Healthcare Limited",
-        "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
-        "price": {
-          "original": 65.00,
-          "discounted": 65.00,
-          "discount_percentage": 0,
-          "includes_taxes": true
-        },
-        "package_size": "10 Capsules",
-        "availability": "in stock",
-        "details": {
-          "authenticity": "100% Authentic Products",
-          "shipping": "Free Shipping*",
-          "return_policy": "30-day return policy"
-        },
-        "description": {
-          "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
-          "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
-        },
-        "usage": {
-          "dosage": "As directed by the physician.",
-          "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
-          "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
-          "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
-        },
-        "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
-        "manufacturer_details": {
-          "name": "Algen Healthcare Limited",
-          "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
-          "license": "Mfg. Lic. No.: GMP Certified"
-        },
-        "batch_info": {
-          "number": "AHL-669",
-          "manufacturing_date": "03/2023",
-          "expiry_date": "02/2025"
-        },
-        "prescription_required": true,
-        "marketing": {
-          "company": "Caremark Pharmaceutical Pvt. Ltd.",
-          "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-        },
-        "reviews": [
-          {
-            "user": "Rahul Sharma",
-            "rating": 4.5,
-            "comment": "This medicine worked very well for my pain relief. No major side effects. Highly recommended!",
-            "date": "2024-01-03"
-          },
-          {
-            "user": "Priya Verma",
-            "rating": 4,
-            "comment": "दवा प्रभावी है, लेकिन इसे लेने के बाद थोड़ी नींद आ जाती है।",
-            "date": "2024-01-02"
-          },
-          {
-            "user": "Anil Kumar",
-            "rating": 5,
-            "comment": "Great product! Helped me recover quickly from muscle pain.",
-            "date": "2023-12-30"
-          },
-          {
-            "user": "Neha Singh",
-            "rating": 4.5,
-            "comment": "दर्द से राहत मिली और कोई गंभीर साइड इफेक्ट्स नहीं हुए।",
-            "date": "2023-12-28"
-          }
-        ],
-        "related_products": ["3", "4", "5"]
-      },
-      
-      { "id":"7",
-      "name": "BrocareLs+",
-      "manufacturer": "Caremark Pharmaceutical",
-      "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
-      "price": {
-        "original": 175.00,
-        "discounted": 175.00,
-        "discount_percentage": 0,
-        "includes_taxes": true
-      },
-      "package_size": "10 Capsules",
-      "availability": "in stock",
-      "details": {
-        "authenticity": "100% Authentic Products",
-        "shipping": "Free Shipping*",
-        "return_policy": "Products Return Policy"
-      },
-      "description": {
-        "short": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs.",
-        "long": "BrocareLs+ is a powerful combination medication designed to effectively treat various types of coughs. It contains three active ingredients: Ambroxol hydrochloride, which helps to thin and loosen mucus, making it easier to cough up; Levosalbutamol, a bronchodilator that helps to open up the airways; and Guaifenesin, an expectorant that helps to loosen phlegm."
-      },
-      "usage": {
-        "dosage": "As directed by the physician.",
-        "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
-        "side_effects": "Common side effects may include nausea, vomiting, stomach upset, dizziness, or headache.",
-        "precautions": "Before using this medication, tell your doctor or pharmacist your medical history, especially of: heart problems, high blood pressure, diabetes, overactive thyroid."
-      },
-      "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
-      "manufacturer_details": {
-        "name": "Saphnix Life Sciences",
-        "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025",
-        "license": "Mfg. Lic. No.: MNB/08/680 & MB/08/681"
-      },
-      "batch_info": {
-        "number": "HC4770O",
-        "manufacturing_date": "08/2023",
-        "expiry_date": "07/2025"
-      },
-      "prescription_required": true,
-      "marketing": {
-        "company": "Caremark Pharmaceutical",
-        "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-      },
-      "reviews": [
-        {
-          "user": "John D.",
-          "rating": 4.5,
-          "comment": "Works well for my cough, but causes slight drowsiness.",
-          "date": "2023-12-15"
-        },
-        {
-          "user": "Sarah M.",
-          "rating": 5,
-          "comment": "Excellent product! Cleared my congestion quickly.",
-          "date": "2024-01-03"
-        }
-      ],
-      "related_products": ["2", "3", "4"]
-    },
-    {
-      "id": "8",
-      "name": "SmraFlam",
-      "manufacturer": "Algen Healthcare Limited",
-      "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
-      "price": {
-        "original": 65.00,
-        "discounted": 65.00,
-        "discount_percentage": 0,
-        "includes_taxes": true
-      },
-      "package_size": "Suspension",
-      "availability": "in stock",
-      "details": {
-        "authenticity": "100% Authentic Products",
-        "shipping": "Free Shipping*",
-        "return_policy": "Products Return Policy"
-      },
-      "description": {
-        "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
-        "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
-      },
-      "usage": {
-        "dosage": "As directed by the physician.",
-        "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
-        "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
-        "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
-      },
-      "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
-      "manufacturer_details": {
-        "name": "Algen Healthcare Limited",
-        "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
-        "license": "Mfg. Lic. No.: GMP Certified"
-      },
-      "batch_info": {
-        "number": "AHL-669",
-        "manufacturing_date": "03/2023",
-        "expiry_date": "02/2025"
-      },
-      "prescription_required": true,
-      "marketing": {
-        "company": "Caremark Pharmaceutical Pvt. Ltd.",
-        "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-      },
-      "reviews": [
-        {
-          "user": "Vikas Gupta",
-          "rating": 4.5,
-          "comment": "This suspension worked effectively for pain relief with no major issues.",
-          "date": "2024-01-03"
-        },
-        {
-          "user": "Sneha Roy",
-          "rating": 4,
-          "comment": "This medicine is effective but caused slight dizziness.",
-          "date": "2024-01-02"
-        },
-        {
-          "user": "Ankita Mehra",
-          "rating": 5,
-          "comment": "Helped with my inflammation quickly, and I didn't face any side effects.",
-          "date": "2023-12-30"
-        },
-        {
-          "user": "Ramesh Yadav",
-          "rating": 4.5,
-          "comment": "Good quality and provided relief from pain.",
-          "date": "2023-12-28"
-        }
-      ],
-      "related_products": ["2", "3", "5"]
-    },
-    {
-      "id": "9",
-      "name": "SmraFlam",
-      "manufacturer": "Algen Healthcare Limited",
-      "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
-      "price": {
-        "original": 65.00,
-        "discounted": 65.00,
-        "discount_percentage": 0,
-        "includes_taxes": true
-      },
-      "package_size": "10 Capsules",
-      "availability": "in stock",
-      "details": {
-        "authenticity": "100% Authentic Products",
-        "shipping": "Free Shipping*",
-        "return_policy": "30-day return policy"
-      },
-      "description": {
-        "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
-        "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
-      },
-      "usage": {
-        "dosage": "As directed by the physician.",
-        "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
-        "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
-        "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
-      },
-      "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
-      "manufacturer_details": {
-        "name": "Algen Healthcare Limited",
-        "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
-        "license": "Mfg. Lic. No.: GMP Certified"
-      },
-      "batch_info": {
-        "number": "AHL-669",
-        "manufacturing_date": "03/2023",
-        "expiry_date": "02/2025"
-      },
-      "prescription_required": true,
-      "marketing": {
-        "company": "Caremark Pharmaceutical Pvt. Ltd.",
-        "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-      },
-      "reviews": [
-        {
-          "user": "Rahul Sharma",
-          "rating": 4.5,
-          "comment": "This medicine worked very well for my pain relief. No major side effects. Highly recommended!",
-          "date": "2024-01-03"
-        },
-        {
-          "user": "Priya Verma",
-          "rating": 4,
-          "comment": "दवा प्रभावी है, लेकिन इसे लेने के बाद थोड़ी नींद आ जाती है।",
-          "date": "2024-01-02"
-        },
-        {
-          "user": "Anil Kumar",
-          "rating": 5,
-          "comment": "Great product! Helped me recover quickly from muscle pain.",
-          "date": "2023-12-30"
-        },
-        {
-          "user": "Neha Singh",
-          "rating": 4.5,
-          "comment": "दर्द से राहत मिली और कोई गंभीर साइड इफेक्ट्स नहीं हुए।",
-          "date": "2023-12-28"
-        }
-      ],
-      "related_products": ["3", "4", "5"]
-    },
-    
-    { "id":"10",
-    "name": "BrocareLs+",
-    "manufacturer": "Caremark Pharmaceutical",
-    "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
-    "price": {
-      "original": 175.00,
-      "discounted": 175.00,
-      "discount_percentage": 0,
-      "includes_taxes": true
-    },
-    "package_size": "10 Capsules",
-    "availability": "in stock",
-    "details": {
-      "authenticity": "100% Authentic Products",
-      "shipping": "Free Shipping*",
-      "return_policy": "Products Return Policy"
-    },
-    "description": {
-      "short": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs.",
-      "long": "BrocareLs+ is a powerful combination medication designed to effectively treat various types of coughs. It contains three active ingredients: Ambroxol hydrochloride, which helps to thin and loosen mucus, making it easier to cough up; Levosalbutamol, a bronchodilator that helps to open up the airways; and Guaifenesin, an expectorant that helps to loosen phlegm."
-    },
-    "usage": {
-      "dosage": "As directed by the physician.",
-      "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
-      "side_effects": "Common side effects may include nausea, vomiting, stomach upset, dizziness, or headache.",
-      "precautions": "Before using this medication, tell your doctor or pharmacist your medical history, especially of: heart problems, high blood pressure, diabetes, overactive thyroid."
-    },
-    "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
-    "manufacturer_details": {
-      "name": "Saphnix Life Sciences",
-      "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025",
-      "license": "Mfg. Lic. No.: MNB/08/680 & MB/08/681"
-    },
-    "batch_info": {
-      "number": "HC4770O",
-      "manufacturing_date": "08/2023",
-      "expiry_date": "07/2025"
-    },
-    "prescription_required": true,
-    "marketing": {
-      "company": "Caremark Pharmaceutical",
-      "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-    },
-    "reviews": [
-      {
-        "user": "John D.",
-        "rating": 4.5,
-        "comment": "Works well for my cough, but causes slight drowsiness.",
-        "date": "2023-12-15"
-      },
-      {
-        "user": "Sarah M.",
-        "rating": 5,
-        "comment": "Excellent product! Cleared my congestion quickly.",
-        "date": "2024-01-03"
-      }
-    ],
-    "related_products": ["2", "3", "4"]
-  },
-  {
-    "id": "11",
-    "name": "SmraFlam",
-    "manufacturer": "Algen Healthcare Limited",
-    "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
-    "price": {
-      "original": 65.00,
-      "discounted": 65.00,
-      "discount_percentage": 0,
-      "includes_taxes": true
-    },
-    "package_size": "Suspension",
-    "availability": "in stock",
-    "details": {
-      "authenticity": "100% Authentic Products",
-      "shipping": "Free Shipping*",
-      "return_policy": "Products Return Policy"
-    },
-    "description": {
-      "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
-      "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
-    },
-    "usage": {
-      "dosage": "As directed by the physician.",
-      "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
-      "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
-      "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
-    },
-    "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
-    "manufacturer_details": {
-      "name": "Algen Healthcare Limited",
-      "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
-      "license": "Mfg. Lic. No.: GMP Certified"
-    },
-    "batch_info": {
-      "number": "AHL-669",
-      "manufacturing_date": "03/2023",
-      "expiry_date": "02/2025"
-    },
-    "prescription_required": true,
-    "marketing": {
-      "company": "Caremark Pharmaceutical Pvt. Ltd.",
-      "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-    },
-    "reviews": [
-      {
-        "user": "Vikas Gupta",
-        "rating": 4.5,
-        "comment": "This suspension worked effectively for pain relief with no major issues.",
-        "date": "2024-01-03"
-      },
-      {
-        "user": "Sneha Roy",
-        "rating": 4,
-        "comment": "This medicine is effective but caused slight dizziness.",
-        "date": "2024-01-02"
-      },
-      {
-        "user": "Ankita Mehra",
-        "rating": 5,
-        "comment": "Helped with my inflammation quickly, and I didn't face any side effects.",
-        "date": "2023-12-30"
-      },
-      {
-        "user": "Ramesh Yadav",
-        "rating": 4.5,
-        "comment": "Good quality and provided relief from pain.",
-        "date": "2023-12-28"
-      }
-    ],
-    "related_products": ["2", "3", "5"]
-  },
-  {
-    "id": "12",
-    "name": "SmraFlam",
-    "manufacturer": "Algen Healthcare Limited",
-    "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
-    "price": {
-      "original": 65.00,
-      "discounted": 65.00,
-      "discount_percentage": 0,
-      "includes_taxes": true
-    },
-    "package_size": "Suspension",
-    "availability": "in stock",
-    "details": {
-      "authenticity": "100% Authentic Products",
-      "shipping": "Free Shipping*",
-      "return_policy": "Products Return Policy"
-    },
-    "description": {
-      "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
-      "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
-    },
-    "usage": {
-      "dosage": "As directed by the physician.",
-      "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
-      "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
-      "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
-    },
-    "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
-    "manufacturer_details": {
-      "name": "Algen Healthcare Limited",
-      "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
-      "license": "Mfg. Lic. No.: GMP Certified"
-    },
-    "batch_info": {
-      "number": "AHL-669",
-      "manufacturing_date": "03/2023",
-      "expiry_date": "02/2025"
-    },
-    "prescription_required": true,
-    "marketing": {
-      "company": "Caremark Pharmaceutical Pvt. Ltd.",
-      "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
-    },
-    "reviews": [
-      {
-        "user": "Vikas Gupta",
-        "rating": 4.5,
-        "comment": "This suspension worked effectively for pain relief with no major issues.",
-        "date": "2024-01-03"
-      },
-      {
-        "user": "Sneha Roy",
-        "rating": 4,
-        "comment": "This medicine is effective but caused slight dizziness.",
-        "date": "2024-01-02"
-      },
-      {
-        "user": "Ankita Mehra",
-        "rating": 5,
-        "comment": "Helped with my inflammation quickly, and I didn't face any side effects.",
-        "date": "2023-12-30"
-      },
-      {
-        "user": "Ramesh Yadav",
-        "rating": 4.5,
-        "comment": "Good quality and provided relief from pain.",
-        "date": "2023-12-28"
-      }
-    ],
-    "related_products": ["2", "3", "5"]
-  }
-]
+    ]
+
 }

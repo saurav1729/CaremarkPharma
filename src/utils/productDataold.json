@@ -1,0 +1,840 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "name": "BrocareLs+",
+        "manufacturer": "Caremark Pharmaceutical",
+        "composition": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup",
+        "price": {
+          "original": 111.00,
+          "discounted": 111.00,
+          "discount_percentage": 0,
+          "includes_taxes": true
+        },
+        "images": [
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare_LS_4_fomnyr.jpg",
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243242/Brocare_LS_3_him3cb.jpg",
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare1_pmikhh.jpg",
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243116/ivuk12jyixrbxrha8gg8.jpg"
+        ],
+        "package_size": "10 Capsules",
+        "availability": "in stock",
+        "stock_quantity": 100,
+        "details": {
+          "authenticity": "100% Authentic Products",
+          "shipping": "Free Shipping*",
+          "return_policy": "30-day return policy"
+        },
+        "description": {
+          "short": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs.",
+          "long": "BrocareLs+ is a powerful combination medication designed to effectively treat various types of coughs. It contains three active ingredients: Ambroxol hydrochloride, which helps to thin and loosen mucus, making it easier to cough up; Levosalbutamol, a bronchodilator that helps to open up the airways; and Guaifenesin, an expectorant that helps to loosen phlegm."
+        },
+        "usage": {
+          "dosage": "As directed by the physician.",
+          "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+          "side_effects": "Common side effects may include nausea, vomiting, stomach upset, dizziness, or headache.",
+          "precautions": "Before using this medication, tell your doctor or pharmacist your medical history, especially of: heart problems, high blood pressure, diabetes, overactive thyroid."
+        },
+        "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+        "manufacturer_details": {
+          "name": "Saphnix Life Sciences",
+          "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025",
+          "license": "Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+        },
+        "batch_info": {
+          "number": "HC4770O",
+          "manufacturing_date": "08/2023",
+          "expiry_date": "07/2025"
+        },
+        "prescription_required": true,
+        "marketing": {
+          "company": "Caremark Pharmaceutical",
+          "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+        },
+        "reviews": [
+          {
+            "user": "Satyam Jha",
+            "rating": 4.5,
+            "comment": "Works well for my cough, but causes slight drowsiness.",
+            "date": "2024-12-15"
+          },
+          {
+            "user": "Nityam Jha",
+            "rating": 5,
+            "comment": "Excellent product! Cleared my congestion quickly.",
+            "date": "2024-01-03"
+          }
+        ],
+        "related_products": ["2", "3", "4"]
+      },
+      {
+        "id": "2",
+        "name": "SmraFlam",
+        "manufacturer": "Algen Healthcare Limited",
+        "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+        "price": {
+          "original": 65.00,
+          "discounted": 65.00,
+          "discount_percentage": 0,
+          "includes_taxes": true
+        },
+        "images": [
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare_LS_4_fomnyr.jpg",
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243242/Brocare_LS_3_him3cb.jpg",
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare1_pmikhh.jpg",
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243116/ivuk12jyixrbxrha8gg8.jpg"
+        ],
+        "package_size": "10 Capsules",
+        "availability": "in stock",
+        "details": {
+          "authenticity": "100% Authentic Products",
+          "shipping": "Free Shipping*",
+          "return_policy": "30-day return policy"
+        },
+        "description": {
+          "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
+          "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
+        },
+        "usage": {
+          "dosage": "As directed by the physician.",
+          "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
+          "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
+          "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
+        },
+        "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
+        "manufacturer_details": {
+          "name": "Algen Healthcare Limited",
+          "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+          "license": "Mfg. Lic. No.: GMP Certified"
+        },
+        "batch_info": {
+          "number": "AHL-669",
+          "manufacturing_date": "03/2023",
+          "expiry_date": "02/2025"
+        },
+        "prescription_required": true,
+        "marketing": {
+          "company": "Caremark Pharmaceutical Pvt. Ltd.",
+          "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+        },
+        "reviews": [
+          {
+            "user": "Rahul Sharma",
+            "rating": 4.5,
+            "comment": "This medicine worked very well for my pain relief. No major side effects. Highly recommended!",
+            "date": "2024-01-03"
+          },
+          {
+            "user": "Priya Verma",
+            "rating": 4,
+            "comment": "दवा प्रभावी है, लेकिन इसे लेने के बाद थोड़ी नींद आ जाती है।",
+            "date": "2024-01-02"
+          },
+          {
+            "user": "Anil Kumar",
+            "rating": 5,
+            "comment": "Great product! Helped me recover quickly from muscle pain.",
+            "date": "2023-12-30"
+          },
+          {
+            "user": "Neha Singh",
+            "rating": 4.5,
+            "comment": "दर्द से राहत मिली और कोई गंभीर साइड इफेक्ट्स नहीं हुए।",
+            "date": "2023-12-28"
+          }
+        ],
+        "related_products": ["3", "4", "5"]
+      },
+      
+      { "id":"3",
+      "name": "BrocareLs+",
+      "manufacturer": "Caremark Pharmaceutical",
+      "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
+      "price": {
+        "original": 175.00,
+        "discounted": 175.00,
+        "discount_percentage": 0,
+        "includes_taxes": true
+      },
+      "images": [
+        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare_LS_4_fomnyr.jpg",
+        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243242/Brocare_LS_3_him3cb.jpg",
+        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare1_pmikhh.jpg",
+        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243116/ivuk12jyixrbxrha8gg8.jpg"
+      ],
+      "package_size": "10 Capsules",
+      "availability": "in stock",
+      "details": {
+        "authenticity": "100% Authentic Products",
+        "shipping": "Free Shipping*",
+        "return_policy": "Products Return Policy"
+      },
+      "description": {
+        "short": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs.",
+        "long": "BrocareLs+ is a powerful combination medication designed to effectively treat various types of coughs. It contains three active ingredients: Ambroxol hydrochloride, which helps to thin and loosen mucus, making it easier to cough up; Levosalbutamol, a bronchodilator that helps to open up the airways; and Guaifenesin, an expectorant that helps to loosen phlegm."
+      },
+      "usage": {
+        "dosage": "As directed by the physician.",
+        "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+        "side_effects": "Common side effects may include nausea, vomiting, stomach upset, dizziness, or headache.",
+        "precautions": "Before using this medication, tell your doctor or pharmacist your medical history, especially of: heart problems, high blood pressure, diabetes, overactive thyroid."
+      },
+      "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+      "manufacturer_details": {
+        "name": "Saphnix Life Sciences",
+        "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025",
+        "license": "Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+      },
+      "batch_info": {
+        "number": "HC4770O",
+        "manufacturing_date": "08/2023",
+        "expiry_date": "07/2025"
+      },
+      "prescription_required": true,
+      "marketing": {
+        "company": "Caremark Pharmaceutical",
+        "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+      },
+      "reviews": [
+        {
+          "user": "John D.",
+          "rating": 4.5,
+          "comment": "Works well for my cough, but causes slight drowsiness.",
+          "date": "2023-12-15"
+        },
+        {
+          "user": "Sarah M.",
+          "rating": 5,
+          "comment": "Excellent product! Cleared my congestion quickly.",
+          "date": "2024-01-03"
+        }
+      ],
+      "related_products": ["2", "3", "4"]
+    },
+    {
+      "id": "4",
+      "name": "SmraFlam",
+      "manufacturer": "Algen Healthcare Limited",
+      "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+      "price": {
+        "original": 65.00,
+        "discounted": 65.00,
+        "discount_percentage": 0,
+        "includes_taxes": true
+      },
+      "images": [
+        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare_LS_4_fomnyr.jpg",
+        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243242/Brocare_LS_3_him3cb.jpg",
+        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare1_pmikhh.jpg",
+        "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243116/ivuk12jyixrbxrha8gg8.jpg"
+      ],
+      "package_size": "Suspension",
+      "availability": "in stock",
+      "details": {
+        "authenticity": "100% Authentic Products",
+        "shipping": "Free Shipping*",
+        "return_policy": "Products Return Policy"
+      },
+      "description": {
+        "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
+        "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
+      },
+      "usage": {
+        "dosage": "As directed by the physician.",
+        "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
+        "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
+        "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
+      },
+      "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
+      "manufacturer_details": {
+        "name": "Algen Healthcare Limited",
+        "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+        "license": "Mfg. Lic. No.: GMP Certified"
+      },
+      "batch_info": {
+        "number": "AHL-669",
+        "manufacturing_date": "03/2023",
+        "expiry_date": "02/2025"
+      },
+      "prescription_required": true,
+      "marketing": {
+        "company": "Caremark Pharmaceutical Pvt. Ltd.",
+        "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+      },
+      "reviews": [
+        {
+          "user": "Vikas Gupta",
+          "rating": 4.5,
+          "comment": "This suspension worked effectively for pain relief with no major issues.",
+          "date": "2024-01-03"
+        },
+        {
+          "user": "Sneha Roy",
+          "rating": 4,
+          "comment": "This medicine is effective but caused slight dizziness.",
+          "date": "2024-01-02"
+        },
+        {
+          "user": "Ankita Mehra",
+          "rating": 5,
+          "comment": "Helped with my inflammation quickly, and I didn't face any side effects.",
+          "date": "2023-12-30"
+        },
+        {
+          "user": "Ramesh Yadav",
+          "rating": 4.5,
+          "comment": "Good quality and provided relief from pain.",
+          "date": "2023-12-28"
+        }
+      ],
+      "related_products": ["2", "3", "5"]
+    },
+      {
+        "id": "5",
+        "name": "BrocareLs+",
+        "manufacturer": "Caremark Pharmaceutical",
+        "composition": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup",
+        "price": {
+          "original": 111.00,
+          "discounted": 111.00,
+          "discount_percentage": 0,
+          "includes_taxes": true
+        },
+        "images": [
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare_LS_4_fomnyr.jpg",
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243242/Brocare_LS_3_him3cb.jpg",
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243243/Brocare1_pmikhh.jpg",
+          "https://res.cloudinary.com/df6sjkg3j/image/upload/v1725243116/ivuk12jyixrbxrha8gg8.jpg"
+        ],
+        "package_size": "10 Capsules",
+        "availability": "in stock",
+        "stock_quantity": 100,
+        "details": {
+          "authenticity": "100% Authentic Products",
+          "shipping": "Free Shipping*",
+          "return_policy": "30-day return policy"
+        },
+        "description": {
+          "short": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs.",
+          "long": "BrocareLs+ is a powerful combination medication designed to effectively treat various types of coughs. It contains three active ingredients: Ambroxol hydrochloride, which helps to thin and loosen mucus, making it easier to cough up; Levosalbutamol, a bronchodilator that helps to open up the airways; and Guaifenesin, an expectorant that helps to loosen phlegm."
+        },
+        "usage": {
+          "dosage": "As directed by the physician.",
+          "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+          "side_effects": "Common side effects may include nausea, vomiting, stomach upset, dizziness, or headache.",
+          "precautions": "Before using this medication, tell your doctor or pharmacist your medical history, especially of: heart problems, high blood pressure, diabetes, overactive thyroid."
+        },
+        "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+        "manufacturer_details": {
+          "name": "Saphnix Life Sciences",
+          "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025",
+          "license": "Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+        },
+        "batch_info": {
+          "number": "HC4770O",
+          "manufacturing_date": "08/2023",
+          "expiry_date": "07/2025"
+        },
+        "prescription_required": true,
+        "marketing": {
+          "company": "Caremark Pharmaceutical",
+          "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+        },
+        "reviews": [
+          {
+            "user": "Satyam Jha",
+            "rating": 4.5,
+            "comment": "Works well for my cough, but causes slight drowsiness.",
+            "date": "2024-12-15"
+          },
+          {
+            "user": "Nityam Jha",
+            "rating": 5,
+            "comment": "Excellent product! Cleared my congestion quickly.",
+            "date": "2024-01-03"
+          }
+        ],
+        "related_products": ["2", "3", "4"]
+      },
+      {
+        "id": "6",
+        "name": "SmraFlam",
+        "manufacturer": "Algen Healthcare Limited",
+        "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+        "price": {
+          "original": 65.00,
+          "discounted": 65.00,
+          "discount_percentage": 0,
+          "includes_taxes": true
+        },
+        "package_size": "10 Capsules",
+        "availability": "in stock",
+        "details": {
+          "authenticity": "100% Authentic Products",
+          "shipping": "Free Shipping*",
+          "return_policy": "30-day return policy"
+        },
+        "description": {
+          "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
+          "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
+        },
+        "usage": {
+          "dosage": "As directed by the physician.",
+          "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
+          "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
+          "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
+        },
+        "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
+        "manufacturer_details": {
+          "name": "Algen Healthcare Limited",
+          "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+          "license": "Mfg. Lic. No.: GMP Certified"
+        },
+        "batch_info": {
+          "number": "AHL-669",
+          "manufacturing_date": "03/2023",
+          "expiry_date": "02/2025"
+        },
+        "prescription_required": true,
+        "marketing": {
+          "company": "Caremark Pharmaceutical Pvt. Ltd.",
+          "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+        },
+        "reviews": [
+          {
+            "user": "Rahul Sharma",
+            "rating": 4.5,
+            "comment": "This medicine worked very well for my pain relief. No major side effects. Highly recommended!",
+            "date": "2024-01-03"
+          },
+          {
+            "user": "Priya Verma",
+            "rating": 4,
+            "comment": "दवा प्रभावी है, लेकिन इसे लेने के बाद थोड़ी नींद आ जाती है।",
+            "date": "2024-01-02"
+          },
+          {
+            "user": "Anil Kumar",
+            "rating": 5,
+            "comment": "Great product! Helped me recover quickly from muscle pain.",
+            "date": "2023-12-30"
+          },
+          {
+            "user": "Neha Singh",
+            "rating": 4.5,
+            "comment": "दर्द से राहत मिली और कोई गंभीर साइड इफेक्ट्स नहीं हुए।",
+            "date": "2023-12-28"
+          }
+        ],
+        "related_products": ["3", "4", "5"]
+      },
+      
+      { "id":"7",
+      "name": "BrocareLs+",
+      "manufacturer": "Caremark Pharmaceutical",
+      "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
+      "price": {
+        "original": 175.00,
+        "discounted": 175.00,
+        "discount_percentage": 0,
+        "includes_taxes": true
+      },
+      "package_size": "10 Capsules",
+      "availability": "in stock",
+      "details": {
+        "authenticity": "100% Authentic Products",
+        "shipping": "Free Shipping*",
+        "return_policy": "Products Return Policy"
+      },
+      "description": {
+        "short": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs.",
+        "long": "BrocareLs+ is a powerful combination medication designed to effectively treat various types of coughs. It contains three active ingredients: Ambroxol hydrochloride, which helps to thin and loosen mucus, making it easier to cough up; Levosalbutamol, a bronchodilator that helps to open up the airways; and Guaifenesin, an expectorant that helps to loosen phlegm."
+      },
+      "usage": {
+        "dosage": "As directed by the physician.",
+        "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+        "side_effects": "Common side effects may include nausea, vomiting, stomach upset, dizziness, or headache.",
+        "precautions": "Before using this medication, tell your doctor or pharmacist your medical history, especially of: heart problems, high blood pressure, diabetes, overactive thyroid."
+      },
+      "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+      "manufacturer_details": {
+        "name": "Saphnix Life Sciences",
+        "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025",
+        "license": "Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+      },
+      "batch_info": {
+        "number": "HC4770O",
+        "manufacturing_date": "08/2023",
+        "expiry_date": "07/2025"
+      },
+      "prescription_required": true,
+      "marketing": {
+        "company": "Caremark Pharmaceutical",
+        "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+      },
+      "reviews": [
+        {
+          "user": "John D.",
+          "rating": 4.5,
+          "comment": "Works well for my cough, but causes slight drowsiness.",
+          "date": "2023-12-15"
+        },
+        {
+          "user": "Sarah M.",
+          "rating": 5,
+          "comment": "Excellent product! Cleared my congestion quickly.",
+          "date": "2024-01-03"
+        }
+      ],
+      "related_products": ["2", "3", "4"]
+    },
+    {
+      "id": "8",
+      "name": "SmraFlam",
+      "manufacturer": "Algen Healthcare Limited",
+      "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+      "price": {
+        "original": 65.00,
+        "discounted": 65.00,
+        "discount_percentage": 0,
+        "includes_taxes": true
+      },
+      "package_size": "Suspension",
+      "availability": "in stock",
+      "details": {
+        "authenticity": "100% Authentic Products",
+        "shipping": "Free Shipping*",
+        "return_policy": "Products Return Policy"
+      },
+      "description": {
+        "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
+        "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
+      },
+      "usage": {
+        "dosage": "As directed by the physician.",
+        "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
+        "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
+        "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
+      },
+      "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
+      "manufacturer_details": {
+        "name": "Algen Healthcare Limited",
+        "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+        "license": "Mfg. Lic. No.: GMP Certified"
+      },
+      "batch_info": {
+        "number": "AHL-669",
+        "manufacturing_date": "03/2023",
+        "expiry_date": "02/2025"
+      },
+      "prescription_required": true,
+      "marketing": {
+        "company": "Caremark Pharmaceutical Pvt. Ltd.",
+        "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+      },
+      "reviews": [
+        {
+          "user": "Vikas Gupta",
+          "rating": 4.5,
+          "comment": "This suspension worked effectively for pain relief with no major issues.",
+          "date": "2024-01-03"
+        },
+        {
+          "user": "Sneha Roy",
+          "rating": 4,
+          "comment": "This medicine is effective but caused slight dizziness.",
+          "date": "2024-01-02"
+        },
+        {
+          "user": "Ankita Mehra",
+          "rating": 5,
+          "comment": "Helped with my inflammation quickly, and I didn't face any side effects.",
+          "date": "2023-12-30"
+        },
+        {
+          "user": "Ramesh Yadav",
+          "rating": 4.5,
+          "comment": "Good quality and provided relief from pain.",
+          "date": "2023-12-28"
+        }
+      ],
+      "related_products": ["2", "3", "5"]
+    },
+    {
+      "id": "9",
+      "name": "SmraFlam",
+      "manufacturer": "Algen Healthcare Limited",
+      "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+      "price": {
+        "original": 65.00,
+        "discounted": 65.00,
+        "discount_percentage": 0,
+        "includes_taxes": true
+      },
+      "package_size": "10 Capsules",
+      "availability": "in stock",
+      "details": {
+        "authenticity": "100% Authentic Products",
+        "shipping": "Free Shipping*",
+        "return_policy": "30-day return policy"
+      },
+      "description": {
+        "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
+        "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
+      },
+      "usage": {
+        "dosage": "As directed by the physician.",
+        "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
+        "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
+        "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
+      },
+      "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
+      "manufacturer_details": {
+        "name": "Algen Healthcare Limited",
+        "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+        "license": "Mfg. Lic. No.: GMP Certified"
+      },
+      "batch_info": {
+        "number": "AHL-669",
+        "manufacturing_date": "03/2023",
+        "expiry_date": "02/2025"
+      },
+      "prescription_required": true,
+      "marketing": {
+        "company": "Caremark Pharmaceutical Pvt. Ltd.",
+        "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+      },
+      "reviews": [
+        {
+          "user": "Rahul Sharma",
+          "rating": 4.5,
+          "comment": "This medicine worked very well for my pain relief. No major side effects. Highly recommended!",
+          "date": "2024-01-03"
+        },
+        {
+          "user": "Priya Verma",
+          "rating": 4,
+          "comment": "दवा प्रभावी है, लेकिन इसे लेने के बाद थोड़ी नींद आ जाती है।",
+          "date": "2024-01-02"
+        },
+        {
+          "user": "Anil Kumar",
+          "rating": 5,
+          "comment": "Great product! Helped me recover quickly from muscle pain.",
+          "date": "2023-12-30"
+        },
+        {
+          "user": "Neha Singh",
+          "rating": 4.5,
+          "comment": "दर्द से राहत मिली और कोई गंभीर साइड इफेक्ट्स नहीं हुए।",
+          "date": "2023-12-28"
+        }
+      ],
+      "related_products": ["3", "4", "5"]
+    },
+    
+    { "id":"10",
+    "name": "BrocareLs+",
+    "manufacturer": "Caremark Pharmaceutical",
+    "composition": "Rabeprazole Sodium (EC) & Levosulpiride (SR)",
+    "price": {
+      "original": 175.00,
+      "discounted": 175.00,
+      "discount_percentage": 0,
+      "includes_taxes": true
+    },
+    "package_size": "10 Capsules",
+    "availability": "in stock",
+    "details": {
+      "authenticity": "100% Authentic Products",
+      "shipping": "Free Shipping*",
+      "return_policy": "Products Return Policy"
+    },
+    "description": {
+      "short": "Ambroxol hydrochloride, levosalbutamol, and guaiphenesin syrup is a combination of three medicines that treat coughs.",
+      "long": "BrocareLs+ is a powerful combination medication designed to effectively treat various types of coughs. It contains three active ingredients: Ambroxol hydrochloride, which helps to thin and loosen mucus, making it easier to cough up; Levosalbutamol, a bronchodilator that helps to open up the airways; and Guaifenesin, an expectorant that helps to loosen phlegm."
+    },
+    "usage": {
+      "dosage": "As directed by the physician.",
+      "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+      "side_effects": "Common side effects may include nausea, vomiting, stomach upset, dizziness, or headache.",
+      "precautions": "Before using this medication, tell your doctor or pharmacist your medical history, especially of: heart problems, high blood pressure, diabetes, overactive thyroid."
+    },
+    "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+    "manufacturer_details": {
+      "name": "Saphnix Life Sciences",
+      "address": "Village-Barotiwala, Paonta Sahib, Distt. Sirmour, Himachal Pradesh-173 025",
+      "license": "Mfg. Lic. No.: MNB/08/680 & MB/08/681"
+    },
+    "batch_info": {
+      "number": "HC4770O",
+      "manufacturing_date": "08/2023",
+      "expiry_date": "07/2025"
+    },
+    "prescription_required": true,
+    "marketing": {
+      "company": "Caremark Pharmaceutical",
+      "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+    },
+    "reviews": [
+      {
+        "user": "John D.",
+        "rating": 4.5,
+        "comment": "Works well for my cough, but causes slight drowsiness.",
+        "date": "2023-12-15"
+      },
+      {
+        "user": "Sarah M.",
+        "rating": 5,
+        "comment": "Excellent product! Cleared my congestion quickly.",
+        "date": "2024-01-03"
+      }
+    ],
+    "related_products": ["2", "3", "4"]
+  },
+  {
+    "id": "11",
+    "name": "SmraFlam",
+    "manufacturer": "Algen Healthcare Limited",
+    "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+    "price": {
+      "original": 65.00,
+      "discounted": 65.00,
+      "discount_percentage": 0,
+      "includes_taxes": true
+    },
+    "package_size": "Suspension",
+    "availability": "in stock",
+    "details": {
+      "authenticity": "100% Authentic Products",
+      "shipping": "Free Shipping*",
+      "return_policy": "Products Return Policy"
+    },
+    "description": {
+      "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
+      "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
+    },
+    "usage": {
+      "dosage": "As directed by the physician.",
+      "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
+      "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
+      "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
+    },
+    "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
+    "manufacturer_details": {
+      "name": "Algen Healthcare Limited",
+      "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+      "license": "Mfg. Lic. No.: GMP Certified"
+    },
+    "batch_info": {
+      "number": "AHL-669",
+      "manufacturing_date": "03/2023",
+      "expiry_date": "02/2025"
+    },
+    "prescription_required": true,
+    "marketing": {
+      "company": "Caremark Pharmaceutical Pvt. Ltd.",
+      "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+    },
+    "reviews": [
+      {
+        "user": "Vikas Gupta",
+        "rating": 4.5,
+        "comment": "This suspension worked effectively for pain relief with no major issues.",
+        "date": "2024-01-03"
+      },
+      {
+        "user": "Sneha Roy",
+        "rating": 4,
+        "comment": "This medicine is effective but caused slight dizziness.",
+        "date": "2024-01-02"
+      },
+      {
+        "user": "Ankita Mehra",
+        "rating": 5,
+        "comment": "Helped with my inflammation quickly, and I didn't face any side effects.",
+        "date": "2023-12-30"
+      },
+      {
+        "user": "Ramesh Yadav",
+        "rating": 4.5,
+        "comment": "Good quality and provided relief from pain.",
+        "date": "2023-12-28"
+      }
+    ],
+    "related_products": ["2", "3", "5"]
+  },
+  {
+    "id": "12",
+    "name": "SmraFlam",
+    "manufacturer": "Algen Healthcare Limited",
+    "composition": "Aceclofenac IP 50 mg, Paracetamol IP 125 mg",
+    "price": {
+      "original": 65.00,
+      "discounted": 65.00,
+      "discount_percentage": 0,
+      "includes_taxes": true
+    },
+    "package_size": "Suspension",
+    "availability": "in stock",
+    "details": {
+      "authenticity": "100% Authentic Products",
+      "shipping": "Free Shipping*",
+      "return_policy": "Products Return Policy"
+    },
+    "description": {
+      "short": "SmraFlam Suspension contains Aceclofenac and Paracetamol, ideal for relieving pain and inflammation.",
+      "long": "SmraFlam is a suspension containing Aceclofenac and Paracetamol. It is designed to reduce pain and inflammation effectively. Aceclofenac is a non-steroidal anti-inflammatory drug (NSAID), while Paracetamol is an analgesic and antipyretic."
+    },
+    "usage": {
+      "dosage": "As directed by the physician.",
+      "instructions": "Shake the bottle well before use. Administer the prescribed dosage as advised by the doctor. Do not exceed the recommended dose.",
+      "side_effects": "Common side effects may include stomach upset, nausea, dizziness, or rash.",
+      "precautions": "Inform your doctor about any liver conditions, kidney issues, or hypersensitivity to NSAIDs before use."
+    },
+    "storage": "Store in a cool & dark place. Protect from direct sunlight, heat & moisture. Keep the medicine out of the reach of children.",
+    "manufacturer_details": {
+      "name": "Algen Healthcare Limited",
+      "address": "Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+      "license": "Mfg. Lic. No.: GMP Certified"
+    },
+    "batch_info": {
+      "number": "AHL-669",
+      "manufacturing_date": "03/2023",
+      "expiry_date": "02/2025"
+    },
+    "prescription_required": true,
+    "marketing": {
+      "company": "Caremark Pharmaceutical Pvt. Ltd.",
+      "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+    },
+    "reviews": [
+      {
+        "user": "Vikas Gupta",
+        "rating": 4.5,
+        "comment": "This suspension worked effectively for pain relief with no major issues.",
+        "date": "2024-01-03"
+      },
+      {
+        "user": "Sneha Roy",
+        "rating": 4,
+        "comment": "This medicine is effective but caused slight dizziness.",
+        "date": "2024-01-02"
+      },
+      {
+        "user": "Ankita Mehra",
+        "rating": 5,
+        "comment": "Helped with my inflammation quickly, and I didn't face any side effects.",
+        "date": "2023-12-30"
+      },
+      {
+        "user": "Ramesh Yadav",
+        "rating": 4.5,
+        "comment": "Good quality and provided relief from pain.",
+        "date": "2023-12-28"
+      }
+    ],
+    "related_products": ["2", "3", "5"]
+  }
+]
+}

@@ -55,7 +55,7 @@ const ProductInfo = ({ product }) => {
         <dl className="mt-2 border-t border-b border-gray-200 divide-y divide-gray-200">
           <div className="py-3 flex justify-between text-sm">
             <dt className="text-gray-500">Package Size</dt>
-            <dd className="text-gray-900 font-medium">{product?.category=='tablet'? product.package_size:product.package_size_ml}</dd>
+            <dd className="text-gray-900 font-medium">{product?.category=='tablets'? product.package_size:product.package_size_ml}</dd>
           </div>
           {Object.entries(product.details).map(([key, value]) => (
             <div key={key} className="py-3 flex justify-between text-sm">

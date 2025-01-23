@@ -34,6 +34,7 @@ const initialProduct = {
   prescription_required: true,
   availability: 'in stock',
   images: [],
+  related_products:[], 
   details: { authenticity: '100% authentic product', shipping: 'Free shipping', return_policy: '7 days return policy' },
   storage: 'Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.',
   marketing: { company: 'Caremark Pharmaceutical', address: 'Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403' },

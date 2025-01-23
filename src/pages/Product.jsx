@@ -14,7 +14,7 @@ import { Helmet } from 'react-helmet-async';
 
 const Product = () => {
   
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
   const { productId } = useParams();
   const initialFrontendProduct = ProductData.products.find(p => p._id === productId);
   const [product, setProduct] = useState(initialFrontendProduct);
@@ -23,7 +23,7 @@ const Product = () => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      setIsLoading(true);
+      // setIsLoading(true);
       try {
         const response = await api.get(`/api/product/getProduct/${productId}`);
         if (response.data && response.data.success) {
@@ -47,7 +47,7 @@ const Product = () => {
           setProduct(frontendProduct);
         }
       } finally {
-        setIsLoading(false);
+        // setIsLoading(false);
       }
     };
 
@@ -55,7 +55,7 @@ const Product = () => {
     window.scrollTo(0, 0);
   }, [productId]);
 
-  if (isLoading) return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
+  // if (!product) return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
   if (error && !product) return <div className="min-h-screen flex items-center justify-center">Error: {error}</div>;
   if (!product) return <div className="min-h-screen flex items-center justify-center">Product not found</div>;
 
@@ -84,7 +84,7 @@ const Product = () => {
         </div>
         <ProductDetails product={product} />
         {/* <Reviews reviews={product.reviews} /> */}
-        {/* <RelatedProducts relatedIds={product.related_products} /> */}
+        <RelatedProducts relatedIds={product.related_products} />
       </div>
     </div>
   );

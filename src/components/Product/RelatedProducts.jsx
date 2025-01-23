@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import productData from '../../utils/productData.json';
 
 const RelatedProducts = ({ relatedIds }) => {
-  const relatedProducts = productData.products.filter((product) => relatedIds.includes(product.id));
+  const relatedProductIds = relatedIds && relatedIds.map(item => item.value);
+  const relatedProducts = productData.products.filter((product) => relatedProductIds && relatedProductIds.includes(product._id));
+  console.log(relatedIds, relatedProducts)
 
   return (
     <div className="mt-16">
@@ -13,13 +15,13 @@ const RelatedProducts = ({ relatedIds }) => {
           {relatedProducts.map((product) => (
             <Link
               key={product.id}
-              to={`/product/${product.id}`}
+              to={`/medicines/${product._id}`}
               className="group"
             >
               <div className="relative overflow-hidden rounded-lg shadow-md transition-all duration-300 ease-in-out transform group-hover:scale-105">
                 <div className="aspect-w-1 aspect-h-1">
                   <img
-                    src={product.images && product.images.length > 0 ? product.images[0] : '/default-image.jpg'}
+                    src={product.images && product.images.length > 0 ? product?.images[0]?.url : '/default-image.jpg'}
                     alt={product.name}
                     className="w-full h-full object-center object-cover"
                   />

@@ -49,7 +49,7 @@ const FormReview = ({ product }) => (
         <ReviewItem label="Manufacturer Name" value={formatDescription(product.manufacturer_details.name)} />
         <ReviewItem label="Manufacturer Address" value={formatDescription(product.manufacturer_details.address)} />
         <ReviewItem label="Manufacturer License" value={formatDescription(product.manufacturer_details.license)} />
-        <ReviewItem label="Batch Number" value={formatDescription(product.batch_info.number)} />
+        {/* <ReviewItem label="Batch Number" value={formatDescription(product.batch_info.number)} /> */}
         <ReviewItem label="Manufacturing Date" value={formatDescription(product.batch_info.manufacturing_date)} />
         <ReviewItem label="Expiry Date" value={formatDescription(product.batch_info.expiry_date)} />
       </ReviewSection>

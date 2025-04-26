@@ -33,10 +33,17 @@ const Footer = () => {
                 <li className='hover:underline cursor-pointer'>Products</li>
               </ul>
             </div>
+            {/* Contact details to put on site.
+
+Phone: 6204352229
+
+Email: caremark30@gmail.com
+
+Email 2nd : officialcaremarkpharmaceutical@gmail.com */}
             <div className='text-center md:text-left'>
               <span className='text-xl md:text-[1.2rem] font-serif text-[#295276]'>Contact</span>
               <ul className='text-base md:text-[1rem] text-[#6b829c] font-medium mt-2'>
-                <li className='hover:underline cursor-pointer'>Ph.:+91 6205573557</li>
+                <li className='hover:underline cursor-pointer'>Ph.:+91 6204352229</li>
                 <li className='hover:underline cursor-pointer'>wh.:+91 6205573557</li>
               </ul>
             </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [navbarHeight, setNavbarHeight] = useState("90px");
- 
+
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);
   const lastScrollY = useRef(0);
@@ -47,7 +47,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       if (currentScrollY > lastScrollY.current) {
         setIsVisible(false);
       } else {
@@ -84,12 +84,12 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full z-20 transition-all duration-300 ${isVisible ? 'top-0' : '-top-full'}`}>
-      <div className=" bg-gradient-to-r  from-[rgba(48,48,48,0.3)] to-[rgba(217,217,217,0)] backdrop-blur-[20px] rounded-[50px] px-8 py-2 mx-4 mt-2">
-    
+      <div className=" bg-[rgba(48,48,48,0.3)] backdrop-blur-[20px] rounded-[50px] px-10 py-2 mx-14 mt-2">
+
         <div className="flex flex-row-reverse sm:flex-row justify-between items-center">
-  <Link to="/" className="sm:flex hidden  sm:items-center sm:space-x-2">
-    <img src={logoImg} alt="Logo" className="h-[5rem] " />
-  </Link>
+          <Link to="/" className="sm:flex hidden  sm:items-center sm:space-x-2">
+            <img src={logoImg} alt="Logo" className="h-[5rem] " />
+          </Link>
 
 
           <div className="hidden md:flex space-x-8 text-xl">
@@ -124,7 +124,7 @@ const Navbar = () => {
                       <div>{user.name}</div>
                       <div className="font-medium truncate">{user.email}</div>
                     </div>
-                    {isAdmin && <button  onClick={()=>navigate('/admin')} className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Admin Dashboard</button>}
+                    {isAdmin && <button onClick={() => navigate('/admin')} className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Admin Dashboard</button>}
                     <button
                       onClick={handleSignOut}
                       className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -136,16 +136,16 @@ const Navbar = () => {
               </div>
             )}
 
-          
+
           </div>
           <button
-              onClick={toggleMobileMenu}
-              className="md:hidden ml-4 focus:outline-none"
-            >
-              <div className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${mobileMenuOpen ? 'transform rotate-45 translate-y-2' : ''}`}></div>
-              <div className={`w-6 h-0.5 bg-white mb-1.5 ${mobileMenuOpen ? 'opacity-0' : ''}`}></div>
-              <div className={`w-6 h-0.5 bg-white transition-all ${mobileMenuOpen ? 'transform -rotate-45 -translate-y-2' : ''}`}></div>
-            </button>
+            onClick={toggleMobileMenu}
+            className="md:hidden ml-4 focus:outline-none"
+          >
+            <div className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${mobileMenuOpen ? 'transform rotate-45 translate-y-2' : ''}`}></div>
+            <div className={`w-6 h-0.5 bg-white mb-1.5 ${mobileMenuOpen ? 'opacity-0' : ''}`}></div>
+            <div className={`w-6 h-0.5 bg-white transition-all ${mobileMenuOpen ? 'transform -rotate-45 -translate-y-2' : ''}`}></div>
+          </button>
         </div>
 
         {/* Mobile menu */}
@@ -190,9 +190,8 @@ const Navbar = () => {
 const NavItem = ({ to, label, isActive }) => (
   <Link
     to={to}
-    className={`text-white font-medium hover:text-[#3b5bc5d6] transition duration-300 relative ${
-      isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-[#3f88a9] to-[#294fbf]' : ''
-    }`}
+    className={`text-white font-medium hover:text-[#3b5bc5d6] transition duration-300 relative ${isActive ? 'text-transparent bg-clip-text bg-gradient-to-r from-[#3f88a9] to-[#294fbf]' : ''
+      }`}
   >
     {label}
     {isActive && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#3f88a9] to-[#294fbf]"></span>}

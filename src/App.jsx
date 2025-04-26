@@ -23,7 +23,7 @@ const ViewProducs = lazy(()=>import("./pages/profile/ViewProduct"))
 const Layout = () => (
   <div>
     <Header />
-    <div className="page bg-gradient-to-t from-[#cfd9df] to-[#e2ebf0]">
+    <div className="page bg-gradient-to-r from-blue-50 to-teal-50">
       <Outlet />
     </div>
     <Footer />

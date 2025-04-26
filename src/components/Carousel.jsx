@@ -1,44 +1,50 @@
-import React, { useState, useEffect } from "react";
-import "./styles/caraousel.css";
-import images from "../utils/image"; // Ensure this imports correctly
+"use client"
+
+import { useState, useEffect } from "react"
+import images from "../utils/image" // Ensure this imports correctly
 
 function Carousel() {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 2500);
+      setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+    }, 5500)
 
-    return () => clearInterval(interval);
-  }, [current]);
+    return () => clearInterval(interval)
+  }, [])
 
   return (
-    <div className="carousel_wrapper">
+    <div className="relative flex h-[12rem] sm:h-[15rem] md:h-[18rem] lg:h-[20rem] w-[92%] max-w-7xl mx-auto overflow-hidden rounded-xl shadow-lg">
       {images.map((image, index) => (
         <div
           key={index}
-          className={`carousel_card ${
-            index === current ? "carousel_card_active" : ""
+          className={`absolute inset-0 w-full h-full overflow-hidden transition-opacity duration-500 ease-in-out ${
+            index === current ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
         >
-          <img className="card_image" src={image.image} alt={image.title} />
+          <img
+            className="w-full h-full object-cover"
+            src={image.image || "/placeholder.svg"}
+            alt={image.title || "Carousel image"}
+          />
         </div>
       ))}
 
-      <div className="carousel_pagination">
+      <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
         {images.map((_, index) => (
-          <div
+          <button
             key={index}
-            className={`pagination_dot ${
-              index === current ? "pagination_dot_active" : ""
+            className={`h-2.5 w-2.5 rounded-full transition-all ${
+              index === current ? "bg-[#26b5c6] w-5" : "bg-white/70 hover:bg-white"
             }`}
             onClick={() => setCurrent(index)}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
     </div>
-  );
+  )
 }
 
-export default Carousel;
+export default Carousel

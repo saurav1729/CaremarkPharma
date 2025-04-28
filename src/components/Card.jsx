@@ -4,6 +4,7 @@ import Logo from '../resources/logo.png';
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import AuthContext from '../../Context/AuthContext';
 import Button from '@mui/material/Button';
+import { motion } from 'framer-motion';
 
 const ProductCard = (props) => {
   const{ data, onEdit,onDelete,enableEdit } = props; 
@@ -66,32 +67,38 @@ console.log("image", firstImageUrl);
         </div>
       </div>
       {enableEdit && hovered && authCtx.user.role === "ADMIN" && (
-        <div className='w-full flex justify-between mt-5'
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
+        <motion.div 
+          className="w-full flex justify-between mt-3 gap-2"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2 }}
         >
-            <Button   onClick={(e) => {
-              e.preventDefault();
+          <button
+            onClick={(e) => {
+              e.preventDefault()
               if (onEdit) {
-                authCtx.eventData = data;
-                onEdit(data);
+                authCtx.eventData = data
+                onEdit(data)
               }
-            }} variant='contained'>
-      Edit Product
-    </Button>
-    <Button variant='contained' color="warning" startIcon=""   onClick={(e) => {
-              e.preventDefault();
-              const isConfirmed = window.confirm(
-                `Do you really want to delete this event "?`
-              );
+            }}
+            className="flex-1 py-2 px-4 bg-[#26b5c6] text-white font-medium rounded-lg hover:bg-[#1d95a3] transition-colors duration-300"
+          >
+            Edit Product
+          </button>
+          <button
+            onClick={(e) => {
+              e.preventDefault()
+              const isConfirmed = window.confirm(`Do you really want to delete this product?`)
               if (isConfirmed && onDelete) {
-                authCtx.eventData = data;
-                onDelete();
+                authCtx.eventData = data
+                onDelete()
               }
-            }} className="rounded bg-sky-600 py-2 px-4 text-sm text-white data-[hover]:bg-sky-500 data-[active]:bg-sky-700">
-    Delete Product
-    </Button>
-        </div>
+            }}
+            className="flex-1 py-2 px-4 bg-red-500 text-white font-medium rounded-lg hover:bg-red-600 transition-colors duration-300"
+          >
+            Delete Product
+          </button>
+        </motion.div>
       )}
     </div>
   );

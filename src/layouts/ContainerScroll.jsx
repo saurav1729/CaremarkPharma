@@ -116,8 +116,8 @@ const Card = ({ rotate, scale }) => {
               </div>
               <div>
                 <p className="text-gray-700 font-medium">Business Hours</p>
-                <p className="text-gray-600 mt-1">Mon-Fri: 9:00 AM - 8:00 PM</p>
-                <p className="text-gray-600">Sat-Sun: 10:00 AM - 6:00 PM</p>
+                <p className="text-gray-600 mt-1">Mon-Fri: 9:00 AM - 5:00 PM</p>
+                <p className="text-gray-600">Sat: 9:00 AM - 1:00 PM</p>
               </div>
             </motion.div>
           </div>

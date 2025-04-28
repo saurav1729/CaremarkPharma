@@ -15,7 +15,8 @@ function Carousel() {
   }, [])
 
   return (
-    <div className="relative flex h-[12rem] sm:h-[15rem] md:h-[18rem] lg:h-[20rem] w-[92%] max-w-7xl mx-auto overflow-hidden rounded-xl shadow-lg">
+    
+    <div className="relative flex h-[12rem]  border-[2px] border-[#1d95a3] sm:h-[15rem] md:h-[18rem] lg:h-[20rem] lg:w-full w-[95%] max-w-7xl mx-auto overflow-hidden rounded-3xl shadow-lg">
       {images.map((image, index) => (
         <div
           key={index}
@@ -36,7 +37,7 @@ function Carousel() {
           <button
             key={index}
             className={`h-2.5 w-2.5 rounded-full transition-all ${
-              index === current ? "bg-[#26b5c6] w-5" : "bg-white/70 hover:bg-white"
+              index === current ? "bg-[#26b5c6] w-5" : "bg-gray-500/70 hover:bg-white"
             }`}
             onClick={() => setCurrent(index)}
             aria-label={`Go to slide ${index + 1}`}

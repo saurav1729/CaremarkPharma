@@ -84,15 +84,15 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full z-20 transition-all duration-300 ${isVisible ? 'top-0' : '-top-full'}`}>
-      <div className=" bg-[rgba(48,48,48,0.3)] backdrop-blur-[20px] rounded-[50px] px-10 py-2 mx-14 mt-2">
-
+   <div className="bg-[#36323230] backdrop-blur-[20px] px-4 lg:px-10 rounded-[50px]  py-2 mx-4 md:mx-14 mt-2  border-b-2 border-b-white shadow-md">
+ 
         <div className="flex flex-row-reverse sm:flex-row justify-between items-center">
           <Link to="/" className="sm:flex hidden  sm:items-center sm:space-x-2">
-            <img src={logoImg} alt="Logo" className="h-[5rem] " />
+            <img src={logoImg} alt="Logo" className="lg:h-[5rem] md:h-[70px] sm:h-[40px]" />
           </Link>
 
 
-          <div className="hidden md:flex space-x-8 text-xl">
+          <div className="hidden md:flex space-x-8 lg:text-2xl text-md">
             <NavItem to="/" label="Home" isActive={isActiveLink("/")} />
             <NavItem to="/medicines" label="Products" isActive={isActiveLink("/medicines")} />
             <NavItem to="/about" label="About" isActive={isActiveLink("/about")} />
@@ -102,7 +102,7 @@ const Navbar = () => {
           <div className="flex items-center">
             {!authCtx.isLoggedIn ? (
               <Link to="/login">
-                <button className="text-white bg-gradient-to-r from-[rgba(177,143,48,0.84)] to-[#3b5bc5d6] hover:from-[rgba(56,149,165,0.9)] hover:to-[rgba(58,74,179,0.9)] font-semibold rounded-full text-md px-5 py-2.5 transition-all duration-300 ease-in-out transform hover:scale-105">
+                <button className="text-white  bg-gradient-to-r from-[rgba(177,143,48,0.84)] to-[#3b5bc5d6] hover:from-[rgba(56,149,165,0.9)] hover:to-[rgba(58,74,179,0.9)] font-semibold rounded-full text-md lg:text-xl px-5 py-2.5 transition-all duration-300 ease-in-out transform hover:scale-105">
                   Login/Signup
                 </button>
               </Link>

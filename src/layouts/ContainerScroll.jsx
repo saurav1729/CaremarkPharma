@@ -142,13 +142,13 @@ const Card = ({ rotate, scale }) => {
 
         <div className="md:w-1/2 h-72 md:h-auto relative">
           <div className="absolute inset-0 bg-gradient-to-br from-[#26b5c6]/20 to-transparent z-10 pointer-events-none"></div>
-          <iframe
+{/*           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d263.5172798760566!2d85.98098523359182!3d26.64880085881926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ec3ffa6b3ea819%3A0xb0fbc3d7026efa04!2sJha%20Steel%20Udyog!5e0!3m2!1sen!2sin!4v1727237648843!5m2!1sen!2sin"
             className="w-full h-full border-0"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          ></iframe> */}
         </div>
       </div>
     </motion.div>

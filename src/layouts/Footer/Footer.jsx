@@ -225,7 +225,7 @@ const Footer = () => {
                   <Phone className="h-5 w-5 text-[#26b5c6] mt-0.5 mr-3 flex-shrink-0" />
                   <div>
                     <p className="text-gray-300">+91 6204352229</p>
-                    <p className="text-gray-300">+91 6205573557 (WhatsApp)</p>
+{/*                     <p className="text-gray-300">+91 6205573557 (WhatsApp)</p> */}
                   </div>
                 </li>
                 <li className="flex items-start">

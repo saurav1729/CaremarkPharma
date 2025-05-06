@@ -6,7 +6,7 @@ const AboutDeveloper = () => {
 
   return (
     <motion.div className="py-12 px-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-      <div className="max-w-4xl mx-auto">
+{/*       <div className="max-w-4xl mx-auto">
         <motion.div
           className="text-center mb-10"
           initial={{ opacity: 0, y: -20 }}
@@ -130,7 +130,7 @@ const AboutDeveloper = () => {
             </div>
           </div>
         </motion.div>
-      </div>
+      </div> */}
     </motion.div>
   )
 }

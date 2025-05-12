@@ -4,7 +4,7 @@ import { MdLogout, MdDashboard, MdShoppingCart, MdAddCircle, MdMenu } from "reac
 import AuthContext from "../../../Context/AuthContext";
 
 const Sidebar = ({ isCollapsed, toggleSidebar }) => {
-  const [activePage, setActivePage] = useState("Dashboard");
+
   const authCtx = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -19,24 +19,26 @@ const Sidebar = ({ isCollapsed, toggleSidebar }) => {
     return name.length > maxLength ? `${name.slice(0, maxLength)}...` : name;
   };
 
-  const handleChange = (page) => {
-    setActivePage(page);
-  };
+  // const handleChange = (page) => {
+  //   setActivePage(page);
+  // };
 
-  const NavItem = ({ to, icon, children }) => (
+  const NavItem = ({ to, icon, children, exact = false }) => (
     <NavLink
       to={to}
+      end={exact}
       className={({ isActive }) =>
         `flex items-center py-2 px-4 rounded transition duration-200 ${
           isActive ? 'bg-indigo-600 text-white' : 'text-gray-300 hover:bg-indigo-700 hover:text-white'
         }`
       }
-      onClick={() => handleChange(children)}
     >
       {icon}
       {!isCollapsed && <span className="ml-3">{children}</span>}
     </NavLink>
   );
+  
+  
 
   return (
     <div className={`bg-gray-900 text-white ${isCollapsed ? 'w-20' : 'w-64'} min-h-screen flex flex-col transition-all duration-300 ease-in-out`}>
@@ -61,7 +63,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar }) => {
           )}
         </div>
         <nav className="space-y-2">
-          <NavItem to="/admin" icon={<MdDashboard size={20} />}>Dashboard</NavItem>
+        <NavItem to="/admin" icon={<MdDashboard size={20} />} exact={true}>Dashboard</NavItem>
           <NavItem to="/admin/products" icon={<MdShoppingCart size={20} />}>Products</NavItem>
           <NavItem to="/admin/add-product" icon={<MdAddCircle size={20} />}>Add Product</NavItem>
         </nav>

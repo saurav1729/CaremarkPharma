@@ -284,7 +284,7 @@ const Footer = () => {
           {/* Copyright and Credits */}
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
             <p>© {new Date().getFullYear()} Caremark Pharmaceutical. All rights reserved.</p>
-{/*             <p className="mt-2 md:mt-0">
+            <p className="mt-2 md:mt-0">
               Developed with ❤️ by{" "}
               <a
                 href="https://www.linkedin.com/in/saurav-jha-574171279/"
@@ -295,7 +295,7 @@ const Footer = () => {
                 Saurav Jha
                 <ExternalLink className="h-3 w-3 ml-1" />
               </a>
-            </p> */}
+            </p>
           </div>
         </div>
       </footer>

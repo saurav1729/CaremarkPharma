@@ -30,7 +30,7 @@ const initialProduct = {
   description: { short: '', long: '' },
   usage: { dosage: 'As directed by the physician', instructions: 'Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.', side_effects: '', precautions: '' },
   manufacturer_details: { name: '', address: '', license: '' },
-  batch_info: { number: '', manufacturing_date: '', expiry_date: '' },
+  batch_info: { number: '1234', manufacturing_date: '', expiry_date: '' },
   prescription_required: true,
   availability: 'in stock',
   images: [],

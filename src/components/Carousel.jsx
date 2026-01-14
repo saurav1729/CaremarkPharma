@@ -16,7 +16,7 @@ function Carousel() {
 
   return (
     
-    <div className="relative flex h-[12rem]  border-[2px] border-[#1d95a3] sm:h-[15rem] md:h-[18rem] lg:h-[20rem] lg:w-full w-[95%] max-w-7xl mx-auto overflow-hidden rounded-3xl shadow-lg">
+    <div className="relative flex h-[12rem]  border-[2px] border-[#1d95a3] sm:h-[15rem] md:h-[18rem] lg:h-[24rem] lg:w-[90%] w-[95%] max-w-7xl mx-auto overflow-hidden rounded-3xl shadow-lg">
       {images.map((image, index) => (
         <div
           key={index}

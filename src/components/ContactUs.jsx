@@ -23,12 +23,17 @@ const ContactUs = ({ isHomePage = false }) => {
   const [submitMessage, setSubmitMessage] = useState("")
   const [messageType, setMessageType] = useState("") // 'success' or 'error'
 
+   useEffect(() => {
+    window.scrollTo(0, 0);
+   })
+
   useEffect(() => {
     setFormData((prevData) => ({
       ...prevData,
       name: authCtx.user?.name || "",
       email: authCtx.user?.email || "",
     }))
+
   }, [authCtx.user])
 
   const handleChange = (e) => {
@@ -213,7 +218,7 @@ const ContactUs = ({ isHomePage = false }) => {
 
                   <div className="flex items-center justify-center gap-2 text-gray-700">
                     <Mail className="h-5 w-5 text-[#26b5c6]" />
-                    <span>officialcaremarkpharmaceutical@gmail.com</span>
+                    <span>caremark30@gmail.com</span>
                   </div>
 
                   <div className="flex items-center justify-center gap-2 text-gray-700">

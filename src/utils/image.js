@@ -12,10 +12,6 @@ const CarouselImg = [
   },   {
     "image": slide1,
     "title": "Image 1"
-  }, 
-  {
-    "image": image,
-    "title": "Image 1"
   }];
 
 export default CarouselImg;

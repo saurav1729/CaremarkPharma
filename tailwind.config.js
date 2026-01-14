@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        'brand-paper': '#FFFBF5',
+        'brand-red': '#C0392B',
+        'brand-charcoal': '#2C3E50',
+        'brand-yellow': '#F39C12',
+      },
 
       backgroundImage: {
         'custom-gradient': 'linear-gradient(315deg, #7ed6df 0%, #000000 74%)',

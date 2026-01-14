@@ -179,7 +179,7 @@ const MultiStepProductForm = () => {
   const CurrentStepComponent = steps[currentStep].component;
 
   return (
-    <div className="max-w-2xl mx-auto ">
+    <div className="max-w-[90%] mx-auto ">
       <FormNavigation steps={steps} currentStep={currentStep} />
       <form className="bg-gray-300 shadow-sm shadow-blue-400 rounded px-4 pt-4 pb-4 mb-4">
         <CurrentStepComponent product={product} handleChange={handleChange} errors={errors} />

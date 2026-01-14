@@ -3,6 +3,8 @@
 import { useRef, useState, useEffect } from "react"
 import { useScroll, useTransform, motion } from "framer-motion"
 import { FaMapMarkerAlt, FaPhone, FaClock } from "react-icons/fa"
+import { AnimatedHealthcareVisual } from "../components/AnimatedHealthcareVisual"
+// import Image from "next/image" // Import Next.js Image component
 
 export const ContainerScroll = () => {
   const containerRef = useRef(null)
@@ -100,8 +102,7 @@ const Card = ({ rotate, scale }) => {
               <div className="flex items-center justify-center w-10 h-10 rounded-full bg-teal-50 text-[#26b5c6] mr-4 flex-shrink-0">
                 <FaPhone className="text-lg" />
               </div>
-              <p className="text-gray-700"> 6204352229
-              </p>
+              <p className="text-gray-700"> 6204352229</p>
             </motion.div>
 
             <motion.div
@@ -116,8 +117,7 @@ const Card = ({ rotate, scale }) => {
               </div>
               <div>
                 <p className="text-gray-700 font-medium">Business Hours</p>
-                <p className="text-gray-600 mt-1">Mon-Fri: 9:00 AM - 5:00 PM</p>
-                <p className="text-gray-600">Sat: 9:00 AM - 1:00 PM</p>
+                <p className="text-gray-600 mt-1">Mon-Sat: 10:00 AM - 5:00 PM</p>
               </div>
             </motion.div>
           </div>
@@ -140,15 +140,17 @@ const Card = ({ rotate, scale }) => {
           </motion.button>
         </div>
 
-        <div className="md:w-1/2 h-72 md:h-auto relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#26b5c6]/20 to-transparent z-10 pointer-events-none"></div>
-{/*           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d263.5172798760566!2d85.98098523359182!3d26.64880085881926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ec3ffa6b3ea819%3A0xb0fbc3d7026efa04!2sJha%20Steel%20Udyog!5e0!3m2!1sen!2sin!4v1727237648843!5m2!1sen!2sin"
-            className="w-full h-full border-0"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe> */}
+        {/* Map Image Section */}
+           <div className="md:w-1/2 h-72 md:h-auto relative overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="absolute inset-0"
+          >
+            <AnimatedHealthcareVisual />
+          </motion.div>
         </div>
       </div>
     </motion.div>

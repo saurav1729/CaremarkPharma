@@ -35,7 +35,7 @@ const AboutDeveloper = () => {
                 <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-100 rounded-full z-0 opacity-50"></div>
                 <div className="relative z-10">
                   <img
-                    src="https://media.licdn.com/dms/image/v2/D5603AQE_xD-kd2C0QA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710159591417?e=2147483647&v=beta&t=deKLmSdAVDGF9MwtEAy5WonLUcIih15vGBhFvVmdTiw"
+                    src="https://res.cloudinary.com/df6sjkg3j/image/upload/v1765340092/WhatsApp_Image_2025-12-10_at_9.43.00_AM_vri3cz.jpg"
                     alt="Saurav Kumar Jha"
                     className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
                   />

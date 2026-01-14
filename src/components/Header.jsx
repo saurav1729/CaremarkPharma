@@ -102,7 +102,7 @@ const Navbar = () => {
           <div className="flex items-center">
             {!authCtx.isLoggedIn ? (
               <Link to="/login">
-                <button className="text-white  bg-gradient-to-r from-[rgba(177,143,48,0.84)] to-[#3b5bc5d6] hover:from-[rgba(56,149,165,0.9)] hover:to-[rgba(58,74,179,0.9)] font-semibold rounded-full text-md lg:text-xl px-5 py-2.5 transition-all duration-300 ease-in-out transform hover:scale-105">
+                <button className="text-white bg-gradient-to-r from-cyan-500  to-black hover:from-[rgba(56,149,165,0.9)] hover:to-[rgba(58,74,179,0.9)] font-semibold rounded-full text-md lg:text-xl px-5 py-2.5 transition-all duration-300 ease-in-out transform hover:scale-105">
                   Login/Signup
                 </button>
               </Link>

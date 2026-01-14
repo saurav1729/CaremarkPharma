@@ -152,8 +152,7 @@ const Footer = () => {
                   />
                 </div>
                 <p className="text-gray-300 text-center md:text-left mb-4">
-                  Caremark Pharmaceutical Private Limited, established in 2021, is a manufacturer of high-quality
-                  pharmaceutical products based in Haridwar, Uttarakhand, India.
+                 Caremark Pharmaceutical Private Limited, established in 2021, is a pharmaceutical company based in Haridwar, Uttarakhand, India, committed to delivering high-quality products.
                 </p>
                 <div className="flex space-x-3">
                   <a
@@ -232,7 +231,6 @@ const Footer = () => {
                   <Mail className="h-5 w-5 text-[#26b5c6] mt-0.5 mr-3 flex-shrink-0" />
                   <div className="min-w-0">
                     <p className="text-gray-300 break-words">caremark30@gmail.com</p>
-                    <p className="text-gray-300 text-sm break-words">officialcaremarkpharmaceutical@gmail.com</p>
                   </div>
                 </li>
 
@@ -255,14 +253,10 @@ const Footer = () => {
                 Business Hours
                 <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#26b5c6]"></span>
               </h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2 ">
                 <li className="flex justify-between">
-                  <span className="text-gray-400">Monday - Friday:</span>
-                  <span className="text-gray-200 font-medium">9:00 AM - 5:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span className="text-gray-400">Saturday:</span>
-                  <span className="text-gray-200 font-medium">9:00 AM - 1:00 PM</span>
+                  <span className="text-gray-400">Mon - Sat:</span>
+                  <span className="text-gray-200 font-medium">10:00 AM - 5:00 PM</span>
                 </li>
                 <li className="flex justify-between">
                   <span className="text-gray-400">Sunday:</span>
@@ -287,7 +281,7 @@ const Footer = () => {
             <p className="mt-2 md:mt-0">
               Developed with ❤️ by{" "}
               <a
-                href="https://www.linkedin.com/in/saurav-jha-574171279/"
+                href="https://jhasaurav.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#26b5c6] hover:underline font-medium inline-flex items-center"

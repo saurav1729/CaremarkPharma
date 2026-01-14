@@ -16,7 +16,7 @@ const ProductInfo = ({ product }) => {
           {console.log(product)}
       <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
       <p className="text-xl text-gray-500">{product.manufacturer||'Caremark Pharmaceutical Pvt. Ltd.'}</p>
-      <p className="text-lg">{product.composition}</p>
+      <p className="text-md text-justify ">{product.composition}</p>
       <div className="flex items-center">
         <p className="text-xl flex justify-center items-center font-semibold text-gray-900">
         <BiRupee/> {product.price.currency} {product.price.discounted.toFixed(2)}

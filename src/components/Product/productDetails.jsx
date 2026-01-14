@@ -74,7 +74,7 @@ const ProductDetails = ({ product }) => {
                 'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
               )}
             >
-              <div className="text-sm text-gray-700">{content}</div>
+              <div className="text-sm text-gray-700 text-justify">{content}</div>
             </Tab.Panel>
           ))}
         </Tab.Panels>

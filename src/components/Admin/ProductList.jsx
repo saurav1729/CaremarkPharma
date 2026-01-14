@@ -8,11 +8,6 @@ import { api } from '../../service';
 
 
 
-
-
-
-
-
 const ProductList = () => {
    const [products,setProducts]=useState([]); 
    const[error,setError]=useState(null);

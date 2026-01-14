@@ -707,7 +707,175 @@
                 }
             ],
             "__v": 0
-        }
+        },
+        {
+  "_id":  "69565b5de35c33a1be47ef4e",
+  "name": "SMRAFLAM-P",
+  "category": "tablets",
+  "composition": "Aceclofenac (100 mg) + Paracetamol (325 mg)",
+  "price": {
+    "original": 65,
+    "discounted": 65,
+    "discount_percentage": 0,
+    "includes_taxes": true
+  },
+  "package_size": "10 Capsules",
+  "package_size_ml": "100 ml",
+  "stock_quantity": 0,
+  "description": {
+    "short": "Useful in arthritis, musculoskeletal pain, joint inflammation, body pain, and fever.",
+    "long": "This tablet is a combination of Aceclofenac, a non-steroidal anti-inflammatory drug (NSAID), and Paracetamol, an analgesic and antipyretic. Aceclofenac helps reduce inflammation, swelling, and pain by inhibiting inflammatory mediators, while Paracetamol enhances pain relief and lowers fever by acting on the central nervous system. Together, they provide effective relief from mild to moderate pain, inflammation, and fever associated with various musculoskeletal and inflammatory conditions. The combination is commonly prescribed for short-term symptomatic management where both pain control and anti-inflammatory action are required."
+  },
+  "usage": {
+    "dosage": "As directed by the physician",
+    "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+    "side_effects": "Nausea, indigestion, abdominal discomfort, dizziness, headache, or mild gastric irritation.",
+    "precautions": "Always take this medication as prescribed by a healthcare professional for safe and effective results."
+  },
+  "manufacturer_details": {
+    "name": "Algen Healthcare Ltd.",
+    "address": "134/2, Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+    "license": "S-MNB/08/25 & S-MB/08/26"
+  },
+  "batch_info": {
+    "number": "1234",
+    "manufacturing_date": {
+      "$date": "2025-10-01T00:00:00.000Z"
+    },
+    "expiry_date": {
+      "$date": "2027-09-01T00:00:00.000Z"
+    }
+  },
+  "prescription_required": true,
+  "availability": "in stock",
+  "details": {
+    "authenticity": "100% authentic product",
+    "shipping": "Free shipping",
+    "return_policy": "7 days return policy"
+  },
+  "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+  "marketing": {
+    "company": "Caremark Pharmaceutical",
+    "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+  },
+  "images": [
+    {
+      "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1767267162/ProductImages/qso2jwmefoncivmy4cwc.jpg",
+      "_id":  "69565b5de35c33a1be47ef4f"
+    },
+    {
+      "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1767267162/ProductImages/bwhzw2rni6lsaj9gzjvj.jpg",
+      "_id":  "69565b5de35c33a1be47ef50"
+    },
+    {
+      "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1767267163/ProductImages/ooq8f7oraqqqtssssgke.jpg",
+      "_id":  "69565b5de35c33a1be47ef51"
+      
+    },
+    {
+      "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1767267164/ProductImages/gwhzopitbvdf7wu5bk0b.jpg",
+      "_id":  "69565b5de35c33a1be47ef52"
+      
+    },
+    {
+      "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1767267165/ProductImages/aiizwir4b1t0hwzlrib4.jpg",
+      "_id": "69565b5de35c33a1be47ef53"
+      
+    }
+  ],
+  "related_products": [
+    {
+      "label": "SMRAFLAM",
+      "value": "678d29db9b447b5281046d57"
+      ,
+      "_id":  "69565b5de35c33a1be47ef54"
+      
+    }
+  ],
+  "__v": 0
+}, 
+{
+  "_id": "69565db0e35c33a1be47f033"
+  ,
+  "name": "ZYNOPLUS-M",
+  "category": "tablets",
+  "composition": "Montelukast (10 mg) + Bilastine (20 mg)",
+  "price": {
+    "original": 125,
+    "discounted": 125,
+    "discount_percentage": 0,
+    "includes_taxes": true
+  },
+  "package_size": "10 Capsules",
+  "package_size_ml": "100 ml",
+  "stock_quantity": 0,
+  "description": {
+    "short": "Useful in allergic rhinitis, seasonal allergies, sneezing, runny nose, nasal congestion, and allergic asthma.",
+    "long": "This tablet is a combination of Montelukast, a leukotriene receptor antagonist, and Bilastine, a second-generation antihistamine, designed for effective management of allergic conditions. Montelukast works by blocking leukotrienes, which are responsible for airway inflammation, bronchoconstriction, and allergy symptoms, while Bilastine relieves allergic symptoms by selectively inhibiting histamine without causing significant sedation. Together, they provide sustained relief from nasal, respiratory, and skin-related allergy symptoms and help improve breathing comfort and overall quality of life in allergic patients."
+  },
+  "usage": {
+    "dosage": "As directed by the physician",
+    "instructions": "Take this medication by mouth as directed by your doctor. Do not increase your dose or use this drug more often or for longer than prescribed.",
+    "side_effects": "Headache, dry mouth, mild drowsiness, stomach discomfort, or fatigue in some patients.",
+    "precautions": "Always take this medication as prescribed by a healthcare professional for safe and effective results."
+  },
+  "manufacturer_details": {
+    "name": "Algen Healthcare Ltd.",
+    "address": "134/2, Vill. Khara Khari, Sadhaura Road, Kala Amb, Distt. Sirmour (H.P.) 173030",
+    "license": "S-MNB/08/25 & S-MB/08/26"
+  },
+  "batch_info": {
+    "number": "1234",
+    "manufacturing_date": {
+      "$date": "2025-11-01T00:00:00.000Z"
+    },
+    "expiry_date": {
+      "$date": "2027-10-01T00:00:00.000Z"
+    }
+  },
+  "prescription_required": true,
+  "availability": "in stock",
+  "details": {
+    "authenticity": "100% authentic product",
+    "shipping": "Free shipping",
+    "return_policy": "7 days return policy"
+  },
+  "storage": "Store in a cool, dry & dark place. Protect from direct sunlight. Keep medicine out of reach of children. Do not chew or crush the capsule. It should be swallowed whole.",
+  "marketing": {
+    "company": "Caremark Pharmaceutical",
+    "address": "Mantra City, Ranipur Range, Haridwar, Uttrakhand, Pin-249403"
+  },
+  "images": [
+    {
+      "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1767267757/ProductImages/dsenqcdznqkbajgbyvcn.jpg",
+      "_id": "69565db0e35c33a1be47f034"
+      
+    },
+    {
+      "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1767267758/ProductImages/ltz2kbcxpysa42kp34io.jpg",
+      "_id":  "69565db0e35c33a1be47f035"
+      
+    },
+    {
+      "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1767267758/ProductImages/ulgsc8tsguixoxdrfcs0.jpg",
+      "_id":  "69565db0e35c33a1be47f036"
+      
+    },
+    {
+      "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1767267759/ProductImages/vt6sjlmavteoqvokwm9r.jpg",
+      "_id":  "69565db0e35c33a1be47f037"
+      
+    },
+    {
+      "url": "https://res.cloudinary.com/df6sjkg3j/image/upload/v1767267759/ProductImages/iixc3mrddrhhee3gdkkw.jpg",
+      "_id":  "69565db0e35c33a1be47f038"
+      
+    }
+  ],
+  "related_products": [],
+  "__v": 0
+}
+
     ]
 
 }

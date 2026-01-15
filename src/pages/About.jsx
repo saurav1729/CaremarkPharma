@@ -144,7 +144,7 @@ import CompanyLeadership from "../components/CompanyLeadership"
           </motion.div>
 
           {/* Developer Section */}
-          <AboutDeveloper />
+          {/* <AboutDeveloper /> */}
         </div>
       </div>
     )

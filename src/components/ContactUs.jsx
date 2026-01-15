@@ -220,11 +220,6 @@ const ContactUs = ({ isHomePage = false }) => {
                     <Mail className="h-5 w-5 text-[#26b5c6]" />
                     <span>caremark30@gmail.com</span>
                   </div>
-
-                  <div className="flex items-center justify-center gap-2 text-gray-700">
-                    <Phone className="h-5 w-5 text-[#26b5c6]" />
-                    <span>+91 6204352229</span>
-                  </div>
                 </div>
               </div>
             </motion.div>

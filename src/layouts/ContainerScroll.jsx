@@ -92,18 +92,7 @@ const Card = ({ rotate, scale }) => {
               <p className="text-gray-700">Haridwar City (Near Mantra Township), Haridwar - 249401</p>
             </motion.div>
 
-            <motion.div
-              className="flex items-start"
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-teal-50 text-[#26b5c6] mr-4 flex-shrink-0">
-                <FaPhone className="text-lg" />
-              </div>
-              <p className="text-gray-700"> 6204352229</p>
-            </motion.div>
+          
 
             <motion.div
               className="flex items-start"

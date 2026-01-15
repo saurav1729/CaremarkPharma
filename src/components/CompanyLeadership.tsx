@@ -3,24 +3,18 @@
 import React from "react"
 import { motion } from "framer-motion"
 
-const leaders = [
-  {
-    name: "Abdhesh Kumar Jha",
-    role: "Managing Director",
-    image: "https://res.cloudinary.com/df6sjkg3j/image/upload/v1768390973/57e809f0cf20c-bpfull-1_1_fuigyp.jpg",
-    // This image will be clickable
-    linkedin: "", 
-  },
-  {
-    name: "Satyam Kumar Jha",
-    role: "Manager – Admin & HR",
-    image: "https://res.cloudinary.com/df6sjkg3j/image/upload/v1768390505/Gemini_Generated_Image_9190qw9190qw9190__1_-removebg-preview_pmxmwg.png",
-    // This image will NOT be clickable (no anchor tag)
-    linkedin: "https://www.linkedin.com/in/satyamkrjhaa", 
-  },
-]
+interface Leader {
+  name: string
+  role: string
+  image: string
+  linkedin?: string
+}
+
+const leaders: Leader[] = []
 
 const CompanyLeadership = () => {
+  if (leaders.length === 0) return null
+
   return (
     <motion.div
       initial={{ opacity: 0, x: 30 }}
@@ -38,15 +32,13 @@ const CompanyLeadership = () => {
             key={index}
             className="bg-white rounded-lg transition flex flex-col items-center text-center pb-4"
           >
-            {/* Image Container with Conditional Linking */}
             <div className="mb-4">
               {leader.linkedin ? (
-                // If LinkedIn URL exists, wrap image in Anchor tag
-                <a 
-                  href={leader.linkedin} 
-                  target="_blank" 
+                <a
+                  href={leader.linkedin}
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="block" // Ensures anchor behaves correctly layout-wise
+                  className="block"
                 >
                   <img
                     src={leader.image}
@@ -55,7 +47,6 @@ const CompanyLeadership = () => {
                   />
                 </a>
               ) : (
-                // Else just show the image
                 <img
                   src={leader.image}
                   alt={leader.name}
@@ -67,7 +58,7 @@ const CompanyLeadership = () => {
             <h4 className="text-lg font-semibold text-[#293649]">
               {leader.name}
             </h4>
-            
+
             <p className="text-sm text-[#26b5c6] font-medium mb-3">
               {leader.role}
             </p>
